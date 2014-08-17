@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+      <loc>{{ site.url }}/about/</loc>
+      <lastmod>2014-05-19</lastmod>
+  </url>
+  <url>
+      <loc>{{ site.url }}/cakephp-book/</loc>
+      <lastmod>2014-08-16</lastmod>
+  </url>
+  <url>
+      <loc>{{ site.url }}/hire-me/</loc>
+      <lastmod>2014-05-19</lastmod>
+  </url>
+
+{% for post in site.posts %}
+  <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date_to_ymd }}</lastmod>
+  </url>
+{% endfor %}
+
+</urlset>

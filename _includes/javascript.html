@@ -1,0 +1,40 @@
+<script type="text/javascript" src="{{ "/javascripts/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/navigation.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/hogan.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/typeahead.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/affix.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/app.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/rainbow.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/languages/c.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/languages/css.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/languages/generic.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/languages/html.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/languages/javascript.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/languages/php.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/languages/python.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/languages/ruby.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/javascripts/rainbow/languages/shell.js" | prepend: site.baseurl }}"></script>
+
+<script type="text/javascript">
+    {% if site.disqus_shortname %}
+    if ($('#disqus_thread').length) {
+        var disqus_shortname  = '{{ site.disqus_shortname }}';
+        var disqus_identifier = '{{ page.url }}';
+        var disqus_url        = '{{ site.url }}{{ page.url }}';
+        var disqus_title      = {% capture disqus_title %}{% if page.series %}{{ page.series }}: {% endif %}{{ page.title }}{% endcapture %}{{ disqus_title | to_json }};
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + '{{ site.disqus_shortname }}' + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    }
+    {% endif %}
+    {% if site.ga_tracking_id %}
+        (function() {
+            var ga = document.createElement('script');     ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    {% endif %}
+</script>

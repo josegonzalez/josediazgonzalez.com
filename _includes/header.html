@@ -1,0 +1,22 @@
+<header class="site-header" role="banner">
+    <hgroup>
+        <h1 class="site-title">
+            <a href="/" title="{{ site.title }}" rel="home">{{ site.title }}</a>
+        </h1>
+        {% if site.description %}<h2 class="site-description"><a href="/about/" title="About me">{{ site.description }}</a></h2>{% endif %}
+    </hgroup>
+
+    {% if site.navigation %}
+        <nav class="main-navigation" role="navigation">
+            <h3 class="menu-toggle">Menu</h3>
+            <a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+            <div class="nav-menu">
+                <ul class="nav-menu">
+                    {% for nav_item in site.navigation %}
+                        <li class="{% if page.is_nav == nav_item.link %}current_page_item{% else %}page_item{% endif %}"><a href="{{ nav_item.link }}">{{ nav_item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </nav>
+    {% endif %}
+</header>

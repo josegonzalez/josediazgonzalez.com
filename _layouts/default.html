@@ -1,0 +1,27 @@
+{% strip %}<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+  {% include head.html %}
+  <body class="home {{ page.body }} {{ page.page_id }}">
+    <div class="site">
+      {% include header.html %}
+      <div class="wrapper">
+        <div class="site-content">
+          <div role="main">
+            {{ content }}
+          </div>
+        </div>
+        {% include sidebar.html %}
+      </div>
+      {% include footer.html %}
+    </div>
+    {% include javascript.html %}
+  </body>
+</html>{% endstrip %}

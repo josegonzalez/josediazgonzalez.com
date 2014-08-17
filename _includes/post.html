@@ -1,0 +1,88 @@
+<article class="type-post">
+  <header class="entry-header">
+    {% if page.title %}
+      <h1 class="entry-title">
+        {{ page.title }}
+      </h1>
+    {% endif %}
+    {% if title %}
+      <h1 class="entry-title">
+        {{ title }}
+      </h1>
+    {% endif %}
+
+    {% if site.comments and page.comments %}
+      <div class="comments-link">
+        <a href="#comments" title="Comment on {{ page.title }}!">
+          Comments
+        </a>
+      </div>
+    {% endif %}
+  </header>
+
+  {% if page.lead %}
+    <header class="entry-content">
+      <h2>{{ page.lead }}</h2>
+    </header>
+  {% endif %}
+
+  {% if lead %}
+    <header class="entry-content">
+      <h2>{{ lead }}</h2>
+    </header>
+  {% endif %}
+
+  <div class="entry-content">
+    {% if page.image %}{% unless page.hide_image %}
+    <div class="post-image">
+      <div>
+        {% if page.image_url %}<a href="{{ page.image_url }}"{% if page.image_tooltip %} title="{{ page.image_tooltip }}"{% endif %}>{% endif %}
+        <img src="{{ page.image }}" >
+        {% if page.image_url %}</a>{% endif %}
+      </div>
+      {% if page.subtitle %}<span>{{ page.subtitle }}</span>{% endif %}
+    </div>
+    {% endunless %}{% endif %}
+
+    {% if things %}
+      {% for thing in things %}
+        <h4>
+          <a href="/{{ type }}/{{ thing | replace:' ', '-' | downcase }}" name="{{ thing | replace:' ','-' | downcase }}">
+            {{ thing | titleize }}
+          </a>
+        </h4>
+        <ul>
+          {% for post in collection[thing] %}
+            <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    {% endif %}
+
+{% if page.series %}<div class="series-note">{% include series.html %}</div>{% endif %}
+
+    {{ content }}
+  </div>
+
+  {% if page.category %}
+    <footer class="entry-meta">
+      This entry was posted in <a href="/categories/{{ page.category | replace:' ', '-' | downcase  }}" title="View all posts in {{ page.category }}" rel="category">{{ page.category }}</a> on <a href="{{ site.url }}{{ page.url }}" title="10:40 pm" rel="bookmark"><time class="entry-date" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/about/" title="See more info on {{ site.author }}" rel="author">{{ site.author }}</a></span></span>.
+    </footer>
+  {% endif %}
+</article>
+{% if site.related_limit and site.related_posts %}
+  <div class="related-posts section">
+    <h4>Related Posts</h4>
+    <ol>
+      {% for post in site.related_posts limit:site.related_limit %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ol>
+  </div>
+{% endif %}
+{% if site.comments and page.comments %}
+  <div id="comments">
+    <div id="disqus_thread" name="#comments"></div>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+{% endif %}
