@@ -93,6 +93,9 @@ exclude:
 # A list of directories and files to include in the conversion
 include:
   - .nojekyll
+# Timezone for timestamp conversion
+timezone: UTC
+
 
 # ----------------------- #
 #         Rakefile        #
