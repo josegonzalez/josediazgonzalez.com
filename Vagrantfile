@@ -14,6 +14,15 @@ echo "- installing repository requirements"
 export DEBIAN_FRONTEND=noninteractive
 apt-get install -qq -y --force-yes build-essential git ruby1.9.1 ruby1.9.1-dev rubygems1.9.1 irb1.9.1 ri1.9.1 rdoc1.9.1 libopenssl-ruby1.9.1 nginx gsl-bin libgsl0-dev > /dev/null
 
+command -v nodejs > /dev/null || {
+  echo "- installing nodejs requirements"
+  apt-get install -qq -y --force-yes python-software-properties python g++ make > /dev/null
+  add-apt-repository -y ppa:chris-lea/node.js > /dev/null
+  apt-get update > /dev/null
+  apt-get install -qq -y --force-yes nodejs > /dev/null
+  npm install -g uglify-js clean-css > /dev/null
+}
+
 echo "- installing gem requirements"
 cd /vagrant
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
