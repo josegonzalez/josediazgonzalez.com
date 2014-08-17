@@ -29,7 +29,7 @@
 require 'fileutils'
 require 'digest/md5'
 
-DITAA_CACHE_DIR = File.dirname(__FILE__) + "/../../_tmp/ditaa"
+DITAA_CACHE_DIR = File.dirname(__FILE__) + "/../_tmp/ditaa"
 FileUtils.mkdir_p(DITAA_CACHE_DIR)
 File.chmod(0777, DITAA_CACHE_DIR)
 
