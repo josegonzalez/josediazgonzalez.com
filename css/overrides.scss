@@ -70,18 +70,18 @@ pre code {
 }
 
 .series-note {
-  ul {
+  ol {
     background: #FCFCFC;
     border: 1px solid #E0E0E0;
     color: #575757;
     display: block;
     float: none;
     font: inherit;
+    list-style-type: decimal;
     margin: 20px 0;
-    padding: 20px 30px;
+    padding: 20px 30px 20px 50px;
   }
   li {
-    list-style-type: none;
     margin: 0;
   }
   p {
