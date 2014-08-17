@@ -1,0 +1,12 @@
+{% if page.image %}
+  {% unless page.hide_image %}
+    <div class="post-image">
+      <div>
+        {% if page.image_url %}<a href="{{ page.image_url }}"{% if page.image_tooltip %} title="{{ page.image_tooltip }}"{% endif %}>{% endif %}
+        <img src="{{ page.image }}" >
+        {% if page.image_url %}</a>{% endif %}
+      </div>
+      {% if page.subtitle %}<span>{{ page.subtitle }}</span>{% endif %}
+    </div>
+  {% endunless %}
+{% endif %}

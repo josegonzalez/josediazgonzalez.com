@@ -1,0 +1,9 @@
+{% if site.related_limit and site.related_posts %}
+  <div class="related-posts section">
+    <h4>Related Posts</h4>
+    <ol>
+      {% for post in site.related_posts limit:site.related_limit %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ol>
+  </div>
+{% endif %}

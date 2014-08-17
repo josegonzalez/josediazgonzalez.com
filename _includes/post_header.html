@@ -1,0 +1,32 @@
+<header class="entry-header">
+    {% if page.title %}
+      <h1 class="entry-title">
+        {{ page.title }}
+      </h1>
+    {% endif %}
+    {% if title %}
+      <h1 class="entry-title">
+        {{ title }}
+      </h1>
+    {% endif %}
+
+    {% if site.comments and page.comments %}
+      <div class="comments-link">
+        <a href="#comments" title="Comment on {{ page.title }}!">
+          Comments
+        </a>
+      </div>
+    {% endif %}
+  </header>
+
+  {% if page.lead %}
+    <header class="entry-content">
+      <h2>{{ page.lead }}</h2>
+    </header>
+  {% endif %}
+
+  {% if lead %}
+    <header class="entry-content">
+      <h2>{{ lead }}</h2>
+    </header>
+  {% endif %}
