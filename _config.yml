@@ -91,6 +91,7 @@ exclude:
   - Gemfile.lock
   - requirements.txt
   - Vagrantfile
+  - bin
 # A list of directories and files to include in the conversion
 include:
   - .nojekyll

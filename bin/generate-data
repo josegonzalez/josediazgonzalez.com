@@ -1,0 +1,203 @@
+#!/usr/bin/env python
+
+import json
+import os
+import sys
+import urllib
+import urllib2
+
+CURRENT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PREFIXES = {
+    'cakephp': 'cake',
+    'java': 'java',
+    'php': 'php',
+    'python': 'py',
+    'ruby': 'rb',
+    'shell': 'sh'
+}
+USERNAME = 'josegonzalez'
+
+
+def log_error(message):
+    if type(message) == str:
+        message = [message]
+
+    for msg in message:
+        sys.stderr.write("{0}\n".format(msg))
+
+    sys.exit(1)
+
+
+def log_info(message):
+    if type(message) == str:
+        message = [message]
+
+    for msg in message:
+        sys.stdout.write("{0}\n".format(msg))
+
+
+def retrieve_data(template, query_args=None, single_request=False):
+    per_page = 100
+    page = 0
+    data = []
+    if not query_args:
+        query_args = {}
+
+    header = 'X-RateLimit-Limit'
+
+    while True:
+        page = page + 1
+        querystring = urllib.urlencode(dict({
+            'per_page': per_page,
+            'page': page
+        }.items() + query_args.items()))
+
+        request = urllib2.Request(template + '?' + querystring)
+        r = urllib2.urlopen(request)
+
+        errors = []
+        if int(r.getcode()) != 200:
+            errors.append('Bad response from api')
+
+        if header in r.headers and int(r.headers[header]) == 0:
+            ratelimit_error = 'No more requests remaining'
+            errors.append(ratelimit_error)
+
+        if int(r.getcode()) != 200:
+            log_error(errors)
+
+        response = json.loads(r.read())
+        if len(errors) == 0:
+            if type(response) == list:
+                data.extend(response)
+                if len(response) < per_page:
+                    break
+            elif type(response) == dict and single_request:
+                data.append(response)
+
+        if len(errors) > 0:
+            log_error(errors)
+
+        if single_request:
+            break
+
+    return data
+
+
+def retrieve_repositories():
+    url = 'https://api.github.com/users/{0}/repos'.format(USERNAME)
+    return retrieve_data(url, single_request=False)
+
+
+def composer_data(name):
+
+    template = 'https://raw.githubusercontent.com/{0}/master/composer.json'
+    request = urllib2.Request(template.format(name))
+
+    try:
+        r = urllib2.urlopen(request)
+    except urllib2.HTTPError:
+        return None
+
+    if int(r.getcode()) != 200:
+        log_error('Missing composer.json')
+        return None
+
+    return json.loads(r.read())
+
+
+def cake_version(name, prefix, description, composer=None):
+    version = None
+    description = description.lower()
+
+    if prefix == 'cakephp':
+        version = ''
+
+        if 'cakephp2' in description:
+            version = '2'
+        elif 'cakephp3' in description:
+            version = '3'
+
+    if composer is not None:
+        require = composer.get('require', {})
+
+        if 'cakephp/cakephp' in require:
+            cake_version = require['cakephp/cakephp']
+
+            if cake_version.startswith('2.'):
+                version = '2'
+            elif cake_version.startswith('3.'):
+                version = '3'
+
+    return version
+
+
+def main():
+    class HTTPErrorProcessor(urllib2.BaseHandler):
+        def http_error_default(self, request, response, code, msg, hdrs):
+            return response
+
+    opener = urllib2.build_opener(HTTPErrorProcessor)
+    urllib2.install_opener(opener)
+
+    output = []
+    repositories = retrieve_repositories()
+    _cakephp = ['cakephp', 'cakephp2', 'cakephp3']
+
+    for repository in repositories:
+        if repository.get('private', False):
+            continue
+        if repository.get('fork', False):
+            continue
+
+        name = repository.get('name')
+        for prefix, label in PREFIXES.iteritems():
+            if name.startswith('{0}-'.format(prefix)):
+                _label = label
+                _prefix = prefix
+                description = repository.get('description', '')
+                active = 'deprecated' not in description.lower()
+                composer = None
+
+                if prefix == 'cakephp':
+                    composer = composer_data(repository.get('full_name'))
+                    version = cake_version(name, prefix, description, composer)
+                    _label += version
+                    _prefix += version
+
+                description = description.replace('CakePHP1:', '')
+                description = description.replace('CakePHP2:', '')
+                description = description.replace('CakePHP3:', '')
+                description = description.replace('Deprecated:', '')
+                description = description.strip(' \t\n\r')
+                is_cakephp = _prefix in _cakephp
+
+                unmaintained = False
+                if is_cakephp:
+                    unmaintained = active is False or composer is None
+                elif not active:
+                    unmaintained = True
+
+                active_cakephp = not is_cakephp or composer is not None
+                active = active is True and active_cakephp
+
+                output.append({
+                    'active': active,
+                    'description': description,
+                    'label': _label,
+                    'link': repository.get('html_url'),
+                    'name': name,
+                    'type': _prefix,
+                    'unmaintained': unmaintained,
+                })
+
+    output = sorted(output, key=lambda k: k['label'])
+
+    with open('{0}/_data/projects.json'.format(CURRENT_PATH), 'w') as out:
+        kwargs = {'sort_keys': True, 'indent': 4, 'separators': (',', ': ')}
+        res = json.dumps(output, **kwargs)
+        out.write(res)
+
+
+if __name__ == '__main__':
+    main()
