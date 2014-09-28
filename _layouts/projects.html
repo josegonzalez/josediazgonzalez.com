@@ -1,0 +1,25 @@
+---
+layout: default
+full_page: true
+body: full-width template-front-page
+comments: false
+---
+<h3>Active Projects</h3>
+
+{% for project in site.data.projects %}
+
+    {% if project.active == true %}
+        {% include project.html %}
+    {% endif %}
+
+{% endfor %}
+
+<h3>Unmaintained Projects</h3>
+
+{% for project in site.data.projects %}
+
+    {% if project.unmaintained == true %}
+        {% include project.html %}
+    {% endif %}
+
+{% endfor %}
