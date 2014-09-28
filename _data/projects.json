@@ -442,6 +442,15 @@
     },
     {
         "active": true,
+        "description": "Python binary to losslessly compress images using smush.it",
+        "label": "py",
+        "link": "https://github.com/josegonzalez/python-smooshy",
+        "name": "python-smooshy",
+        "type": "python",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "Unmaintained: Jekyll blogging at it's finest. No really, even finer than Octopress ;)",
         "label": "rb",
         "link": "https://github.com/josegonzalez/ruby-cimino",
