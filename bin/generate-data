@@ -10,6 +10,7 @@ CURRENT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PREFIXES = {
     'cakephp': 'cake',
     'java': 'java',
+    'go': 'go',
     'php': 'php',
     'python': 'py',
     'ruby': 'rb',
