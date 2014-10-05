@@ -3,12 +3,13 @@
 /* =Customizations
 ----------------------------------------------- */
 /* Mixins */
-@mixin project-icon($start, $stop) {
-  background-image: -webkit-gradient(radial, 5% 5%, 0, 5% 5%, 50, color-stop(0%, $start), color-stop(100%, $stop));
-  background-image: -webkit-radial-gradient(5% 5%, $start 0%, $stop 50px);
-  background-image: -moz-radial-gradient(5% 5%, $start 0%, $stop 50px);
-  background-image: -o-radial-gradient(5% 5%, $start 0%, $stop 50px);
-  background-image: radial-gradient(5% 5%, $start 0%,$stop 50px);
+@mixin project-icon($light) {
+  $dark: saturate(darken($light, 30%), 10%);
+  background-image: -webkit-gradient(radial, 5% 5%, 0, 5% 5%, 50, color-stop(0%, $light), color-stop(100%, $dark));
+  background-image: -webkit-radial-gradient(5% 5%, $light 0%, $dark 50px);
+  background-image: -moz-radial-gradient(5% 5%, $light 0%, $dark 50px);
+  background-image: -o-radial-gradient(5% 5%, $light 0%, $dark 50px);
+  background-image: radial-gradient(5% 5%, $light 0%, $dark 50px);
 }
 
 body {
@@ -415,28 +416,28 @@ pre code {
       -webkit-font-smoothing: antialiased;
     }
     .icon-cakephp {
-      @include project-icon(#92b2b5, #376475);
+      @include project-icon(#92b2b5);
     }
     .icon-cakephp2 {
-      @include project-icon(#5ca0a5, #003c4b);
+      @include project-icon(#5ca0a5);
     }
     .icon-cakephp3 {
-      @include project-icon(#1ca0a5, #2b5f6a);
+      @include project-icon(#1ca0a5);
     }
     .icon-java {
-      @include project-icon(#EDD243, #E89E4F);
+      @include project-icon(#edd243);
     }
     .icon-php {
-      @include project-icon(#6a68a7, #3f3976);
+      @include project-icon(#6a68a7);
     }
     .icon-python {
-      @include project-icon(#528947, #34572d);
+      @include project-icon(#528947);
     }
     .icon-ruby {
-      @include project-icon(#cc3333, #8f2424);
+      @include project-icon(#cc3333);
     }
     .icon-shell {
-      @include project-icon(#3273a9, #214b6e);
+      @include project-icon(#3273a9);
     }
   }
 }
