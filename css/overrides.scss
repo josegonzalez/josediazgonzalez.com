@@ -427,6 +427,9 @@ pre code {
     .icon-java {
       @include project-icon(#edd243);
     }
+    .icon-go {
+      @include project-icon(#63a1d9);
+    }
     .icon-php {
       @include project-icon(#6a68a7);
     }
