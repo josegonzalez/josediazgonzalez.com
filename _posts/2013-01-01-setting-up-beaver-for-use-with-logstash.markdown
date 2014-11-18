@@ -4,9 +4,9 @@
   description: This post will guide you through a simple Beaver installation.
   category:    Opschops
   tags:
-    - logstash
     - beaver
     - logs
+    - logstash
   comments:    true
   sharing:     true
   published:   true

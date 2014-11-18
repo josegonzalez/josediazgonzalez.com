@@ -2,9 +2,9 @@
   title: Things to install or update on my mac when first installing
   category: Installation
   tags:
-    - install
     - development
-    - os x
+    - install
+    - os-x
     - useful
   description: A list of things I install and do on my mac whenever I re-install or update it.
   comments:    true

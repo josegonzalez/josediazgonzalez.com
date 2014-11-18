@@ -4,9 +4,10 @@
   description: "Properly manage your CakePHP application dependencies using Composer, a PHP dependency management tool"
   category:    CakePHP
   tags:
+    - CakeAdvent-2014
     - cakephp
     - composer
-    - dependency management
+    - dependency-management
   comments:    true
   sharing:     true
   published:   true

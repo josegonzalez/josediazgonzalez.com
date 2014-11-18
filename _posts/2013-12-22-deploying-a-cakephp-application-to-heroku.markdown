@@ -4,6 +4,7 @@
   description: "Heroku is a popular place to try out small experiments in CakePHP, so I decided to document the steps necessary for a successful Heroku integration."
   category:    CakePHP
   tags:
+    - CakeAdvent-2014
     - cakephp
     - heroku
   comments:    true

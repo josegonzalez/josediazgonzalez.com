@@ -3,11 +3,11 @@
   description: my first post
   category:    Other
   tags:
-    - jekyll
-    - ruby
-    - first
     - blog
     - cakephp
+    - first
+    - jekyll
+    - ruby
   comments:    true
   sharing:     true
   published:   true

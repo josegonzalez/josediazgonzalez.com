@@ -4,9 +4,9 @@
   description: How to create a cookbook for the Chef Deployment Tool and an explanation of DNA.json files
   category:    Opschops
   tags:
-    - deployment
-    - chef
     - cakephp
+    - chef
+    - deployment
   comments:    true
   sharing:     true
   published:   true

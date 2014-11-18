@@ -5,6 +5,7 @@
   category:    CakePHP
   tags:
     - dispatcher
+    - CakeAdvent-2014
     - cakephp
     - maintenance
   comments:    true

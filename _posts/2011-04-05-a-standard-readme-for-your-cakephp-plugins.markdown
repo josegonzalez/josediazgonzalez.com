@@ -2,9 +2,9 @@
   title: A Standard Readme for your CakePHP Plugins
   category: CakePHP
   tags:
-    - readme
-    - github
     - cakephp
+    - github
+    - readme
   description: Please stop using jank readmes for your CakePHP plugins, and use something like this instead.
   comments:    true
   sharing:     true

@@ -2,9 +2,9 @@
   title:       "Templates, Attributes, Resources, and Dependency Management"
   category:    Opschops
   tags:
-    - deployment
-    - chef
     - cakephp
+    - chef
+    - deployment
   description: Templating, Custom Resources, and Cookbook creation for the Chef Deployment Tool
   comments:    true
   sharing:     true

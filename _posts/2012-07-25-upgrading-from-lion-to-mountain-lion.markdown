@@ -2,10 +2,10 @@
   title: Upgrading from Lion to Mountain Lion
   category: Installation
   tags:
-    - mountain lion
-    - os x
-    - upgrade
     - development
+    - mountain-lion
+    - os-x
+    - upgrade
   description: A guide to fixing all the breaking php and ruby packages in Mountain Lion
   comments:    true
   sharing:     true

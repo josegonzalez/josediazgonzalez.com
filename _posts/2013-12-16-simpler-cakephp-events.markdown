@@ -4,9 +4,10 @@
   description: "Making small changes to the event system workflow to enhance your productivity through annotations and simpler dispatching!"
   category:    CakePHP
   tags:
+    - annotations
+    - CakeAdvent-2014
     - cakephp
     - events
-    - annotations
   redirects:
     - /2013/12/15/simpler-cakephp-events/
   comments:    true

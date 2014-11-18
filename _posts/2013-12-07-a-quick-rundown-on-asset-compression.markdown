@@ -4,9 +4,10 @@
   description: "Using the AssetCompress plugin to render concatenated files is a cheap way to get better application performance"
   category:    CakePHP
   tags:
-    - cakephp
-    - asset_compress
     - assets
+    - asset_compress
+    - CakeAdvent-2014
+    - cakephp
   comments:    true
   sharing:     true
   published:   true

@@ -5,10 +5,10 @@
   category:    CakePHP
   tags:
     - cakephp
-    - view
-    - layout
     - json
+    - layout
     - quicktip
+    - view
   comments:    true
   sharing:     true
   published:   true

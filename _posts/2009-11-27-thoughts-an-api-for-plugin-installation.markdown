@@ -3,10 +3,10 @@
   description: One of my current projects is a CakePHP plugin server. The existing sample was created by John David Anderson of http://www.thoughtglade.com. It is neat and all, and one of the first things I came across when looking at CakePHP 11 months ago.
   category:    CakePHP
   tags:
-    - thoughts
     - cakephp
     - plugins
-    - side projects
+    - side-projects
+    - thoughts
   comments:    true
   sharing:     true
   published:   true

@@ -2,6 +2,7 @@
   title: The Daily Dev Log - 3
   category: Dev Log
   tags:
+    - daily-dev-log
   description: Defining joins in CakePHP finds is simple, but can result in weird sql statements if used in conjunction with Containable.
   comments:    true
   sharing:     true

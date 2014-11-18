@@ -3,10 +3,10 @@
   category: CakePHP
   tags:
     - cakephp
+    - cakephp-1.3
     - code
-    - model
     - loadmodel
-    - cakephp 1.3
+    - model
   description: How do you use loadModel() in the CakePHP Model? Hint, you don't. There are other ways though.
   comments:    true
   sharing:     true

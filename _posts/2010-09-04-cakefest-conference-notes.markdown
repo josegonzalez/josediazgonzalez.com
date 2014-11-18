@@ -3,8 +3,8 @@
   category: CakePHP
   tags:
     - cakephp
-    - conference
     - cakefest
+    - conference
   description: CakeFest 2010 Conference notes and links
   comments:    true
   sharing:     true

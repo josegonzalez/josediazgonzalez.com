@@ -3,10 +3,10 @@
   category: CakePHP
   tags:
     - behaviors
-    - model
-    - custom find
+    - cakephp-1.3
     - code
-    - cakephp 1.3
+    - custom-find
+    - model
   description: Embedding custom finds in behaviors is extremely useful, but not the most straight-forward thing to do. Here's how.
   comments:    true
   sharing:     true

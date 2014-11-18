@@ -4,6 +4,7 @@
   description: "Fat models and skinny controllers are about more than data handling. You should also concern yourself with Error state handling and how to bubble up exceptions."
   category:    CakePHP
   tags:
+    - CakeAdvent-2014
     - cakephp
     - exceptions
     - redirect

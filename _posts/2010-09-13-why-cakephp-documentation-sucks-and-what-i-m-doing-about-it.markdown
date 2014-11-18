@@ -4,7 +4,7 @@
   tags:
     - cakephp
     - github
-    - side projects
+    - side-projects
   description: When people complain about documentation, the solution is to write more, and better, documentation.
   comments:    true
   sharing:     true

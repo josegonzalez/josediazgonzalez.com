@@ -3,8 +3,8 @@
   category:    Opschops
   tags:
     - deployment
-    - tools
     - monitoring
+    - tools
   description: An easy to install, maintain, and use tool for server monitoring doesn't exist, why is that?
   comments:    true
   sharing:     true

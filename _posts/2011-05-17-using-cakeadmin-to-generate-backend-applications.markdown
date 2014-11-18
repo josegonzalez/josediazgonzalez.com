@@ -2,9 +2,9 @@
   title: Using CakeAdmin to generate backend applications
   category: CakePHP
   tags:
-    - cake_admin
     - admin
-    - cakephp 1.3
+    - cake_admin
+    - cakephp-1.3
   description: CakeAdmin is a CakePHP 1.3 plugin for building web application backends quickly and easily. It is most analogous to running `cake bake` which generating your basic application structure with a series of questions.
   comments:    true
   sharing:     true

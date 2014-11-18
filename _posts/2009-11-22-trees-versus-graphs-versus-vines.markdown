@@ -3,14 +3,11 @@
   description: Trees Versus Graphs versus Vines
   category:    Other
   tags:
-    - trees
-    - graphs
-    - vines
-    - tree behavior
     - graph behavior
+    - tree behavior
   comments:    true
   sharing:     true
-  published:   true
+  published:   false
   layout:      post
 ---
 

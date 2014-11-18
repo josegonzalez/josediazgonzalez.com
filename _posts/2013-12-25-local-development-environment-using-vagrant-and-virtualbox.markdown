@@ -4,9 +4,10 @@
   description: "Tired of reinstalling your development environment? We've created one specifically for CakePHP usage."
   category:    CakePHP
   tags:
+    - CakeAdvent-2014
     - cakephp
-    - vagrant
     - development
+    - vagrant
   comments:    true
   sharing:     true
   published:   true

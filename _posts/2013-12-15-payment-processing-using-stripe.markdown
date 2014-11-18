@@ -4,8 +4,9 @@
   description: "Making money with your website should be your primary concern, and this blog post will explain a simple, awesome way to do so"
   category:    CakePHP
   tags:
-    - cakephp
     - aliasing
+    - CakeAdvent-2014
+    - cakephp
     - sessions
   comments:    true
   sharing:     true

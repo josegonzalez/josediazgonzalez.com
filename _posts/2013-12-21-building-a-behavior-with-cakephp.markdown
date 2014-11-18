@@ -4,10 +4,11 @@
   description: "Covering the creation of a plugin, writing Unit Tests, and creating a Behavior to handle a `deleted` field"
   category:    CakePHP
   tags:
+    - CakeAdvent-2014
     - cakephp
     - behaviors
-    - testing
     - plugins
+    - testing
   comments:    true
   sharing:     true
   published:   true

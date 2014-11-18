@@ -2,9 +2,9 @@
   title: A CakePHP Book I can finally recommend
   category: CakePHP
   tags:
+    - application
     - book
     - cakephp
-    - application
   description: Review of Mariano Iglesias' CakePHP 1.3 Application Development Cookbook
   comments:    true
   sharing:     true

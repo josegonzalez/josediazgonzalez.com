@@ -4,11 +4,11 @@
   tags:
     - access
     - authorization
+    - authsome-plugin
     - cakephp
-    - github
-    - authsome plugin
+    - cakephp-1.3
     - component
-    - cakephp 1.3
+    - github
   description: One of the things I am working on is Authentication and Access Control. While Authsome Component takes care of authentication, we still need something more.
   comments:    true
   sharing:     true

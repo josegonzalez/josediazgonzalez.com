@@ -3,10 +3,10 @@
   category: CakePHP
   tags:
     - cakephp
+    - project-management
+    - side-projects
     - thechaw
-    - project management
     - wishlist
-    - side projects
   comments:    true
   sharing:     true
   published:   true

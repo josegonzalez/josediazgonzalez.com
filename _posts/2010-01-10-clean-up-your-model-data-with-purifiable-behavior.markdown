@@ -2,12 +2,12 @@
   title: Clean up your Model data with Purifiable Behavior
   category: CakePHP
   tags:
-    - cakephp
-    - github
     - behaviors
-    - html purifier
+    - cakephp
+    - cakephp-1.3
+    - github
+    - html-purifier
     - licensing
-    - cakephp 1.3
   description: Sanitizing saved data when rendering the view is stupid, and it should be done when creating/updating records.
   comments:    true
   sharing:     true

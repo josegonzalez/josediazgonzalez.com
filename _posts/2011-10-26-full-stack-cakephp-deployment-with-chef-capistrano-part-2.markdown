@@ -2,9 +2,9 @@
   title:       "Chef Recipes"
   category:    Opschops
   tags:
-    - deployment
-    - chef
     - cakephp
+    - chef
+    - deployment
   description: What goes in a Chef Recipe, and how much do I really need to know about resources?
   comments:    true
   sharing:     true

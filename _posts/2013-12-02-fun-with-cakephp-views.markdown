@@ -4,9 +4,10 @@
   description: A guide to creating a custom CakePHP view that generates identicon png images for users
   category:    CakePHP
   tags:
+    - CakeAdvent-2014
     - cakephp
+    - identicon
     - view
-    - indenticon
   comments:    true
   sharing:     true
   published:   true

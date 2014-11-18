@@ -4,11 +4,11 @@
   category:    CakePHP
   tags:
     - cakephp
-    - model
-    - habtm
-    - relationships
-    - join tables
     - counterCache
+    - habtm
+    - join-tables
+    - model
+    - relationships
   comments:    true
   sharing:     true
   published:   true

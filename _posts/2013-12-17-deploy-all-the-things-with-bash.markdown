@@ -4,9 +4,10 @@
   description: "Automate everything, including your deploys, using things as simple as a bash script"
   category:    CakePHP
   tags:
+    - bash
+    - CakeAdvent-2014
     - cakephp
     - deploy
-    - bash
   comments:    true
   sharing:     true
   published:   true

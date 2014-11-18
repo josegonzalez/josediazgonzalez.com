@@ -3,9 +3,9 @@
   description: A very small example on when to use Model::save() versus Model::saveAll()
   category:    CakePHP
   tags:
-    - quicktip
     - cakephp
     - model
+    - quicktip
     - snippet
   comments:    true
   sharing:     true

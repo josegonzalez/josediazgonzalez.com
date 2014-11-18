@@ -4,8 +4,9 @@
   description: "Using class aliasing is a powerful way to inject custom logic into the CakePHP core without actually rewriting libraries in the CakePHP core."
   category:    CakePHP
   tags:
-    - cakephp
     - aliasing
+    - CakeAdvent-2014
+    - cakephp
     - sessions
   comments:    true
   sharing:     true

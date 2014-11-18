@@ -4,9 +4,9 @@
   description: Example .htaccess file for allowing custom subdirectories in your CakePHP application under Apache
   category:    CakePHP
   tags:
+    - apache
     - cakephp
     - htaccess
-    - apache
     - quicktip
   comments:    true
   sharing:     true

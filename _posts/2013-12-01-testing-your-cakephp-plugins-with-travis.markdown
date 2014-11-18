@@ -4,8 +4,9 @@
   description: "Quickly setup automated testing for your cakephp plugin code using Travis-Ci"
   category:    CakePHP
   tags:
-    - travis
+    - CakeAdvent-2014
     - cakephp
+    - travis
   comments:    true
   sharing:     true
   published:   true

@@ -4,6 +4,7 @@
   description: "Specifying application configuration doesn't have to be hard, and here are three ways to do it!"
   category:    CakePHP
   tags:
+    - CakeAdvent-2014
     - cakephp
     - configuration
   comments:    true

@@ -4,9 +4,10 @@
   description: "Rather than writing the same OAuth code for different projects, reuse a community framework to integrate with service providers like Facebook and Twitter"
   category:    CakePHP
   tags:
+    - authentication
+    - CakeAdvent-2014
     - cakephp
     - oauth
-    - authentication
   comments:    true
   sharing:     true
   published:   true

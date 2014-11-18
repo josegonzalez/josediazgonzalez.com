@@ -2,9 +2,10 @@
   title: The Daily Dev Log - 1
   category: Dev Log
   tags:
+    - daily-dev-log
+    - history.js
     - javascript
     - jquery
-    - history.js
   description: I spent around 7 hours putzing with History.js in cake_admin. While History.js should auto-ajax any web application, it doesn't quite play nice with CakePHP.
   comments:    true
   sharing:     true

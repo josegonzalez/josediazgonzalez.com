@@ -2,10 +2,10 @@
   title:       "Introduction to Chef"
   category:    Opschops
   tags:
-    - deployment
-    - chef
-    - capistrano
     - cakephp
+    - capistrano
+    - chef
+    - deployment
   description: This text is the first in a long series to correct an extremely disastrous talk at CakeFest 2011. It will also hopefully apply to more than CakePHP.
   comments:    true
   sharing:     true

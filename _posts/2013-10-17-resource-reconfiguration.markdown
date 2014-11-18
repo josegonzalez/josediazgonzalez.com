@@ -4,10 +4,10 @@
   description: How do you manage service configurations across a cluster of services?
   category:    Opschops
   tags:
-    - provisioning
     - chef
     - cofiguration
     - etcd
+    - provisioning
   comments:    true
   sharing:     true
   published:   true

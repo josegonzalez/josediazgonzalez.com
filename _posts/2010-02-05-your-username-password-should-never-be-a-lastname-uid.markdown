@@ -2,8 +2,8 @@
   title: Your username/password should never be a lastname/uid
   category: Other
   tags:
-    - passwords
     - authentication
+    - passwords
   description: I'm developing an application where the client wants the username and password combination to be a lastname and member ID number. This is quite stupid.
   comments:    true
   sharing:     true

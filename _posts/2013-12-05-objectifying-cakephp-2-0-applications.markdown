@@ -4,6 +4,7 @@
   description: "Stop complaining about not being able to use objects in the ORM and use 3.0-like features in your 2.0 application today!"
   category:    CakePHP
   tags:
+    - CakeAdvent-2014
     - cakephp
     - objects
     - orm

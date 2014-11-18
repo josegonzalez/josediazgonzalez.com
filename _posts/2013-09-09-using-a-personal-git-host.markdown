@@ -4,9 +4,9 @@
   description:
   category:    Opschops
   tags:
-    - gitlab
+    - digital-ocean
     - git
-    - digital ocean
+    - gitlab
   comments:    true
   sharing:     true
   published:   true

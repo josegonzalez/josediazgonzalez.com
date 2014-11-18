@@ -4,9 +4,10 @@
   description: "Don't make your users wait on the server. Instead, move long-running computations to the background and keep your conversions high"
   category:    CakePHP
   tags:
+    - background-jobs
+    - CakeAdvent-2014
     - cakephp
     - queuing
-    - background jobs
   comments:    true
   sharing:     true
   published:   true

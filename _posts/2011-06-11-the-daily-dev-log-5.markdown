@@ -2,6 +2,7 @@
   title: The Daily Dev Log - 5
   category: Dev Log
   tags:
+    - daily-dev-log
   description: Writing a CakeRoute might be straightforward, and when used correctly, can really trim down the number of routes you connect in your routes.php file.
   comments:    true
   sharing:     true

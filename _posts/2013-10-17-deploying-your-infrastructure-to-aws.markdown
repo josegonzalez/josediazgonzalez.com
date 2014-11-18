@@ -5,9 +5,9 @@
   category:    Opschops
   tags:
     - aws
-    - provisioning
     - chef
     - heroku
+    - provisioning
   comments:    true
   sharing:     true
   published:   true
