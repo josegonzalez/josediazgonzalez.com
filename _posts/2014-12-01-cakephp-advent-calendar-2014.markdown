@@ -13,7 +13,7 @@
   series:      CakeAdvent-2014
 ---
 
-Last year for the Advent Calendar, I brought to you [24 delicious posts](/2013/12/01/testing-your-cakephp-plugins-with-travis/) surrounding writing better CakePHP applications. Those posts catered to both the beginner and advanced CakePHP developer, and hopefully can still be of some use to you.
+Last year for the Advent Calendar, I brought to you [25 delicious posts](/2013/12/01/testing-your-cakephp-plugins-with-travis/) surrounding writing better CakePHP applications. Those posts catered to both the beginner and advanced CakePHP developer, and hopefully can still be of some use to you.
 
 This year, however, we're going to kick it up a notch and actually use our skills to design 3 custom [CakePHP](http://cakephp.org/) applications:
 
