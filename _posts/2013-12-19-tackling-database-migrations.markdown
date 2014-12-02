@@ -4,14 +4,14 @@
   description: "We look at creating a Cakeshell to generate migration files for the CakeDC Migrations plugin"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - migrations
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 Database schema migrations are a tricky topic. Luckily, CakePHP has the excellent [Migrations plugin by CakeDC](https://github.com/CakeDC/migrations), but creating a new migration file is often obtuse. Rather than diffing the schema, or trying to manually create it, lets automate some of the process with a custom Cakeshell

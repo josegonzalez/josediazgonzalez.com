@@ -4,7 +4,7 @@
   description: "Stop complaining about not being able to use objects in the ORM and use 3.0-like features in your 2.0 application today!"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - objects
     - orm
@@ -12,7 +12,7 @@
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 One "failing" CakePHP has is it's use of arrays in the Model layer. I say that in quotes because I do believe using arrays in PHP to represent data is the easy choice, and makes a lot of sense in terms of not slowing down data manipulation. In any case, everyone can agree that objects are a good thing, which is why we are moving the Model layer to objects in 3.0.

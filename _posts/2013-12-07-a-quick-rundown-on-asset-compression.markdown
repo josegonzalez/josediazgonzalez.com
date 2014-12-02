@@ -6,13 +6,13 @@
   tags:
     - assets
     - asset_compress
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 Asset compression is a small thing you can do to create more responsive applications. Rather than having your application serve up hundreds of smaller css and javascript files, you can serve up one or two and still retain the benefits of using separate files for different libraries in development.

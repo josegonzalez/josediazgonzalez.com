@@ -4,14 +4,14 @@
   description: "Refactoring Controller code should be simple, and I'll tear apart my own code to show how you can go about it."
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - controllers
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
   image:       "http://cl.ly/image/1N0c441i1M3Y/Screen%20Shot%202013-12-24%20at%202.17.53%20PM.png"
   image_url:   "http://cl.ly/image/1N0c441i1M3Y"
   image_tooltip: "Wow, such code, so slim, many refactor"

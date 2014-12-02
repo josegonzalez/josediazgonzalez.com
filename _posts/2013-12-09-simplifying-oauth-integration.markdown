@@ -5,14 +5,14 @@
   category:    CakePHP
   tags:
     - authentication
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - oauth
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 Handling integration with social services is usually something we have to deal with on a case-by-case basis. Most use some flavor of OAuth, at some random level of the spec with their own customizations. Rather than doing this on a one-off basis, it's best we use a package that handles all the vagaries and gives us a single, unified api to authenticate users for social services.

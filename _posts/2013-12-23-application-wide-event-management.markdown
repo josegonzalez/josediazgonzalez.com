@@ -4,14 +4,14 @@
   description: "Triggering global CakePHP events isn't difficult, and this tutorial shows you how to do it."
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - events
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 Today's post is a simple, application-wide event manager. Listening and firing events usually requires some thought as to where the event should be attached. Do we want it on a model? What if I make a custom class? What if I don't have access to something because I am in a plugin?

@@ -4,7 +4,7 @@
   description: "Share and contribute back to the CakePHP community in one of many ways!"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - community
     - contributing
@@ -12,7 +12,7 @@
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 This year, consider giving back to the CakePHP community. CakePHP is an open source project that is maintained by mostly volunteers. Some companies do contribute in the form of employee time, but CakePHP is largely a labor of love.

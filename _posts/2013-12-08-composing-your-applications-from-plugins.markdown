@@ -4,7 +4,7 @@
   description: "Properly manage your CakePHP application dependencies using Composer, a PHP dependency management tool"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - composer
     - dependency-management
@@ -12,7 +12,7 @@
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 In previous CakeAdvent posts, I've been speaking about using a tool called [Composer](http://getcomposer.org/). Composer is a PHP dependency management tool, not unlike [Bundler for Ruby](http://bundler.io/) or [Pip for Python](http://www.pip-installer.org/en/latest/). We can use it to manage the installation and maintenance of third-party components in our application.

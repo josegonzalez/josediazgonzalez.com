@@ -4,7 +4,7 @@
   description: "Covering the creation of a plugin, writing Unit Tests, and creating a Behavior to handle a `deleted` field"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - behaviors
     - plugins
@@ -13,7 +13,7 @@
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 I've been meaning to create a `deleted_at` behavior, and today we'll go over that.

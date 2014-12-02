@@ -5,14 +5,14 @@
   category:    CakePHP
   tags:
     - dispatcher
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - maintenance
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 If you need a simple application maintenance mode, fear not! CakePHP has you covered!

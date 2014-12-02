@@ -5,14 +5,14 @@
   category:    CakePHP
   tags:
     - aliasing
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - sessions
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 One of CakePHP's features is to allow you to override internal Behaviors, Components and Helpers using class aliasing. For instance, one might want to override the internal `FormHelper` to add HTML6 (not a typo) support, and CakePHP would be okay with that:

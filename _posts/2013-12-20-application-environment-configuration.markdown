@@ -4,14 +4,14 @@
   description: "Specifying application configuration doesn't have to be hard, and here are three ways to do it!"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - configuration
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 Something I see a lot of developers struggle with is handling various environments separate from one other. I'll go over a few methods here, specific to CakePHP applications.

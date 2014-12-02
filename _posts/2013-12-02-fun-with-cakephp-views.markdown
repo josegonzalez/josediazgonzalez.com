@@ -4,7 +4,7 @@
   description: A guide to creating a custom CakePHP view that generates identicon png images for users
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - identicon
     - view
@@ -12,7 +12,7 @@
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 One of the least used features of CakePHP are custom view classes. Custom view classes allow a developer to specify a set of data for the view and have the output automatically formatted. While this automation comes at a price in terms of application speed, it can have great affect on rapid application development. Server resources are cheap, while development time is not.

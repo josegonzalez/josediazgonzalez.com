@@ -4,7 +4,7 @@
   description: "Lets explore different ways in which we could implement an interactive command-line for the purposes of quickly testing code"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - cli
     - repl
@@ -12,7 +12,7 @@
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 > REPL: A read–eval–print loop. It allows developers to test, write and run code interactively from the command-line.

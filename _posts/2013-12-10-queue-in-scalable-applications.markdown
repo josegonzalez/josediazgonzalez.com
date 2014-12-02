@@ -5,14 +5,14 @@
   category:    CakePHP
   tags:
     - background-jobs
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - queuing
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 > This tutorial assumes you are using the FriendsOfCake/app-template project with Composer. Please see [this post for more information](http://josediazgonzalez.com/2013/12/08/composing-your-applications-from-plugins/).

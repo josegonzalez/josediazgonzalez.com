@@ -5,14 +5,14 @@
   category:    CakePHP
   tags:
     - bash
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - deploy
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 This is a post about simple CakePHP application deployment. We'll use the `bash` language to deploy our application.

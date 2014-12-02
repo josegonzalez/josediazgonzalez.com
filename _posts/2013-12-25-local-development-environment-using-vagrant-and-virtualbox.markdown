@@ -4,7 +4,7 @@
   description: "Tired of reinstalling your development environment? We've created one specifically for CakePHP usage."
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - development
     - vagrant
@@ -12,7 +12,7 @@
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 One thing developers have issues with is setting up their local development environment. You install a piece of software, it breaks something, and then rolling back is annoying. Or perhaps you have a new laptop, and now you need to reinstall the entire kitchen sink.

@@ -4,7 +4,7 @@
   description: "Fat models and skinny controllers are about more than data handling. You should also concern yourself with Error state handling and how to bubble up exceptions."
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - exceptions
     - redirect
@@ -12,7 +12,7 @@
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 Every so often, I wish to both raise an exception to the UI as well as redirect to a specific page on the site. Normally, I'll have code that looks like the following:

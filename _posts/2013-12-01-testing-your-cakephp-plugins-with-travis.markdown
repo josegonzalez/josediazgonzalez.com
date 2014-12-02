@@ -4,14 +4,14 @@
   description: "Quickly setup automated testing for your cakephp plugin code using Travis-Ci"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - travis
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 As you work on a plugin, you'll find that ensuring the external api stays stable is difficult. The obvious solution is to write [unit tests](http://book.cakephp.org/2.0/en/development/testing.html), and run them as you develop.

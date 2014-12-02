@@ -4,14 +4,14 @@
   description: "Some personal thoughts on testing your CakePHP code to get maximum efficiency"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - CakeAdvent-2013
     - cakephp
     - testing
   comments:    true
   sharing:     true
   published:   true
   layout:      post
-  series:      CakeAdvent
+  series:      CakeAdvent-2013
 ---
 
 > Note: I have typically approached testing as `TODO: test this`. Meaning I cowboy code a lot. So I take lots of shortcuts. Keep that in mind as you read this post.
