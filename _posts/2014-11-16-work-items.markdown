@@ -38,7 +38,7 @@ Some day I would like to have tens of dollars come into my bank account every mo
 
 ## Blogging
 
-- CakeAdvent 2014 is going to be a thing - [last year](/tags/cakeadvent-2014/) was tres excellent - and I'm currently gathering material
+- CakeAdvent 2014 is going to be a thing - [last year](/tags/CakeAdvent-2013/) was tres excellent - and I'm currently gathering material
 - Bringing back my [daily dev log](/tags/daily-dev-log/) in some fashion. It helped me formulate my plans - most work ended up being spread out over a series of a few days.
 - A few tutorial posts I started but never completed, plus things people ask about in my issue tracker.
 - Writing more tutorials on operations-type things, which will give me an excuse to learn how to use said tools.
