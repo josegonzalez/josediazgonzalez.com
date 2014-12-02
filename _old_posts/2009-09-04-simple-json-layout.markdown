@@ -11,7 +11,7 @@
     - view
   comments:    true
   sharing:     true
-  published:   true
+  published:   false
   layout:      post
 ---
 
