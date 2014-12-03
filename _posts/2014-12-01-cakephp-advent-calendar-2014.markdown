@@ -43,6 +43,7 @@ These tutorials are completely free, and there will be no cost for any of the to
 
 - A [Github account](https://github.com/)
 - A [Heroku account](https://www.heroku.com/)
+- Install [Git](http://git-scm.com/) if you are not on a Mac
 - Install [Vagrant](https://www.vagrantup.com/)
 - Install [Virtualbox](https://www.virtualbox.org/) or [Vmware Fusion](http://www.vmware.com/products/fusion)
 
