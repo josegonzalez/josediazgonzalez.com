@@ -63,9 +63,9 @@ use Cake\View\Helper;
 use Cake\View\View;
 
 /**
- * Cell helper
+ * Post helper
  */
-class CellHelper extends Helper {
+class PostHelper extends Helper {
 
 /**
  * Default configuration.
