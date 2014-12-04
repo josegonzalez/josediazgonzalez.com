@@ -28,7 +28,7 @@ I did, however, still want those log lines, so I set about writing a small daemo
 
 To start, we need to install Beaver:
 
-```bash
+```shell
 pip install --update Beaver
 ```
 
@@ -40,7 +40,7 @@ Please note that while I specify `Python 2.7`, you *may* actually be able to get
 
 Running beaver is relatively straightforward:
 
-```bash
+```shell
 beaver -c /etc/beaver/beaver.conf
 ```
 

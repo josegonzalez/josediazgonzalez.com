@@ -308,7 +308,7 @@ You'll recognize much of the above from the tutorial on using `Boris` as a CakeP
 
 To start a worker, simply run `Console/queuesadilla`. It will run a worker on the default queue:
 
-```bash
+```shell
 [Mysql Worker] Starting worker, max iterations 5
 Email Sent!
 [Mysql Worker] Success. Deleting job from queue.

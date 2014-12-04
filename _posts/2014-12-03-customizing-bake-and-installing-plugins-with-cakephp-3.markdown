@@ -113,7 +113,7 @@ This event will:
 
 To test this, lets run bake:
 
-```bash
+```shell
 # ssh onto the vm
 vagrant ssh
 
@@ -184,7 +184,7 @@ There are two small changes here. One is that we default the redirect to a strin
 
 We'll now modify the `view.ctp`  template to include a post form on the issues controller. You can copy the existing one to something we can modify with the following commands:
 
-```
+```shell
 TEMPLATE_DIR="src/Template/Bake/"
 BAKE_TEMPLATE_DIR="vendor/cakephp/cakephp/src/Template/Bake/"
 cd /vagrant/app
@@ -302,7 +302,7 @@ EventManager::instance()->attach(function (Event $event) {
 
 Now lets run bake:
 
-```php
+```shell
 cd /vagrant/app
 
 bin/cake bake controller issues --force

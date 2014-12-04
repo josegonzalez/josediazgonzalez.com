@@ -169,7 +169,7 @@ What if we wanted to support something other than json? Lets support [Message Pa
 
 First, install the pecl extension:
 
-```bash
+```shell
 pecl install msgpack
 ```
 
@@ -221,7 +221,7 @@ Lets say we want some dead simple authentication in front of this. We just want 
 
 They'll need to set the following header on their requests:
 
-```bash
+```shell
 curl -h 'Crappy-Auth: herp:derp' http://example.com/posts/index.json
 ```
 

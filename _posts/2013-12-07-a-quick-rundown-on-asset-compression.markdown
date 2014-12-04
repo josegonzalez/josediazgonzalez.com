@@ -55,7 +55,7 @@ cachePath = WEBROOT/cache_css/
 
 The paths are used to cache the files on disk. Those paths *must* exist, so create them:
 
-```bash
+```shell
 mkdir -p path/to/webroot/cache_js path/to/webroot/cache_css
 ```
 
@@ -106,7 +106,7 @@ Now when you reference it, it will contain the ascii art!
 
 For production use, I recommend running the associated shell to generate css/js assets on deploy. For instance, you might do:
 
-```bash
+```shell
 ### clear existing assets
 cake AssetCompress.AssetCompress clear
 

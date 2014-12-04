@@ -66,7 +66,7 @@ include dirname(__FILE__) . DS . 'events.php';
 
 Next, create the file:
 
-```bash
+```shell
 touch app/Config/events.php
 ```
 

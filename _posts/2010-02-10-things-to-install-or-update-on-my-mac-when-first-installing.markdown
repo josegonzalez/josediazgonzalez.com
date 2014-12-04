@@ -73,7 +73,7 @@ First thing is first, install all my applications (as dictated by my current /Ap
 
 Update ruby
 
-```bash
+```shell
 sudo gem install rvm
 rvm-install
 rvm install ree
@@ -83,7 +83,7 @@ gem update
 
 Install homebrew and related tools
 
-```bash
+```shell
 Install XCode+X11 https://connect.apple.com
 curl -L http://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C /usr/local
 brew update
@@ -99,7 +99,7 @@ brew install subversion
 
 Setup CakePHP in ~/Sites:
 
-```bash
+```shell
 cd ~/Sites
 git clone git://github.com/cakephp/cakephp1x.git cakephp1.2 -b 1.2
 git clone git://github.com/cakephp/cakephp1x.git cakephp1.3 -b 1.3

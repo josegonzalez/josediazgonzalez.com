@@ -22,7 +22,7 @@ Lets start by cloning the [FriendsOfCake/vagrant-chef](https://github.com/friend
 
 Assuming you already installed Git, Vagrant and Virtualbox, you can simply clone the `FriendsOfCake/vagrant-chef` repo and start the virtual machine. This should take around 5 minutes on a decent DSL connection, and need only be done once.:
 
-```bash
+```shell
 git clone git@github.com:FriendsOfCake/vagrant-chef.git anonymous-issues
 cd anonymous-issues
 
@@ -32,7 +32,7 @@ vagrant up
 
 Now that the virtualmachine is running, you can ssh onto it. Windows users will need to use [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/) or similar, but please refer to the vagrant docs on how to connect.
 
-```bash
+```shell
 # ssh onto the vm
 vagrant ssh
 ```
@@ -41,7 +41,7 @@ Now that you are connected to your development environment, you should be able t
 
 As of CakePHP 3, we create new applications using the [Composer](https://getcomposer.org/) `create-project` command:
 
-```bash
+```shell
 composer create-project --prefer-dist -s dev cakephp/app app
 ```
 
@@ -107,7 +107,7 @@ In previous versions of cake, you would need to configure your security salt and
 
 Now that we've setup our database, we can import an initial schema into our app. There is currently no automated way to create a schema - though it's coming quite soon - so we'll connect to MySQL:
 
-```bash
+```shell
 mysql -uroot -pbananas
 # run the following command within the mysql connection
 use database_name;
@@ -136,7 +136,7 @@ CREATE TABLE `issues` (
 
 Disconnecting from the mysql terminal will drop us back into our linux virtualmachine, where we can now generate some general application scaffolding using the Bake utility. `Bake` is a CakePHP command-line utility that allows us to template out various types of files. We could, for instance, template out custom migration files if we installed the Migrations plugin. In our case, we're going to use it to generate Controllers, Table classes, Entities, and Template files for our `issues` table. This allows us to skip a lot of the boring work of creating various files that won't vary much from application to application.
 
-```bash
+```shell
 cd /vagrant/app
 bin/cake bake all issues
 ```

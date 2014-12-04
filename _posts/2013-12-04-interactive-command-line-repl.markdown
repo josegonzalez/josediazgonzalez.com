@@ -25,7 +25,7 @@ One constant annoyance I have with PHP is it's lack of a decent, built-in REPL. 
 
 All I want to do is the following:
 
-```bash
+```shell
 Console/shell
 cakephp> App::uses('ClassRegistry', 'Utility');
 cakephp> App::uses('Post', 'Model');
@@ -62,14 +62,14 @@ Thats cool. A few issues though:
 
 Boris is a relative newcomer to PHP repl land. It's a pure-php REPL with some interesting code behind the implementation. We'll first need to install it:
 
-```bash
+```shell
 cd path/to/app/Vendor
 git clone git@github.com:d11wtq/boris.git
 ```
 
 Next we'll need something to bootstrap the CakePHP codebase. We will create a file called `app/Console/boris`. You'll need to set proper permissions on it:
 
-```bash
+```shell
 chmod +x app/Console/boris
 ```
 
@@ -156,7 +156,7 @@ Pretty slick, but a few (minor) quirks:
 
 This is something from [@nodesagency](https://github.com/nodesagency). It is a CakePHP shell, similar to the `Console` shell, but in plugin format. We'll need to install it first:
 
-```bash
+```shell
 git clone git://github.com/nodesagency/cake-interactive-shell.git app/Plugin/Interactive
 ```
 
@@ -171,7 +171,7 @@ CakePlugin::load('Interactive');
 
 And now install it:
 
-```bash
+```shell
 Console/cake Interactive.Install
 ```
 

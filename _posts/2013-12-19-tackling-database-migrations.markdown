@@ -20,20 +20,20 @@ Database schema migrations are a tricky topic. Luckily, CakePHP has the excellen
 
 First up, we'll install the [Migrations plugin](https://github.com/CakeDC/migrations). Run the following command in your shell to install it via composer:
 
-```bash
+```shell
 composer require cakedc/migrations 2.2.*
 ```
 
 Next, lets enable it in our `app/Config/bootstrap.php`:
 
-```bash
+```shell
 echo -e "\nApp::import('Vendor', array('file' => 'autoload'));" >> app/Config/bootstrap.php;
 echo -e "\nCakePlugin::loadAll();" >> app/Config/bootstrap.php;
 ```
 
 Now that it is enabled, we will setup the initial database migrations needed for the plugin itself:
 
-```bash
+```shell
 app/Console/cake Migrations.migration run all -p Migrations
 ```
 
@@ -54,7 +54,7 @@ class MigrationGeneratorShell extends AppShell {
 
 There isn't much here. We'll want the following interface to the shell:
 
-```bash
+```shell
 # creates a migration that adds a user_id to the testers table
 app/Console/cake migration_generator create add_user_id_to_tester user_id:integer:index
 ```
@@ -284,13 +284,13 @@ Add the following to the end of your `create` method:
 
 ## Create a schema file
 
-```bash
+```shell
 app/Console/cake migration_generator create create_users id:primary_key name:string created:datetime modified:datetime
 ```
 
 Success! You should have a new file in `app/Config/Migration` with your migrations in it. Now you can run them:
 
-```bash
+```shell
 app/Console/cake Migrations.migration run all
 ```
 

@@ -121,14 +121,14 @@ A process can be terminated by a user or by itself. Our example above terminates
 
 If we ran a process in the background - using [nohup](http://www.cyberciti.biz/tips/nohup-execute-commands-after-you-exit-from-a-shell-prompt.html) for instance - you would potentially get the following output:
 
-```bash
+```shell
 $ nohup ./worker.php &
 => [1] 1337
 ```
 
 The output on the second line above contains a process ID, which can be used to inspect the process. A trivial use of this id would be to kill it:
 
-```bash
+```shell
 # HUP: hang up
 kill -1 1337
 

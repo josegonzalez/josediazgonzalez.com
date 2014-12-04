@@ -21,7 +21,7 @@ On a PaaS, you might have `100` nodes running `6` different services, each havin
 
 One way to do it is by using environment variables:
 
-```bash
+```shell
 export DATABASE_URL=mysql://user:password@host:port/database
 export API_URL=http://internal-domain/mount
 export ENV=production
@@ -30,7 +30,7 @@ export ENV=production
 
 This gets a bit messy because there may be several different environment variables, so eventually you may have something like:
 
-```bash
+```shell
 cat > /etc/services.d/app.conf <<EOF
 export DATABASE_URL=mysql://user:password@host:port/database
 export API_URL=http://internal-domain/mount

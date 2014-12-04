@@ -65,19 +65,19 @@ The final thing would be a cake shell that will be able to query this API and in
 
 Ideally, one would be able to specify a server from which to grab a plugin. The following is a sample cake shell call:
 
-```bash
+```shell
 cake plugin install -server "http://thechaw.com/plugins" -name trackable-behavior -branch 1.3 -scm git -basepath app/plugins/trackable
 ```
 
 The above would query [http://thechaw.com/plugins](http://thechaw.com/plugins) for a plugin matching the slug _trackable-behavior_ and, using git, install the _1.3_ branch in _app/plugins/trackable_. Updating *only* the trackable behavior plugin would be a breeze (assuming we cached the installed plugins somewhere, like in a database or something):
 
-```bash
+```shell
 cake plugin update -server "http://thechaw.com/plugins" -name trackable-behavior
 ```
 
 If you don't like typing out the server, scm, branch, or base install path, one might do the following
 
-```bash
+```shell
 cake plugin configure -server "http://thechaw.com/plugins" -branch 1.3 -scm git -path app/plugins/
 ```
 

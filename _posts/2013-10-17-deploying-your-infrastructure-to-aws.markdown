@@ -114,31 +114,31 @@ Each node *group* inherits from `__base__`, with some rules:
 
 We will have a simple command (name tbd):
 
-```bash
+```shell
 package
 ```
 
 That can take a `namespace:action`:
 
-```bash
+```shell
 package <namespace>:<action>
 ```
 
 And then optional group name filtering:
 
-```bash
+```shell
 package <namespace>:<action> (group)
 ```
 
 Of course, there would be other command line arguments:
 
-```bash
+```shell
 package <namespace>:<action> (group) --arg value
 ```
 
 ### Available actions
 
-```bash
+```shell
 package packer:create (group)
 package packer:run (group)
 package packer:clean (group) -n 10
@@ -158,7 +158,7 @@ package instance:deploy (group) -n 10
 
 Each node group should be able to generate a role:
 
-```bash
+```shell
 package role:create 12_04-bee
 ```
 
@@ -199,7 +199,7 @@ Some notes:
 
 If you ever touch `nodes.json` to add extra capabilities, you'll want to update your existing roles:
 
-```bash
+```shell
 package roles:update 12_04-bee
 ```
 
@@ -209,7 +209,7 @@ Of course, this won't update nodes, which you'll have to do separately.
 
 Running the following command:
 
-```bash
+```shell
 package packer:create 12_04-bee
 ```
 
@@ -237,19 +237,19 @@ The above would be based on some sort of templating language.
 
 Actually creating the ami on AWS for later use would be nice:
 
-```bash
+```shell
 package packer:run 12_04-bee
 ```
 
 We will likely want to clean up older versions of the ami to save money:
 
-```bash
+```shell
 package packer:clean 12_04-bee -n 10 # keep the last 10 amis
 ```
 
 If a node group will never be used again, we can simply delete all amis from aws and the related packer.json:
 
-```bash
+```shell
 # this will not delete any other local files or any ASGs
 package packer:delete 12_04-bee
 ```
@@ -260,7 +260,7 @@ package packer:delete 12_04-bee
 
 If we want to create an autoscale group, you could run the following command:
 
-```bash
+```shell
 package autoscale:create 12_04-bee
 ```
 
@@ -279,7 +279,7 @@ It would also run `package role:create 12_04-bee` for the role dependency. Your 
 
 Next you'll want to actually start any ASGs:
 
-```bash
+```shell
 package autoscale:run 12_04-bee
 ```
 
@@ -293,7 +293,7 @@ This will create the required ASG - or error if one exists! - with the tag `grou
 
 If a node significantly changes - such as the size of the instance, or even base ami - we will likely want to reprovision the autoscale group:
 
-```bash
+```shell
 package autoscale:update 12_04-bee
 ```
 
@@ -307,7 +307,7 @@ This would:
 
 There will be cases where an ASG makes no sense, or we'd like to run a node in a one-off fashion:
 
-```bash
+```shell
 package instance:create <group> --key path/to/key.pem --name INSTANCE-NAME  (--zone name-of-zone)
 ```
 
@@ -323,13 +323,13 @@ You can then run `chef-solo` using whatever tool you feel necessary.
 
 It would be nice to be able to kick off a deployment of all nodes:
 
-```bash
+```shell
 package instance:deploy
 ```
 
 Or a specific subset of nodes:
 
-```bash
+```shell
 package instance:deploy 12_04-bee
 ```
 
@@ -442,7 +442,7 @@ Having not tried it, I cannot endorse it. It *seems* legit.
 
 An operations engineer should be able to go about his day, working on a feature:
 
-```bash
+```shell
 git add data_bags
 git add vftp
 git add seatgeek-service/recipes/ftp-listener.rb
@@ -452,7 +452,7 @@ git commit -m "added service to process ftp uploads"
 
 And then setup instances for this:
 
-```bash
+```shell
 # edit nodes.json to add ftp-processor and ftp-listener roles
 
 package role:create ftp-listener
@@ -471,7 +471,7 @@ package packer:run ftp-processor
 
 And finally bring them up in an autoscale group:
 
-```bash
+```shell
 package autoscale:create ftp-processor
 package autoscale:run ftp-processor
 
@@ -483,7 +483,7 @@ package autoscale:run ftp-processor
 
 What if we had catch-all background workers, and were just deploying some new background worker that processes user analytics?
 
-```bash
+```shell
 # work on seatgeek-service::process-users which requires access to temporary storage
 # meaning we want to ensure the temporary storage is there, in addition to the service itself running.
 
@@ -499,7 +499,7 @@ git commit -m "added user processing to 12_04-bee machines"
 
 We should be able to notify nodes to redeploy in some fashion.
 
-```bash
+```shell
 package instance:deploy 12_04-bee
 ```
 

@@ -27,7 +27,7 @@ For the rest of this post, you'll need the composer tool installed. The followin
 
 Users of the homebrew package manager can use the `homebrew-php` tap to install composer globally, which is the easiest way of interacting with the tool:
 
-```bash
+```shell
 brew tap josegonzalez/php
 brew install composer
 ```
@@ -36,19 +36,19 @@ brew install composer
 
 The following will manually install the `composer.phar` in your current directory. Note that you'll need to execute a PHP script from the internet, so be mindful of not running as root or verifying the script contents:
 
-```bash
+```shell
 curl -sS https://getcomposer.org/installer | php
 ```
 
 If you wish to make it globally available, please install it to your `/usr/local/bin` directory:
 
-```bash
+```shell
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 ```
 
 I normally rename the `composer.phar` file to remove the extension:
 
-```bash
+```shell
 mv composer.phar composer
 ```
 
@@ -60,7 +60,7 @@ The first thing most people get stuck on is how to manage your application disti
 
 Composer has the ability to create projects from project templates registered on the official composer repository, [Packagist.org](https://packagist.org/). In our case, the [FriendsOfCake](http://friendsofcake.com/) organization provides a composer template for CakePHP application development. We'll use it to create a new app called `lollipop`:
 
-```bash
+```shell
 composer -sdev create-project friendsofcake/app-template lollipop
 ```
 
@@ -96,7 +96,7 @@ These are maintained within the `composer.json` file. Lets add the CakeEntity pl
 
 And then install the plugin:
 
-```bash
+```shell
 composer update
 ```
 

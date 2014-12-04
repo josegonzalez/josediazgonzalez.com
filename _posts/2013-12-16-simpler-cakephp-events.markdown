@@ -64,7 +64,7 @@ Not a big change, but something that removes some complication for me.
 
 I absolutely *hate* defining a new method in my listeners to return implemented events. Instead, I'll use annotations. Let's install an annotations library using `composer`:
 
-```bash
+```shell
 composer require minime/annotations:~1.1
 ```
 

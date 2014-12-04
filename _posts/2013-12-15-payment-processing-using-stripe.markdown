@@ -25,7 +25,7 @@ The first thing you'll want to do is [sign up for stripe](https://stripe.com/). 
 
 Once you've signed up, we'll install the [Stripe Plugin from chronon](https://github.com/chronon/CakePHP-StripeComponent-Plugin). Run the following command in your shell to install it via composer:
 
-```bash
+```shell
 composer require chronon/stripe 2.0.0
 ```
 

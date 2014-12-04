@@ -13,7 +13,7 @@ For the purposes of archiving how I like to develop, I'll chronicle a few things
 
 First things first. You'll want to ensure that your login/non-login terminal sessions have the same environment. On OS X, non-login sessions use the `~/.bashrc`, while login sessions use `~/.bash_profile`. Most terminal emulators follow this rule, but lets ensure this is always the case by modifying our non-existent `~/.bash_profile` as follows:
 
-```bash
+```shell
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
@@ -27,7 +27,7 @@ XCode 4.2 users - that means anyone on Snow Leopard - should install the [osx gc
 
 Once that is complete, install homebrew - the proper way, to `/usr/local/`, with no sudo enabled:
 
-```bash
+```shell
 /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 brew update
 brew install bash-completion
@@ -35,25 +35,25 @@ brew install bash-completion
 
 Then you'll want to have RVM installed:
 
-```bash
+```shell
 bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 ```
 
 The following will ensure `rvm` is always loaded. And add the following to the bottom of your `.bashrc`:
 
-```bash
+```shell
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM
 ```
 
 Then source your `~/.bash_profile`
 
-```bash
+```shell
 source ~/.bash_profile
 ```
 
 Be sure to run the following and follow any instructions:
 
-```bash
+```shell
 rvm requirements
 ```
 
@@ -61,7 +61,7 @@ If you are running a version of `rvm` less than `1.12` on Lion/Mountain Lion, yo
 
 Then install the desired rubies. I leave `1.9.2` as default, which is usually safe now:
 
-```bash
+```shell
 rvm install 1.8.7
 rvm install 1.9.2
 rvm install 1.9.3
@@ -73,7 +73,7 @@ You can now install any gems you typically use. I would recommend leaving this t
 
 I usually install the following brews - follow all their individual installation instructions! - at this point:
 
-```bash
+```shell
 brew install bash-completion git subversion bazaar mercurial mysql mongodb redis elasticsearch ack python nodejs imagemagick
 ```
 
@@ -81,27 +81,27 @@ Sometimes `subversion` installation freezes - haven't investigated this yet - so
 
 I personally install `gsl`, so I can use `LSI` to generate related posts within [Jekyll](https://github.com/mojombo/jekyll) in conjunction with [Ruby-GSL](http://rb-gsl.rubyforge.org/). Homebrew comes in handy.
 
-```bash
+```shell
 brew install gsl
 ```
 
 If you get issues doing `gem install rb-gsl`, you probably want to install an older version of `gsl`, version 1.14:
 
-```bash
+```shell
 brew remove gsl
 brew install https://raw.github.com/mxcl/homebrew/83ed49411f076e30ced04c2cbebb054b2645a431/Library/Formula/gsl.rb
 ```
 
 If you are using nodejs, you'll also want to install `npm`:
 
-```bash
+```shell
 curl http://npmjs.org/install.sh | sh
 ```
 
 
 If you've installed `python` using homebrew, I suggest doing the following so that installing python packages uses the right python:
 
-```bash
+```shell
 # install pip
 /usr/local/share/python/easy_install pip
 
@@ -112,7 +112,7 @@ export PATH="/usr/local/share/python:$PATH"
 
 Next comes the customization of PHP. I use PHP for most of my development - well, anything that has nothing to do with systems administration at least - so it's very useful to have an up to date version with a few different extensions. I've recently begun managing [Homebrew-PHP](https://github.com/josegonzalez/homebrew-php/), so I have the process down pat - again, follow any instructions for each brew, like enabling the homebrew `php` in Apache:
 
-```bash
+```shell
 brew tap josegonzalez/homebrew-php
 brew install php --with-mysql
 brew install apc-php
@@ -129,7 +129,7 @@ For the record, my `~/.bashrc` ends up looking [a bit like this](https://gist.gi
 
 I no longer use [Textmate](http://macromates.com/) religiously. I recommend using [Sublime Text 2](http://www.sublimetext.com/2) with whatever your favorite setup is. Someday I shall post mine. I did run the following command to make it easier to call `Sublime Text` from the terminal:
 
-```bash
+```shell
 ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" $(brew --prefix)/bin/subl
 ```
 

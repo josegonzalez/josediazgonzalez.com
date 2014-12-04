@@ -20,7 +20,7 @@ These are some notes from my deploy of an application I am developing to Heroku.
 
 The biggest bit here is to ensure that we are properly using composer for everything but our application logic. Most people tend to bundle the CakePHP core with their app in version control, but we can safely rely on Composer to be run before the application is deployed. Having CakePHP installed via composer allows us to safely and quickly test upgrades from one release to another.
 
-```bash
+```shell
 composer -sdev create-project friendsofcake/app-template your_app
 ```
 
@@ -83,7 +83,7 @@ This does mean you'll need to do extra work to get the app running locally, but 
 
 This buildpack does a lot of the gruntwork to get a PHP app running to current community standards. Built-in support for Composer, PHP 5.5, PHP-FPM and Nginx. I approve.
 
-```bash
+```shell
 heroku config:set BUILDPACK_URL=https://github.com/CHH/heroku-buildpack-php
 ```
 
@@ -182,7 +182,7 @@ CakeLog::config('error', array(
 
 And the configuration:
 
-```bash
+```shell
 heroku config:set LOG_PATH=/app/vendor/php/var/log/
 ```
 

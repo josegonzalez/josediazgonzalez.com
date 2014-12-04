@@ -21,7 +21,7 @@ This is a post about simple CakePHP application deployment. We'll use the `bash`
 
 Let's start by defining a new bash file in the base of our repository called `deploy`:
 
-```bash
+```shell
 #!/bin/sh
 #
 # Deploy Script
@@ -33,7 +33,7 @@ Let's start by defining a new bash file in the base of our repository called `de
 
 You should execute the command `chmod +x deploy` in order to give it executable permissions. Next, lets add a few configuration variables:
 
-```bash
+```shell
 # Colors
 COLOR_OFF="\033[0m"   # unsets color to term fg color
 RED="\033[0;31m"      # red
@@ -67,7 +67,7 @@ We've defined a few colors for use within our deploy process, as well as configu
 
 Now lets add some meat to our deploy script. The following bit will control how the script reacts to different arguments:
 
-```bash
+```shell
 case $1 in
   staging)
     echo "\n${GREEN}DEPLOYING APP TO STAGING${COLOR_OFF}\n"
@@ -130,7 +130,7 @@ We still don't have many of the functions referenced, so lets define them. Pleas
 
 ### `restart_production_workers`
 
-```bash
+```shell
 restart_production_workers() {
   ssh -p $PRODUCTION_SSH_PORT $DEPLOY_USER@$PRODUCTION_SERVER "cd $PRODUCTION_DIR/current &&\
     echo -e \"${YELLOW}--->${COLOR_OFF} Stopping workers \" &&\
@@ -144,7 +144,7 @@ This command is custom to my own setup. It will stop my CakeResque workers and r
 
 ### `deploy_production`
 
-```bash
+```shell
 deploy_production() {
   ssh -p $PRODUCTION_SSH_PORT $DEPLOY_USER@$PRODUCTION_SERVER "cd $PRODUCTION_DIR/current &&\
     echo -e \"${YELLOW}--->${COLOR_OFF} Fetching changes\" &&\
@@ -174,7 +174,7 @@ deploy_production() {
 
 ### `deploy_staging`
 
-```bash
+```shell
 deploy_staging() {
   ssh -p $STAGING_SSH_PORT $DEPLOY_USER@$STAGING_SERVER "cd $STAGING_DIR/current &&\
     echo -e \"${YELLOW}--->${COLOR_OFF} Fetching changes\" &&\
@@ -205,7 +205,7 @@ Notably, we don't care about any downtime in staging, so all directory changes a
 
 ### `tag_nonproduction`
 
-```bash
+```shell
 tag_nonproduction() {
   verify_working_directory_clean
 
@@ -234,7 +234,7 @@ Pretty straightforward. To tag the staging release, we:
 
 ### `production`
 
-```bash
+```shell
 tag_production() {
   verify_working_directory_clean
 
@@ -261,7 +261,7 @@ Also straightforward. To tag the production release, we:
 
 ### `verify_working_directory_clean`
 
-```bash
+```shell
 verify_working_directory_clean() {
   git status | grep "working directory clean" &> /dev/null
   if [ ! $? -eq 0 ]; then # working directory is NOT clean

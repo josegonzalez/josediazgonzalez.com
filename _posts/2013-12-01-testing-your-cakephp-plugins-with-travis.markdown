@@ -63,7 +63,7 @@ The above runs automated tests for a python application. Which is nice, but we w
 
 Friends Of Cake has built a *delicious* integration with Travis which is available on [github](https://github.com/friendsofcake/travis). Usage is actually pretty simple:
 
-```bash
+```shell
 # example for Crud plugin
 # assumes plugin is in path/to/app/Plugin/Crud
 cd path/to/app

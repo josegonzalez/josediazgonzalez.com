@@ -147,7 +147,7 @@ Simply add the above to your `.git/hooks/pre-commit` and you'll be off to the ra
 
 Do you have a test that fails and you don't know when the regression was introduced? Use `git-bisect` to find it.
 
-```bash
+```shell
 # start a bisect
 git bisect state
 # mark a commit as passing

@@ -98,7 +98,7 @@ This was great, because now all my configuration was in one place, and all I nee
 
 The environment switching was done by the existing of a `CAKE_ENV` environment variable or by hostname, so I could get away with local development pretty easily as well as with command-line tools:
 
-```bash
+```shell
 CAKE_ENV=production app/Console/cake Migrations.migration run all -p Migrations
 ```
 
@@ -110,7 +110,7 @@ The other big issue is that this exposes production credentials for everything t
 
 This is my current favorite. Essentially, all configuration is retrieved from an environment variable. You would, for instance, retrieve cache configuration from the `CACHE_URL` environment variable:
 
-```bash
+```shell
 CACHE_URL=redis://localhost:6379/0 app/Console/cake Migrations.migration run all -p Migrations
 ```
 
@@ -124,7 +124,7 @@ Some benefits:
 
 However, it's more annoying to specify multiple config values:
 
-```bash
+```shell
 export CACHE_URL=redis://localhost:6379/0
 export DATABASE_URL=mysql://localhost:3306/example
 export TEMP_PATH=/mnt
@@ -133,7 +133,7 @@ app/Console/cake Migrations.migration run all -p Migrations
 
 I normally create a file in `/etc/services/my-service` with the exports:
 
-```bash
+```shell
 export CACHE_URL=redis://localhost:6379/0
 export DATABASE_URL=mysql://localhost:3306/example
 export TEMP_PATH=/mnt
@@ -141,6 +141,6 @@ export TEMP_PATH=/mnt
 
 And then source the file in:
 
-```bash
+```shell
 . /etc/services/my-service app/Console/cake Migrations.migration run all -p Migrations
 ```

@@ -24,14 +24,14 @@ I normally place non-application code in a plugin. Most extensions to your core 
 
 Lets create the followin directory structure:
 
-```bash
+```shell
 cd path/to/app
 mkdir -p app/Plugin/DeletedAt/Model/Behavior
 ```
 
 Next, we'll initialize our plugin as a git repository. We're doing this with the aim of having the plugin within hosted Packagist:
 
-```bash
+```shell
 cd app/Plugin/DeletedAt
 touch Model/Behavior/empty
 git init
@@ -44,7 +44,7 @@ git push origin master
 
 And now we'll make this a [FriendsOfCake-approved](http://friendsofcake.com/) plugin using the steps from the [first CakeAdvent post](/2013/12/01/testing-your-cakephp-plugins-with-travis/):
 
-```bash
+```shell
 cd path/to/app
 git clone git@github.com:FriendsOfCake/travis.git vendor/travis
 export COPYRIGHT_YEAR=2013
@@ -67,7 +67,7 @@ At this point, you should be able to enable support for the plugin within Travis
 
 We'll first need to create the proper files. We will have both a `DeletedAtBehavior.php` and a `DeletedAtBehaviorTest.php`. Lets do that:
 
-```bash
+```shell
 cd app/Plugin/DeletedAt
 mkdir -p Test/Case/Model/Behavior
 touch Model/Behavior/DeletedAtBehavior.php
@@ -104,7 +104,7 @@ CakePlugin::load('DeletedAt');
 
 Now lets run tests!
 
-```bash
+```shell
 cd path/to/app
 Console/cake test DeletedAt AllDeletedAt --stderr
 ```
@@ -124,7 +124,7 @@ We'll store this state within a `deleted_at` field on the record. It will be of 
 
 We'll need a fixture to represent our test model. We should create it using the following:
 
-```bash
+```shell
 cd app/Plugin/DeletedAt
 mkdir -p Test/Fixture
 touch Test/Fixture/DeletedUserFixture.php

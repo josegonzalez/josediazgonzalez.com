@@ -194,7 +194,7 @@ I normally specify a `box_name` which sets the hostname for the instance in a se
 
 Running this dna file on the server - chef doesn't run on your machine! - would be done as follows:
 
-```bash
+```shell
 chef-solo -c path/to/chef/solo/config.rb -j path/to/dna/www-ec2-01.json
 ```
 
