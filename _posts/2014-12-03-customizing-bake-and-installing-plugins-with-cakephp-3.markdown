@@ -274,8 +274,7 @@ To add the `$comment` entity, lets modify the `src/Template/Bake/Element/Control
         $this->set('<%= $pluralName %>', [
           $<%= $singularName %>-><%= $modelObj->primaryKey() %> => $<%= $singularName %>-><%= $modelObj->displayField() %>,
         ]);
-<%
-endif %>
+<% endif %>
 ```
 
 This will:
