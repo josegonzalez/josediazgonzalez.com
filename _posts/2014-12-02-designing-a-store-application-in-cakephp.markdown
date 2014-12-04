@@ -118,7 +118,7 @@ And import the following:
 ```sql
 CREATE TABLE `comments` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `comment_id` int(11) DEFAULT NULL,
+  `issue_id` int(11) DEFAULT NULL,
   `email_address` varchar(255) DEFAULT NULL,
   `comment` text,
   `created` datetime DEFAULT NULL,
