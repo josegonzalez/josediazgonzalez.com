@@ -6,7 +6,7 @@
   tags:
     - CakeAdvent-2014
     - cakephp
-    - composer
+    - bake
   comments:    true
   sharing:     true
   published:   true
@@ -126,8 +126,8 @@ Bake will force-overwrite (using the `--force` argument) your existing Controlle
 One thing we'll want to do is exclude `GET` requests to the `/comments/add` endpoint. Users should only post to it from the form that will be embedded on the `/issues/view` page, and it should also redirect back to the issue. After the line setting actions for the `Comments` controller, add the following:
 
 ```php
-$event->view->set('redirect', '["controller" => "Issues", "action" => "view", $comment->issue_id]');
-$event->view->set('requirePost', true);
+$view->set('redirect', '["controller" => "Issues", "action" => "view", $comment->issue_id]');
+$view->set('requirePost', true);
 ```
 
 The above two variables will be used in our custom `src/Template/Bake/Element/Controller/add.ctp`. Controllers use elements to bake each action - meaning we can create custom actions as elements in the aforementioned directory - and the add action is no different. While you can copy the core one to that location, I'll just show you the updated version we'll be using:
@@ -223,7 +223,7 @@ Next, set the following contents in your `add_related.ctp` file:
 <%= $this->element('form', $relatedForm) %>
 ```
 
-Now that the initial setup is done, we need to populate this new `$addRelatedEntity` variable in our `Bake.beforeRender` event. The following event will do just that:
+Now that the initial setup is done, we need to populate this new `$relatedForm` variable in our `Bake.beforeRender` event. The following event will do just that:
 
 ```php
 use Cake\ORM\TableRegistry;
@@ -313,6 +313,7 @@ And we'll have a working form on our view page!
 ## Homework Time
 
 I won't write *all* the code, but hopefully the above gives you a good idea as to how to modify bake templates. Your homework is:
+
 - Make the form actions optional - and turn them off for embedded forms.
 - Create a nicer comment list than the current version.
 - Hide the `issue_id` field on the form without removing it completely
