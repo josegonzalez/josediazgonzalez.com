@@ -207,7 +207,7 @@ We need to modify the `form.ctp` to allow us to set a custom action for the `POS
 <?= $this->Form->create($<%= $singularVar %>, <% if (empty($formOptions)) : %>[]<% else : %><%= var_export($formOptions) %><% endif;%>); ?>
 ```
 
-It's rather long and complicated, but we'll simply add the following line to the end:
+I order to show the related form, we'll need to modify the `Bake/Template/view.ctp` we copied over. It's rather long and complicated, but we'll simply add the following line to the end:
 
 ```php
 <%
