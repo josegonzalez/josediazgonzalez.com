@@ -5,7 +5,7 @@
   category:    CakePHP
   tags:
     - authentication
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - oauth
   comments:    true

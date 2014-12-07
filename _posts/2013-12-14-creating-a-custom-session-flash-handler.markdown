@@ -5,7 +5,7 @@
   category:    CakePHP
   tags:
     - aliasing
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - sessions
   comments:    true

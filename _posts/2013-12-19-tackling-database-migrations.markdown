@@ -4,7 +4,7 @@
   description: "We look at creating a Cakeshell to generate migration files for the CakeDC Migrations plugin"
   category:    CakePHP
   tags:
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - migrations
   comments:    true

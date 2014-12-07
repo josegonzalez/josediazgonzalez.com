@@ -5,7 +5,7 @@
   category:    CakePHP
   tags:
     - bash
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - deploy
   comments:    true

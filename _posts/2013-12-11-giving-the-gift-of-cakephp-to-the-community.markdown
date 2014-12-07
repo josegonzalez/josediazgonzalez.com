@@ -4,7 +4,7 @@
   description: "Share and contribute back to the CakePHP community in one of many ways!"
   category:    CakePHP
   tags:
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - community
     - contributing

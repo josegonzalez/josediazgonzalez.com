@@ -5,7 +5,7 @@
   category:    CakePHP
   tags:
     - background-jobs
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - queuing
   comments:    true

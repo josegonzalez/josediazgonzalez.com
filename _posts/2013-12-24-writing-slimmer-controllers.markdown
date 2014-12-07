@@ -4,7 +4,7 @@
   description: "Refactoring Controller code should be simple, and I'll tear apart my own code to show how you can go about it."
   category:    CakePHP
   tags:
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - controllers
   comments:    true

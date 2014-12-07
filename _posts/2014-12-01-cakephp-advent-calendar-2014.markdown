@@ -4,7 +4,7 @@
   description: "Introducing a slightly different CakePHP Advent Calendar."
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - cakeadvent-2014
     - cakephp
   comments:    true
   sharing:     true

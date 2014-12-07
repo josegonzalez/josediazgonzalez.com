@@ -4,7 +4,7 @@
   description: "Wherein we abuse the CakePHP Disptach cycle to remove the Controllers and Views from our application in favor of smaller, testable units of code. One weird trick, APIs loves this!"
   category:    CakePHP
   tags:
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - dispatcher
   comments:    true

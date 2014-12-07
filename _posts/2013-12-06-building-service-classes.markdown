@@ -4,7 +4,7 @@
   description: "Building complex pages that seem to span hundreds of lines of Controller/Model code? Write Service classes for greater good!"
   category:    CakePHP
   tags:
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - refactoring
     - service-oriented-architecture

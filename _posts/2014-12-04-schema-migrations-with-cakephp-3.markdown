@@ -4,7 +4,7 @@
   description: "Part 3 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
   category:    CakePHP
   tags:
-    - CakeAdvent-2014
+    - cakeadvent-2014
     - cakephp
     - composer
     - migrations

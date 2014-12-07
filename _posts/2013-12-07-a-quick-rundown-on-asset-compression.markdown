@@ -6,7 +6,7 @@
   tags:
     - assets
     - asset_compress
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
   comments:    true
   sharing:     true

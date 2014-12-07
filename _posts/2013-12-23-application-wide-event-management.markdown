@@ -4,7 +4,7 @@
   description: "Triggering global CakePHP events isn't difficult, and this tutorial shows you how to do it."
   category:    CakePHP
   tags:
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - events
   comments:    true

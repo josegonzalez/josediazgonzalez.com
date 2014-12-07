@@ -4,7 +4,7 @@
   description: "Lets explore different ways in which we could implement an interactive command-line for the purposes of quickly testing code"
   category:    CakePHP
   tags:
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - cli
     - repl

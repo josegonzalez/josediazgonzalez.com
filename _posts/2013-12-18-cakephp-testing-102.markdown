@@ -4,7 +4,7 @@
   description: "Some personal thoughts on testing your CakePHP code to get maximum efficiency"
   category:    CakePHP
   tags:
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - testing
   comments:    true

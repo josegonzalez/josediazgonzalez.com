@@ -5,7 +5,7 @@
   category:    CakePHP
   tags:
     - annotations
-    - CakeAdvent-2013
+    - cakeadvent-2013
     - cakephp
     - events
   redirects:
