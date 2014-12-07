@@ -65,7 +65,7 @@ In future tutorials, we'll avoid these issues, but just keep this in mind for no
 
 ---
 
-Webhooks are actually pretty easy to setup. Whenever a comment is created, we'll want to notify all other comment webhooks that the issue was updated. To do so, we can hook into the `Issues::afterSave()` method.
+Webhooks are actually pretty easy to setup. Whenever a comment is created, we'll want to notify all other comment webhooks that the issue was updated. To do so, we can hook into the `CommentsTable::afterSave()` method.
 
 A `Table::afterSave()` call takes the following arguments:
 
@@ -73,11 +73,11 @@ A `Table::afterSave()` call takes the following arguments:
 - `Entity $entity`: The entity that was just saved
 - `ArrayObject $options`: An array of options that was passed into the `Table::save()` call.
 
-If you don't create a concrete `afterSave()` method, the event isn't fired on the Table class, so unfortunately we can't bind to the global event easily. Instead, we'll fire a custom `IssuesTable.afterSave` event from our own custom `afterSave()` method:
+If you don't create a concrete `afterSave()` method, the event isn't fired on the Table class, so unfortunately we can't bind to the global event easily. Instead, we'll fire a custom `CommentsTable.afterSave` event from our own custom `afterSave()` method:
 
 ```php
 public function afterSave(Event $event, Entity $entity, ArrayObject $options) {
-  $this->dispatchEvent('IssuesTable.afterSave', compact('entity', 'options'));
+  $this->dispatchEvent('CommentsTable.afterSave', compact('entity', 'options'));
 }
 ```
 
@@ -108,23 +108,23 @@ use Cake\ORM\Entity;
 use Cake\ORM\TableRegistry;
 
 EventManager::instance()->attach(function (Event $event, Entity $entity, ArrayObject $options) {
-    $issueId = $entity->issue_id;
     $table = TableRegistry::get('Comments');
     $comments = $table->find('all')->where([
         'Comments.id !=' => $entity->id,
-        'Comments.issue_id' => $issueId,
+        'Comments.issue_id' => $entity->issue_id,
         'Comments.webhook_url IS NOT' => null,
     ]);
     foreach ($comments as $comment) {
         $data = $comment->toArray();
         unset($data['email_address']);
+        unset($data['webhook_url']);
 
         $http = new Client();
         $http->post($comment->webhook_url, json_encode($data), [
           'type' => 'json'
         ]);
     }
-}, 'IssuesTable.afterSave');
+}, 'CommentsTable.afterSave');
 ?>
 ```
 
