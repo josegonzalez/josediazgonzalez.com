@@ -159,7 +159,7 @@ EventManager::instance()->attach(function (Event $event, Entity $entity, ArrayOb
 
 To send email, you'll need to [configure an email transport](http://book.cakephp.org/3.0/en/core-libraries/email.html#configuring-transports). I'm going assume you did that (gmail via smtp should work fine) so we'll skip ahead to the actual email sending. Our new event will *also* be in the `app/config/event.php` file, so we only need to call `use` on one more class:
 
-```
+```php
 use Cake\Network\Email\Email;
 
 EventManager::instance()->attach(function (Event $event, Entity $entity, ArrayObject $options) {
