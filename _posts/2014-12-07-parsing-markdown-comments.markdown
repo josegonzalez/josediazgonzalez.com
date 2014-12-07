@@ -67,6 +67,7 @@ The contents of our helper will then be the following:
 namespace App\View\Helper;
 
 use Cake\View\Helper;
+use Cake\View\View;
 use ColinODell\CommonMark\CommonMarkConverter;
 
 class MarkdownHelper extends Helper {
