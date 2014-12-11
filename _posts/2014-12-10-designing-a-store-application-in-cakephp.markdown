@@ -154,7 +154,7 @@ bin/cake bake migration create_products name:string stock:integer price:float ca
 
 Now you can run your migrations
 
-```
+```shell
 cd /vagrant/app
 
 bin/cake migrations migrate
