@@ -6,6 +6,8 @@
   tags:
     - cakeadvent-2014
     - cakephp
+  redirects:
+    - /2014/12/08/closing-issues/
   comments:    true
   sharing:     true
   published:   true
