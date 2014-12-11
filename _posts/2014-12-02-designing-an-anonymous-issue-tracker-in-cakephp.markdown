@@ -7,6 +7,8 @@
     - cakeadvent-2014
     - cakephp
     - composer
+  redirects:
+    - /2014/12/02/designing-a-store-application-in-cakephp/
   comments:    true
   sharing:     true
   published:   true
