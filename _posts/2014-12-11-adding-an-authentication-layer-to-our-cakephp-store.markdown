@@ -161,10 +161,12 @@ While we've templated out a bunch of stuff, we still need to actually handle log
 public function initialize() {
     $this->loadComponent('Flash');
     $this->loadComponent('Auth', [
+        // Where to redirect after a successful login
         'loginRedirect' => [
             'controller' => 'Products',
             'action' => 'index'
         ],
+        // Where to redirect after a user logs out
         'logoutRedirect' => [
             'controller' => 'Products',
             'action' => 'index',
