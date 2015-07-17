@@ -63,6 +63,15 @@
         "unmaintained": true
     },
     {
+        "active": true,
+        "description": "CakePHP ElasticSearch datasource that actually behaves like a real datasource",
+        "label": "cake",
+        "link": "https://github.com/josegonzalez/cakephp-elastic-search-datasource",
+        "name": "cakephp-elastic-search-datasource",
+        "type": "cakephp",
+        "unmaintained": false
+    },
+    {
         "active": false,
         "description": "Deprecated",
         "label": "cake",
@@ -162,6 +171,15 @@
         "unmaintained": true
     },
     {
+        "active": true,
+        "description": "A CakePHP 3.x plugin that facilitates versioned database entities",
+        "label": "cake",
+        "link": "https://github.com/josegonzalez/cakephp-version",
+        "name": "cakephp-version",
+        "type": "cakephp",
+        "unmaintained": false
+    },
+    {
         "active": false,
         "description": "Deprecated in favor of https://github.com/FriendsOfCake/crud",
         "label": "cake2",
@@ -176,6 +194,15 @@
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-ajax-controller",
         "name": "cakephp-ajax-controller",
+        "type": "cakephp2",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "ACL system using controller action annotations",
+        "label": "cake2",
+        "link": "https://github.com/josegonzalez/cakephp-annotation-control-list",
+        "name": "cakephp-annotation-control-list",
         "type": "cakephp2",
         "unmaintained": false
     },
@@ -343,6 +370,15 @@
     },
     {
         "active": true,
+        "description": "Connect to database using a REDIS_URL and the radix redis client. \u2014 Edit",
+        "label": "go",
+        "link": "https://github.com/josegonzalez/go-radixurl",
+        "name": "go-radixurl",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "Connect to database using a DATABASE_URL and the sqlx client.",
         "label": "go",
         "link": "https://github.com/josegonzalez/go-sqlxurl",
@@ -397,7 +433,7 @@
     },
     {
         "active": true,
-        "description": "Job Queuing Library for PHP",
+        "description": "PHP job/worker system built to support various queuing systems",
         "label": "php",
         "link": "https://github.com/josegonzalez/php-queuesadilla",
         "name": "php-queuesadilla",
