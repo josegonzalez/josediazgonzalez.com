@@ -1,3 +1,4 @@
 .sass-cache
 .vagrant
 _site
+*.cache.db
