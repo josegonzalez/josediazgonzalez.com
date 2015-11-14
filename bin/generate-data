@@ -15,7 +15,8 @@ PREFIXES = {
     'php': 'php',
     'python': 'py',
     'ruby': 'rb',
-    'shell': 'sh'
+    'shell': 'sh',
+    'bash': 'sh',
 }
 USERNAME = 'josegonzalez'
 
