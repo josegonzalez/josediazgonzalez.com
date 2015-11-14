@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import filecache
 import json
 import os
 import sys
@@ -37,6 +38,7 @@ def log_info(message):
         sys.stdout.write("{0}\n".format(msg))
 
 
+@filecache.filecache(filecache.YEAR)
 def retrieve_data(template, query_args=None, single_request=False):
     per_page = 100
     page = 0
@@ -85,13 +87,14 @@ def retrieve_data(template, query_args=None, single_request=False):
     return data
 
 
+@filecache.filecache(filecache.YEAR)
 def retrieve_repositories():
     url = 'https://api.github.com/users/{0}/repos'.format(USERNAME)
     return retrieve_data(url, single_request=False)
 
 
+@filecache.filecache(filecache.YEAR)
 def composer_data(name):
-
     template = 'https://raw.githubusercontent.com/{0}/master/composer.json'
     request = urllib2.Request(template.format(name))
 
