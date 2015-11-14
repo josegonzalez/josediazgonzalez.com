@@ -185,4 +185,4 @@ The above went by really quickly, and while it's still early, our application lo
 - Generating Schema migrations from the command-line
 - Attaching comments to issues and associating them automatically
 
-We'll cover those in the next installment of CakeAdvent 2014. Be sure to follow along as via twitter on [@savant](https://twitter.com/savant). If you'd like to subscribe to this blog, you may follow the [rss feed here](http://josediazgonzalez.com/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow (if you're reading this on the 2nd of December!) for more delicious content.
+We'll cover those in the next installment of CakeAdvent 2014. Be sure to follow along via twitter on [@savant](https://twitter.com/savant). If you'd like to subscribe to this blog, you may follow the [rss feed here](http://josediazgonzalez.com/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow (if you're reading this on the 2nd of December!) for more delicious content.
