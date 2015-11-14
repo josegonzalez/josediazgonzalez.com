@@ -63,13 +63,13 @@
         "unmaintained": true
     },
     {
-        "active": true,
-        "description": "CakePHP ElasticSearch datasource that actually behaves like a real datasource",
+        "active": false,
+        "description": "An incomplete re-implementation of the CakePHP documentation as a series of tutorials. CakePHP 1.3 ONLY. Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
         "label": "cake",
-        "link": "https://github.com/josegonzalez/cakephp-elastic-search-datasource",
-        "name": "cakephp-elastic-search-datasource",
+        "link": "https://github.com/josegonzalez/cakephp-documentation",
+        "name": "cakephp-documentation",
         "type": "cakephp",
-        "unmaintained": false
+        "unmaintained": true
     },
     {
         "active": false,
@@ -171,15 +171,6 @@
         "unmaintained": true
     },
     {
-        "active": true,
-        "description": "A CakePHP 3.x plugin that facilitates versioned database entities",
-        "label": "cake",
-        "link": "https://github.com/josegonzalez/cakephp-version",
-        "name": "cakephp-version",
-        "type": "cakephp",
-        "unmaintained": false
-    },
-    {
         "active": false,
         "description": "Deprecated in favor of https://github.com/FriendsOfCake/crud",
         "label": "cake2",
@@ -239,6 +230,15 @@
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-dynamic-route",
         "name": "cakephp-dynamic-route",
+        "type": "cakephp2",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "ElasticSearch datasource that actually behaves like a real datasource",
+        "label": "cake2",
+        "link": "https://github.com/josegonzalez/cakephp-elastic-search-datasource",
+        "name": "cakephp-elastic-search-datasource",
         "type": "cakephp2",
         "unmaintained": false
     },
@@ -370,6 +370,15 @@
     },
     {
         "active": true,
+        "description": "plugin that facilitates versioned database entities",
+        "label": "cake3",
+        "link": "https://github.com/josegonzalez/cakephp-version",
+        "name": "cakephp-version",
+        "type": "cakephp3",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "Connect to database using a REDIS_URL and the radix redis client. \u2014 Edit",
         "label": "go",
         "link": "https://github.com/josegonzalez/go-radixurl",
@@ -392,6 +401,15 @@
         "label": "go",
         "link": "https://github.com/josegonzalez/go-statsdurl",
         "name": "go-statsdurl",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "golang metrics collecting agent for linux",
+        "label": "go",
+        "link": "https://github.com/josegonzalez/metricsd",
+        "name": "metricsd",
         "type": "go",
         "unmaintained": false
     },
@@ -438,6 +456,15 @@
         "link": "https://github.com/josegonzalez/php-queuesadilla",
         "name": "php-queuesadilla",
         "type": "php",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "python wrapper around chef-solo, for managing AWS instances",
+        "label": "py",
+        "link": "https://github.com/josegonzalez/chef-solo-cup",
+        "name": "chef-solo-cup",
+        "type": "python",
         "unmaintained": false
     },
     {
@@ -505,6 +532,24 @@
     },
     {
         "active": true,
+        "description": "A set of generic cookbooks for chef",
+        "label": "rb",
+        "link": "https://github.com/josegonzalez/chef-cookbooks",
+        "name": "chef-cookbooks",
+        "type": "ruby",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "chef based os x management system",
+        "label": "rb",
+        "link": "https://github.com/josegonzalez/chefsen",
+        "name": "chefsen",
+        "type": "ruby",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "Unmaintained: Jekyll blogging at it's finest. No really, even finer than Octopress ;)",
         "label": "rb",
         "link": "https://github.com/josegonzalez/ruby-cimino",
@@ -543,8 +588,26 @@
         "active": true,
         "description": "Send hipchat notifications from the command line",
         "label": "sh",
-        "link": "https://github.com/josegonzalez/shell-hipchat",
-        "name": "shell-hipchat",
+        "link": "https://github.com/josegonzalez/bash-hipchat",
+        "name": "bash-hipchat",
+        "type": "shell",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "",
+        "label": "sh",
+        "link": "https://github.com/josegonzalez/dokku-compose-app",
+        "name": "dokku-compose-app",
+        "type": "shell",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a test dokku app",
+        "label": "sh",
+        "link": "https://github.com/josegonzalez/dokku-test-hellodjango",
+        "name": "dokku-test-hellodjango",
         "type": "shell",
         "unmaintained": false
     }
