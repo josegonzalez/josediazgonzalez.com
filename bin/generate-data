@@ -9,14 +9,19 @@ import urllib2
 
 CURRENT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PREFIXES = {
-    'cakephp': 'cake',
-    'java': 'java',
-    'go': 'go',
-    'php': 'php',
-    'python': 'py',
-    'ruby': 'rb',
-    'shell': 'sh',
-    'bash': 'sh',
+    'cake': ['cakephp'],
+    'java': ['java'],
+    'go': ['go', 'golang'],
+    'php': ['php'],
+    'py': ['python'],
+    'rb': ['chef', 'ruby'],
+    'sh': ['bash', 'dokku', 'shell'],
+}
+PREFIX_MAP = {
+    'bash': 'shell',
+    'chef': 'ruby',
+    'dokku': 'shell',
+    'golang': 'go',
 }
 USERNAME = 'josegonzalez'
 
@@ -137,6 +142,52 @@ def cake_version(name, prefix, description, composer=None):
     return version
 
 
+def project_data(name, label, prefix, description, repository):
+    _cakephp = ['cakephp', 'cakephp2', 'cakephp3']
+
+    _label = label
+    _prefix = prefix
+
+    for p in PREFIX_MAP.keys():
+        if _prefix == p:
+            _prefix = PREFIX_MAP[p]
+
+    active = 'deprecated' not in description.lower()
+    composer = None
+
+    if prefix == 'cakephp':
+        composer = composer_data(repository.get('full_name'))
+        version = cake_version(name, prefix, description, composer)
+        _label += version
+        _prefix += version
+
+    description = description.replace('CakePHP1:', '')
+    description = description.replace('CakePHP2:', '')
+    description = description.replace('CakePHP3:', '')
+    description = description.replace('Deprecated:', '')
+    description = description.strip(' \t\n\r')
+    is_cakephp = _prefix in _cakephp
+
+    unmaintained = False
+    if is_cakephp:
+        unmaintained = active is False or composer is None
+    elif not active:
+        unmaintained = True
+
+    active_cakephp = not is_cakephp or composer is not None
+    active = active is True and active_cakephp
+
+    return {
+        'active': active,
+        'description': description,
+        'label': _label,
+        'link': repository.get('html_url'),
+        'name': name,
+        'type': _prefix,
+        'unmaintained': unmaintained,
+    }
+
+
 def main():
     class HTTPErrorProcessor(urllib2.BaseHandler):
         def http_error_default(self, request, response, code, msg, hdrs):
@@ -147,7 +198,6 @@ def main():
 
     output = []
     repositories = retrieve_repositories()
-    _cakephp = ['cakephp', 'cakephp2', 'cakephp3']
 
     for repository in repositories:
         if repository.get('private', False):
@@ -156,45 +206,26 @@ def main():
             continue
 
         name = repository.get('name')
-        for prefix, label in PREFIXES.iteritems():
-            if name.startswith('{0}-'.format(prefix)):
-                _label = label
-                _prefix = prefix
-                description = repository.get('description', '')
-                active = 'deprecated' not in description.lower()
-                composer = None
-
-                if prefix == 'cakephp':
-                    composer = composer_data(repository.get('full_name'))
-                    version = cake_version(name, prefix, description, composer)
-                    _label += version
-                    _prefix += version
-
-                description = description.replace('CakePHP1:', '')
-                description = description.replace('CakePHP2:', '')
-                description = description.replace('CakePHP3:', '')
-                description = description.replace('Deprecated:', '')
-                description = description.strip(' \t\n\r')
-                is_cakephp = _prefix in _cakephp
-
-                unmaintained = False
-                if is_cakephp:
-                    unmaintained = active is False or composer is None
-                elif not active:
-                    unmaintained = True
-
-                active_cakephp = not is_cakephp or composer is not None
-                active = active is True and active_cakephp
-
-                output.append({
-                    'active': active,
-                    'description': description,
-                    'label': _label,
-                    'link': repository.get('html_url'),
-                    'name': name,
-                    'type': _prefix,
-                    'unmaintained': unmaintained,
-                })
+        description = repository.get('description', '')
+        matched = False
+        for label, prefixes in PREFIXES.iteritems():
+            for prefix in prefixes:
+                name_prefixed = name.startswith('{0}-'.format(prefix))
+                description_prefixed = description.startswith('{0} '.format(prefix))
+                if name_prefixed or description_prefixed:
+                    if len(description) == 0:
+                        print '{0}: missing description'.format(name)
+                    output.append(project_data(name,
+                                               label,
+                                               prefix,
+                                               description,
+                                               repository))
+                    matched = True
+                    break
+            if matched:
+                break
+        if not matched:
+            print '{0}: unmatched'.format(name)
 
     output = sorted(output, key=lambda k: k['label'])
 
