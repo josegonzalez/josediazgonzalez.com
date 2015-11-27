@@ -333,20 +333,11 @@
         "unmaintained": false
     },
     {
-        "active": false,
+        "active": true,
         "description": "Plugin for tracking who created/modified a record",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-trackable",
         "name": "cakephp-trackable",
-        "type": "cakephp2",
-        "unmaintained": true
-    },
-    {
-        "active": true,
-        "description": "handle file uploading sans ridiculous automagic",
-        "label": "cake2",
-        "link": "https://github.com/josegonzalez/cakephp-upload",
-        "name": "cakephp-upload",
         "type": "cakephp2",
         "unmaintained": false
     },
@@ -366,6 +357,15 @@
         "link": "https://github.com/josegonzalez/cakephp-wysiwyg",
         "name": "cakephp-wysiwyg",
         "type": "cakephp2",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "handle file uploading sans ridiculous automagic",
+        "label": "cake3",
+        "link": "https://github.com/josegonzalez/cakephp-upload",
+        "name": "cakephp-upload",
+        "type": "cakephp3",
         "unmaintained": false
     },
     {
