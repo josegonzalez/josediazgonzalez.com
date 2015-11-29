@@ -180,13 +180,13 @@
         "unmaintained": true
     },
     {
-        "active": true,
-        "description": "Automatically support ajax requests from popular Javascript libraries without any more thought",
+        "active": false,
+        "description": "Deprecated parent controller class that adds a helper _respond() method for ajax requests",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-ajax-controller",
         "name": "cakephp-ajax-controller",
         "type": "cakephp2",
-        "unmaintained": false
+        "unmaintained": true
     },
     {
         "active": true,
