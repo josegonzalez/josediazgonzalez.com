@@ -2,7 +2,7 @@
   title:       "Creating Table Callback Events"
   date:        2014-12-05 17:34
   description: "Part 4 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

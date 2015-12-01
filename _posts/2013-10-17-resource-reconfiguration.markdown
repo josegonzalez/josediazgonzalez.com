@@ -2,7 +2,7 @@
   title:       "Resource reconfiguration"
   date:        2013-10-17 11:38
   description: How do you manage service configurations across a cluster of services?
-  category:    Opschops
+  category:    opschops
   tags:
     - chef
     - cofiguration

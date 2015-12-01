@@ -1,6 +1,6 @@
 ---
   title: Why CakePHP documentation sucks and what I'm doing about it
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - github

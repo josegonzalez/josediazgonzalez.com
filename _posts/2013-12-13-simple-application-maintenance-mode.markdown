@@ -2,7 +2,7 @@
   title:       "Simple application maintenance mode"
   date:        2013-12-13 03:05
   description: "Setup a fast maintenance mode for your application using the CakePHP Dispatch Filter system"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - dispatcher
     - cakeadvent-2013

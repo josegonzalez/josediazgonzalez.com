@@ -1,6 +1,6 @@
 ---
   title: Upgrading from Lion to Mountain Lion
-  category: Installation
+  category:    installation
   tags:
     - development
     - mountain-lion

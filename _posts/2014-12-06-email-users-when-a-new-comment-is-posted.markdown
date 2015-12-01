@@ -2,7 +2,7 @@
   title:       "Emailing users when a new comment is posted"
   date:        2014-12-06 13:45
   description: "Part 5 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

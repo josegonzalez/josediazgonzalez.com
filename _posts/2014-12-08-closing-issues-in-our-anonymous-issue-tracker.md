@@ -2,7 +2,7 @@
   title:       "Closing Issues in our Anonymous Issue Tracker using Events"
   date:        2014-12-08 17:31
   description: "Part 7 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

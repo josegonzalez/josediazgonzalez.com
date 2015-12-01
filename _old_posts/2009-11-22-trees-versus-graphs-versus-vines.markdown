@@ -1,7 +1,7 @@
 ---
   title:       "Trees Versus Graphs versus Vines"
   description: Trees Versus Graphs versus Vines
-  category:    Other
+  category:    other
   tags:
     - graph behavior
     - tree behavior

@@ -2,7 +2,7 @@
   title:       "Deploying your infrastructure to AWS"
   date:        2013-10-17 00:29
   description: "Deployment of servers to the AWS EC2 service, with particular care taken to ameliorate some issues with deploying applications over datastores"
-  category:    Opschops
+  category:    opschops
   tags:
     - aws
     - chef

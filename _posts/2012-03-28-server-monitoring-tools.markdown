@@ -1,6 +1,6 @@
 ---
   title:       Server Monitoring Tools
-  category:    Opschops
+  category:    opschops
   tags:
     - deployment
     - monitoring

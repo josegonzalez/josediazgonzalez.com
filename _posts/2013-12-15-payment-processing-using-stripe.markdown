@@ -2,7 +2,7 @@
   title:       "Payment Processing using Stripe"
   date:        2013-12-15 01:19
   description: "Making money with your website should be your primary concern, and this blog post will explain a simple, awesome way to do so"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - aliasing
     - cakeadvent-2013

@@ -2,7 +2,7 @@
   title:       "Adding dummy data via a custom faker shell to our store"
   date:        2014-12-12 18:26
   description: "Part 3 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

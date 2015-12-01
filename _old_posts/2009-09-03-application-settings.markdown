@@ -2,7 +2,7 @@
   title:       "Application Settings"
   date:        2009-09-03 00:00
   description: Snippet of code to load application-level settings from the database
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - helpers

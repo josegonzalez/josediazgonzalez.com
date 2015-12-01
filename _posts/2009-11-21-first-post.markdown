@@ -1,7 +1,7 @@
 ---
   title:       "First Post"
   description: my first post
-  category:    Other
+  category:    other
   tags:
     - blog
     - cakephp

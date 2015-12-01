@@ -2,7 +2,7 @@
   title:       "Writing Slimmer Controllers"
   date:        2013-12-24 13:27
   description: "Refactoring Controller code should be simple, and I'll tear apart my own code to show how you can go about it."
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

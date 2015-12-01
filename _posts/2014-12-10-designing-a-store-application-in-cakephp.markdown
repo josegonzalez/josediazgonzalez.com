@@ -2,7 +2,7 @@
   title:       "Designing a Store application in CakePHP"
   date:        2014-12-10 17:24
   description: "Part 1 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

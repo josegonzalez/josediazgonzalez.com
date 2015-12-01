@@ -1,6 +1,6 @@
 ---
   title: My development setup
-  category: Installation
+  category:    installation
   tags:
   description: For the purposes of archiving how I like to develop, I'll chronicle a few things here.
   comments:    true

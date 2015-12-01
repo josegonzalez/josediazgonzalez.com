@@ -1,6 +1,6 @@
 ---
   title: Using CakeAdmin to generate backend applications
-  category: CakePHP
+  category:    cakephp
   tags:
     - admin
     - cake_admin

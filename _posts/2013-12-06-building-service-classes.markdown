@@ -2,7 +2,7 @@
   title:       "Building Service Classes"
   date:        2013-12-06 12:41
   description: "Building complex pages that seem to span hundreds of lines of Controller/Model code? Write Service classes for greater good!"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

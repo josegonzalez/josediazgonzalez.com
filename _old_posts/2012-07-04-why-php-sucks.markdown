@@ -2,7 +2,7 @@
   title:       "Why PHP Sucks"
   date:        2012-07-04 14:07
   description: PHP sucks so bad it is used for pageviews alone
-  category:    PHP
+  category:    php
   tags:
     - php
     - sucks

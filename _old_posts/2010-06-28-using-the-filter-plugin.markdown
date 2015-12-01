@@ -1,6 +1,6 @@
 ---
   title: Using the Filter Plugin
-  category: Tutorials
+  category:    tutorials
   tags:
   comments:    true
   sharing:     false

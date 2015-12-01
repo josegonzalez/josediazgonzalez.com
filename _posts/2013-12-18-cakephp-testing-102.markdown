@@ -2,7 +2,7 @@
   title:       "CakePHP Testing 102"
   date:        2013-12-18 14:17
   description: "Some personal thoughts on testing your CakePHP code to get maximum efficiency"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

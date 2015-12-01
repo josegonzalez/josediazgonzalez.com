@@ -2,7 +2,7 @@
   title:       "Application-wide event management"
   date:        2013-12-23 14:15
   description: "Triggering global CakePHP events isn't difficult, and this tutorial shows you how to do it."
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

@@ -1,7 +1,7 @@
 ---
   title:       "Quick Tip - Translating Model Variables"
   description: Translating CakePHP Model variables and validation rules isn't straight-forward to new developers. However, it is possible through the use of the class constructor.
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - quicktip

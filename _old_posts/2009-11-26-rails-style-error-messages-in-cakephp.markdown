@@ -1,7 +1,7 @@
 ---
   title:       "Rails-Style Error Messages in CakePHP"
   description: A simple CakePHP helper for outputting grouped error messages as in the Ruby on Rails framework.
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - rails

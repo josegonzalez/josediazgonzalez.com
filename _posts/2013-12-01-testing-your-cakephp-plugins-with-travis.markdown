@@ -2,7 +2,7 @@
   title:       "Testing your CakePHP Plugins with Travis"
   date:        2013-12-01 16:22
   description: "Quickly setup automated testing for your cakephp plugin code using Travis-Ci"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

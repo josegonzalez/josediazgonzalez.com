@@ -2,7 +2,7 @@
   title:       "Deploy ALL the things using simple Bash scripts"
   date:        2013-12-17 05:51
   description: "Automate everything, including your deploys, using things as simple as a bash script"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - bash
     - cakeadvent-2013

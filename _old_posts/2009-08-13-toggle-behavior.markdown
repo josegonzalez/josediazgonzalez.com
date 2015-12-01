@@ -2,7 +2,7 @@
   title:       "Toggle Behavior"
   description: Toggle CakePHP Behavior for toggling boolean model fields in CakePHP
   date:        2009-08-13 00:00
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - toggle

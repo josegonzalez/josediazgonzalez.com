@@ -2,7 +2,7 @@
   title:       "Tackling database migrations with one neat trick"
   date:        2013-12-19 00:54
   description: "We look at creating a Cakeshell to generate migration files for the CakeDC Migrations plugin"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

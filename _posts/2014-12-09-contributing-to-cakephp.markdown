@@ -2,7 +2,7 @@
   title:       "Contributing to CakePHP"
   date:        2014-12-09 17:31
   description: "Find out various ways to contribute back to the CakePHP project"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

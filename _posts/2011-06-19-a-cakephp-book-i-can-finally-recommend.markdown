@@ -1,6 +1,6 @@
 ---
   title: A CakePHP Book I can finally recommend
-  category: CakePHP
+  category:    cakephp
   tags:
     - application
     - book

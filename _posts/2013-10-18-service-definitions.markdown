@@ -2,7 +2,7 @@
   title:       "Service Definitions"
   date:        2013-10-18 07:06
   description: Just what is a service, and what pieces are necessary to run it?
-  category:    Opschops
+  category:    opschops
   tags:
     - configuration
     - resources

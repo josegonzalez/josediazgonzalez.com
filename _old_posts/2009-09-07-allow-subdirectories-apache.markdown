@@ -2,7 +2,7 @@
   title:       "Allow Subdirectories Apache"
   date:        2009-09-07 00:00
   description: Example .htaccess file for allowing custom subdirectories in your CakePHP application under Apache
-  category:    CakePHP
+  category:    cakephp
   tags:
     - apache
     - cakephp

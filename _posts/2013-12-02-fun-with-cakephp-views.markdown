@@ -2,7 +2,7 @@
   title:       "Fun with CakePHP Views"
   date:        2013-12-02 00:00
   description: A guide to creating a custom CakePHP view that generates identicon png images for users
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

@@ -1,7 +1,7 @@
 ---
   title: Why CakePHP?
   description: Why choose CakePHP over any other framework?
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
   comments:    true

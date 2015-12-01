@@ -2,7 +2,7 @@
   title:       "Simplifying OAuth integration"
   date:        2013-12-09 00:55
   description: "Rather than writing the same OAuth code for different projects, reuse a community framework to integrate with service providers like Facebook and Twitter"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - authentication
     - cakeadvent-2013

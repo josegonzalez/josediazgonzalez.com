@@ -2,7 +2,7 @@
   title:       "Queue in scalable applications"
   date:        2013-12-10 02:37
   description: "Don't make your users wait on the server. Instead, move long-running computations to the background and keep your conversions high"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - background-jobs
     - cakeadvent-2013

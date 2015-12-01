@@ -2,7 +2,7 @@
   title:       "Building a Behavior with CakePHP"
   date:        2013-12-21 14:52
   description: "Covering the creation of a plugin, writing Unit Tests, and creating a Behavior to handle a `deleted` field"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

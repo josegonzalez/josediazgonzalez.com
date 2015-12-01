@@ -2,7 +2,7 @@
   title:       "Building a user cart system in CakePHP"
   date:        2014-12-13 17:26
   description: "Part 4 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

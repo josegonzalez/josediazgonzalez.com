@@ -2,7 +2,7 @@
   title:       "Giving the gift of CakePHP to the Community"
   date:        2013-12-11 11:16
   description: "Share and contribute back to the CakePHP community in one of many ways!"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

@@ -2,7 +2,7 @@
   title:       Why to Actually Choose CakePHP
   date:        2012-09-07 00:00
   description: Why I think CakePHP is a great framework option
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
   comments:    true

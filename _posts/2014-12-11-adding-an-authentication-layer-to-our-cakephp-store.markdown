@@ -2,7 +2,7 @@
   title:       "Adding an Authentication layer to our CakePHP Store"
   date:        2014-12-11 18:26
   description: "Part 2 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

@@ -2,7 +2,7 @@
   title:       "Conditionally Load Javascript"
   date:        2009-09-03 00:00
   description: Example of loading javascript files in 1.2 based on the current controller/action path
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - conditional

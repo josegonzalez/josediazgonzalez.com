@@ -1,7 +1,7 @@
 ---
   title:       "CakePHP HABTM Relationships"
   description: A slightly misguided post on CakePHP HABTM relationships
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - counterCache

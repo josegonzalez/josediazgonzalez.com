@@ -2,7 +2,7 @@
   title:       "CakePHP Advent Calendar 2014"
   date:        2014-12-01 17:24
   description: "Introducing a slightly different CakePHP Advent Calendar."
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

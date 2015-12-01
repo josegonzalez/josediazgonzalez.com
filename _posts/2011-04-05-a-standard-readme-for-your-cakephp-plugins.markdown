@@ -1,6 +1,6 @@
 ---
   title: A Standard Readme for your CakePHP Plugins
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - github

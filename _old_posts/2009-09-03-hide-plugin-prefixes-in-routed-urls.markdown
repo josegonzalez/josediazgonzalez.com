@@ -2,7 +2,7 @@
   title:       "Hide Plugin Prefixes in Routed Urls"
   date:        2009-09-03 00:00
   description: Hack on the CakePHP Router to hide the plugin prefix in connected routes
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - routing

@@ -2,7 +2,7 @@
   title:       "Cacheable Behavior"
   date:        2009-09-04 00:00
   description: Cacheable Model behavior caches views pertaining to model records to the disk via a RequestAction hack.
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - behaviors

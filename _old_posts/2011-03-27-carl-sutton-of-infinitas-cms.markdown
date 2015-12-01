@@ -1,6 +1,6 @@
 ---
   title: Carl Sutton of Infinitas CMS
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - infinitas

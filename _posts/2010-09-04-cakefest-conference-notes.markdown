@@ -1,6 +1,6 @@
 ---
   title: Cakefest Conference Notes
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - cakefest

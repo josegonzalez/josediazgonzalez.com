@@ -2,7 +2,7 @@
   title:       "Creating a cookbook and running chef-solo"
   date:        2012-05-02 01:53
   description: How to create a cookbook for the Chef Deployment Tool and an explanation of DNA.json files
-  category:    Opschops
+  category:    opschops
   tags:
     - cakephp
     - chef

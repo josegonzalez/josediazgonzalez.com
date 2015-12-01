@@ -2,7 +2,7 @@
   title:       "Shipping CakePHP App Logs to Logstash via Syslog"
   date:        2014-03-22 06:28
   description: If you've never written a CakePHP Logger, here is a simple post on how to do so
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - logging

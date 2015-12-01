@@ -2,7 +2,7 @@
   title:       "Local Development Environment using Vagrant and Virtualbox"
   date:        2013-12-25 16:29
   description: "Tired of reinstalling your development environment? We've created one specifically for CakePHP usage."
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

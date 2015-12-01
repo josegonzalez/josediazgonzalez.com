@@ -2,7 +2,7 @@
   title:       "Deploying a CakePHP application to Heroku"
   date:        2013-12-22 15:18
   description: "Heroku is a popular place to try out small experiments in CakePHP, so I decided to document the steps necessary for a successful Heroku integration."
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

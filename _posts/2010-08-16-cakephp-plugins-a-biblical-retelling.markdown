@@ -1,6 +1,6 @@
 ---
   title: CakePHP Plugins - A Biblical Retelling
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - github

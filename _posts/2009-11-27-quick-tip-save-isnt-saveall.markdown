@@ -1,7 +1,7 @@
 ---
   title:       "Quick Tip - Model::save() isn't Model::saveAll()"
   description: A very small example on when to use Model::save() versus Model::saveAll()
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - model

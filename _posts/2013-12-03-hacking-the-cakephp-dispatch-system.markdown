@@ -2,7 +2,7 @@
   title:       "Hacking the CakePHP Dispatch System"
   date:        2013-12-03 00:13
   description: "Wherein we abuse the CakePHP Disptach cycle to remove the Controllers and Views from our application in favor of smaller, testable units of code. One weird trick, APIs loves this!"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

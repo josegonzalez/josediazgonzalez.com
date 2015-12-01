@@ -1,6 +1,6 @@
 ---
   title: The Chaw - A Wishlist
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - project-management

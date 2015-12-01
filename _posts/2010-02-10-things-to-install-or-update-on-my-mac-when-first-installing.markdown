@@ -1,6 +1,6 @@
 ---
   title: Things to install or update on my mac when first installing
-  category: Installation
+  category:    installation
   tags:
     - development
     - install

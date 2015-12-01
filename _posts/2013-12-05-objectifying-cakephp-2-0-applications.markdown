@@ -2,7 +2,7 @@
   title:       "Objectifying CakePHP 2.0 applications"
   date:        2013-12-05 12:59
   description: "Stop complaining about not being able to use objects in the ORM and use 3.0-like features in your 2.0 application today!"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

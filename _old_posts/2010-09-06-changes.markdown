@@ -1,6 +1,6 @@
 ---
   title: Changes
-  category: Other
+  category:    other
   tags:
     - thoughts
     - life

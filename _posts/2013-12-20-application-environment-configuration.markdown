@@ -2,7 +2,7 @@
   title:       "Application Environment Configuration"
   date:        2013-12-20 13:31
   description: "Specifying application configuration doesn't have to be hard, and here are three ways to do it!"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

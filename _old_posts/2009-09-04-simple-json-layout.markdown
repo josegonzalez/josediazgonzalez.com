@@ -2,7 +2,7 @@
   title:       "Simple JSON Layout"
   date:        2009-09-04 00:00
   description: Extremely simple JSON Layout for your application
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - json

@@ -2,7 +2,7 @@
   title:       "Using Beaver to ship log files to Redis/Logstash"
   date:        2013-01-01 23:34
   description: This post will guide you through a simple Beaver installation.
-  category:    Opschops
+  category:    opschops
   tags:
     - beaver
     - logs

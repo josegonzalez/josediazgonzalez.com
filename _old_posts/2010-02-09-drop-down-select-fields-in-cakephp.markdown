@@ -1,6 +1,6 @@
 ---
   title: Drop-down select fields in CakePHP
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - forms

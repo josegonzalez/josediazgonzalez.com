@@ -2,7 +2,7 @@
   title:              "ResourceHelper"
   date:        2009-09-03 00:00
   description: A general purpose helper to support random functionality that need not be in it's own helper. Has BlueprintCSS support, jQuery ASM HABTM, File displaying, jQuery Error displaying and Google Maps support.
-  category:      CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - helpers

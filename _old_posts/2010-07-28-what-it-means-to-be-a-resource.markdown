@@ -1,6 +1,6 @@
 ---
   title: What it means to be a resource
-  category: Other
+  category:    other
   tags:
     - thoughts
     - life

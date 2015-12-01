@@ -2,7 +2,7 @@
   title:       "Composing your applications from plugins"
   date:        2013-12-08 06:15
   description: "Properly manage your CakePHP application dependencies using Composer, a PHP dependency management tool"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

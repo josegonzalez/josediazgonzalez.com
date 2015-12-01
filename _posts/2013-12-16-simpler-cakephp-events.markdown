@@ -2,7 +2,7 @@
   title:       "Simpler CakePHP Events"
   date:        2013-12-16 18:15
   description: "Making small changes to the event system workflow to enhance your productivity through annotations and simpler dispatching!"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - annotations
     - cakeadvent-2013

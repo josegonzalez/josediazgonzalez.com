@@ -2,7 +2,7 @@
   title:       "Interactive command-line REPL for CakePHP"
   date:        2013-12-04 00:53
   description: "Lets explore different ways in which we could implement an interactive command-line for the purposes of quickly testing code"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

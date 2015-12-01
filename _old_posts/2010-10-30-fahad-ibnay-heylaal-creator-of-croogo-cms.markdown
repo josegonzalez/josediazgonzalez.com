@@ -1,6 +1,6 @@
 ---
   title: Fahad Ibnay Heylaal, creator of Croogo CMS
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - croogo

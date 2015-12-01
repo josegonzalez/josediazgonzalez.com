@@ -2,7 +2,7 @@
   title:       "Trackable Behavior"
   date:        2009-06-15 00:00
   description: Trackable Behavior for CakePHP 1.2/1.3
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - trackable

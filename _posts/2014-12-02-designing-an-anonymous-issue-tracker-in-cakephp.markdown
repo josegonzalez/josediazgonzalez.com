@@ -2,7 +2,7 @@
   title:       "Designing an anonymous issue tracker in CakePHP"
   date:        2014-12-02 16:22
   description: "Part 1 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

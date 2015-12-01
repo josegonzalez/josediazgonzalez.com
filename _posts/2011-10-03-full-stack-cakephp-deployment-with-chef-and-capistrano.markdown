@@ -1,6 +1,6 @@
 ---
   title:       "Introduction to Chef"
-  category:    Opschops
+  category:    opschops
   tags:
     - cakephp
     - capistrano

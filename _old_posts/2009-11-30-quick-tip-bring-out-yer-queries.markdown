@@ -1,7 +1,7 @@
 ---
   title:       "Quick Tip - Bring Out Yer Queries"
   description: Log your queries to find out what CakePHP is doing when it has 9 million blobs or is taking 34234 years to process.
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - github

@@ -1,7 +1,7 @@
 ---
   title:       "Inflect Shell - Inflect the heck out of your word(s)"
   description: CakePHP provides us with a nice little Inflector class. It's quite useful in creating slugs, but can't be used for testing purposes without creating a dummy page.
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - cakeshell

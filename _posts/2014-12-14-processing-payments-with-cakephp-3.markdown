@@ -2,7 +2,7 @@
   title:       "Processing Payments with CakePHP 3 and Omnipay"
   date:        2014-12-14 17:26
   description: "Part 5 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

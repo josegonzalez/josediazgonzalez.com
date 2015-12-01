@@ -1,6 +1,6 @@
 ---
   title: You want access? Well you no can has! - A CakePHP AccessComponent
-  category: CakePHP
+  category:    cakephp
   tags:
     - access
     - authorization

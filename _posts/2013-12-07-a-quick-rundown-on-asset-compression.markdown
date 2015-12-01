@@ -2,7 +2,7 @@
   title:       "A quick rundown on Asset Compression"
   date:        2013-12-07 12:41
   description: "Using the AssetCompress plugin to render concatenated files is a cheap way to get better application performance"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - assets
     - asset_compress

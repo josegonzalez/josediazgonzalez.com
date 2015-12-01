@@ -2,7 +2,7 @@
   title:       "Using View Cells in your CakePHP applications"
   date:        2014-03-20 16:54
   description: "A look forward at writing CakePHP 3.x applications, as well as a throwback to Service classes"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - views

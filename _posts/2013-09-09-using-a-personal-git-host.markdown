@@ -2,7 +2,7 @@
   title:       "Using a personal git host"
   date:        2013-09-09 02:53
   description:
-  category:    Opschops
+  category:    opschops
   tags:
     - digital-ocean
     - git

@@ -2,7 +2,7 @@
   title:       "Content Negotiation with CakePHP"
   date:        2014-07-21 03:03
   description:
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - content negotiation

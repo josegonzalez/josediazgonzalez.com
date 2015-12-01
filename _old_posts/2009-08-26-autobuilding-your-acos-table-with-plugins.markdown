@@ -2,7 +2,7 @@
   title:       "Auto-Building your ACOs table with Plugins"
   date:        2009-08-26 00:00
   description: Snippet of code that can automatically build CakePHP ACL ACOs for plugins
-  category:      CakePHP
+  category:    cakephp
   tags:
     - acos
     - authorization

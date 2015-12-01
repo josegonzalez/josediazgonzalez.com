@@ -2,7 +2,7 @@
   title:       "Customizing Bake in CakePHP 3"
   date:        2014-12-03 16:22
   description: "Part 2 of 7 in a series of posts designed to teach you how to use CakePHP 3 effectively"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2014
     - cakephp

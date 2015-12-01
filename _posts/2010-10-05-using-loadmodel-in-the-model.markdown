@@ -1,6 +1,6 @@
 ---
   title: Using loadModel() in the Model
-  category: CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - cakephp-1.3

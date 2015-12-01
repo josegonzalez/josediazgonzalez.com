@@ -1,6 +1,6 @@
 ---
   title:       "Templates, Attributes, Resources, and Dependency Management"
-  category:    Opschops
+  category:    opschops
   tags:
     - cakephp
     - chef

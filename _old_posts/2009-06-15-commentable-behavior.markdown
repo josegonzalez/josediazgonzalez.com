@@ -2,7 +2,7 @@
   title:       "Commentable Behavior"
   date:        2009-06-15 00:00
   description: Commentable Behavior for CakePHP 1.2
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - commentable

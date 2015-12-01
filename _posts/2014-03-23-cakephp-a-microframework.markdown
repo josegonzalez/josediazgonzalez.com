@@ -2,7 +2,7 @@
   title:       "CakePHP as a Microframework"
   date:        2014-03-23 20:37
   description: "Using CakePHP as a library to build applications microframework-style"
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - dispatcher

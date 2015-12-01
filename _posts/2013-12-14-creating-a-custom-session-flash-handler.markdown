@@ -2,7 +2,7 @@
   title:       "Creating a custom session flash handler"
   date:        2013-12-14 15:45
   description: "Using class aliasing is a powerful way to inject custom logic into the CakePHP core without actually rewriting libraries in the CakePHP core."
-  category:    CakePHP
+  category:    cakephp
   tags:
     - aliasing
     - cakeadvent-2013

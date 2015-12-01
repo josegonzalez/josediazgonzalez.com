@@ -2,7 +2,7 @@
   title:       "Adding a Helper/Behavior/Component on the fly"
   date:        2009-08-14 00:00
   description: A short tutorial on adding behaviors/components/helpers to your application in a dynamic fashion
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - behaviors

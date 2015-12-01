@@ -1,6 +1,6 @@
 ---
   title: Sanction - An alternative to the CakePHP AuthComponent
-  category: Tutorials
+  category:    tutorials
   tags:
   description: A tutorial for Sanction Plugin, an authorization alternative to AuthComponent.
   comments:    true
@@ -9,4 +9,4 @@
   layout:      post
 ---
 
-I wrote a 
+I wrote a

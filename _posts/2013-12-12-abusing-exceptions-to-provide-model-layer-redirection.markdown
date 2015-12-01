@@ -2,7 +2,7 @@
   title:       "Abusing Exceptions to provide model-layer redirection"
   date:        2013-12-12 03:01
   description: "Fat models and skinny controllers are about more than data handling. You should also concern yourself with Error state handling and how to bubble up exceptions."
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakeadvent-2013
     - cakephp

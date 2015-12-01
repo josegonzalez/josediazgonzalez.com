@@ -1,6 +1,6 @@
 ---
   title:       "Chef Recipes"
-  category:    Opschops
+  category:    opschops
   tags:
     - cakephp
     - chef

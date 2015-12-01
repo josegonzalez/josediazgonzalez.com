@@ -1,6 +1,6 @@
 ---
   title: Embedding Custom Finds in Behaviors
-  category: CakePHP
+  category:    cakephp
   tags:
     - behaviors
     - cakephp-1.3

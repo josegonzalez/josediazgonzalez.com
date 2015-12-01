@@ -2,7 +2,7 @@
   title:       "Yahoo Maps-based Geocoding"
   date:        2009-06-14 00:00
   description: Very crude integration of Yahoo Maps and CakePHP using CURL
-  category:    CakePHP
+  category:    cakephp
   tags:
     - cakephp
     - model

@@ -1,6 +1,6 @@
 ---
-  title: The Daily Dev Log - 1
-  category: Dev Log
+  title:       The Daily Dev Log - 1
+  category:    dev log
   tags:
     - daily-dev-log
     - history.js
