@@ -69,7 +69,7 @@ source:             ./
 # Changes the directory where Jekyll will write files to
 destination:        _site
 # Changes the directory where Jekyll will look for plugins
-plugins:            _plugins
+plugins_dir:            _plugins
 
 # Inclusion of recent posts in sidebar
 recent_posts:       false
@@ -81,6 +81,7 @@ lsi:                false
 markdown: kramdown
 kramdown:
   input: GFM
+highlighter: false
 # Controls the URLs that posts are generated with.
 permalink:          /:year/:month/:day/:title/
 # A list of directories and files to exclude from the conversion
@@ -121,7 +122,7 @@ sharing:            false
 # Enable comments
 comments:           true
 # Default category for new posts
-category:           Code
+category:           code
 # Default format for new posts
 format:             markdown
 # Turn on redirection

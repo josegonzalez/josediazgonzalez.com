@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
 group :development do
-    gem "jekyll",     "~> 2.5.3"
-    gem "multi_json", "~> 1.10.1"
-    gem "nokogiri",   "~> 1.6.6.2"
+  gem "jekyll",     "~> 3.0.1"
+  gem "multi_json", "~> 1.11.2"
+  gem "nokogiri",   "~> 1.6.7"
 end
 
-gem "sinatra",        "~> 1.4.5"
+gem "sinatra",        "~> 1.4.6"

@@ -3,7 +3,7 @@ all: remove-cache generate-data build
 
 .PHONY: build
 build:
-	jekyll build
+	bundle exec jekyll build
 
 .PHONY: remove-cache
 remove-cache:
