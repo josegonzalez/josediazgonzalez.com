@@ -105,8 +105,8 @@ $this->set('_serialize', 'posts');
 Next, we will define a transformer class. The namespace of each transformer class is interpolated based upon the current request path like so:
 
 ```php
-# if you are missing any param, assume you don't
-# need that section in the class namespace
+// if you are missing any param, assume you don't
+// need that section in the class namespace
 $path = array_filter([
     'App',
     'Transformer',
