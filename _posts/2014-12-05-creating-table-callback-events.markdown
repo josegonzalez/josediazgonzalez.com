@@ -138,7 +138,7 @@ A lot of new code. Lets disect this a bit:
 
 At this point, you'll want to regenerate your `src/Template/Issues/view.ctp` file in order to add the `webhook_url` field to test. You can do so via the following command:
 
-```bash
+```shell
 bin/cake bake view issues --force
 ```
 

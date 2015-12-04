@@ -48,7 +48,7 @@ The CrudView plugin is actually one of the more difficult plugins to use, owing 
 
 To start, you'll want to install the bugger:
 
-```bash
+```shell
 composer require friendsofcake/crud-view:dev-master
 ```
 
