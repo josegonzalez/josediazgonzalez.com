@@ -98,6 +98,8 @@ class AppController extends Controller
 
 That's it! We now have automatic view scaffolding for every controller that inherits from the `AppController`, *as well as* all the yummy api stuff the Crud plugin gives us by default.
 
+![Crud View Admin](/images/2015/03/admin.png)
+
 ### Hiding Sidebar Entries
 
 CrudView is only as smart as you configure it to be. By default, it will show *all* tables in the sidebar and link to their assumed administrative panels. I personally prefer not to show join tables, or anything related to database migrations, and as such my `AppController::beforeFilter` looks something like this:
@@ -115,20 +117,24 @@ public function beforeFilter(Event $event)
 }
 ```
 
+![Crud View Admin](/images/2015/03/limit-sidebar.png)
+
 ### Showing specific fields for specific actions
 
-On my index actions for Categories and Tags, I'd like to hide most fields and just show the `id` and `name`:
+On my index actions for Categories and Tags, I'd like to hide most fields and just show the `name` field:
 
 ```php
 public function beforeFilter(Event $event)
     if ($this->request->action == 'index') {
-        $this->Crud->action()->config('scaffold.fields', $scaffoldFields);
+        $this->Crud->action()->config('scaffold.fields', ['name']);
     }
     return parent::beforeFilter($event);
 }
 ```
 
-Of note, you can also set these config options in specific actions, the same as you would to customize the crud plugin, but sometimes you can avoid that with very trivial hacks. I wouldn't do the above if there was 10 lines of configuration for the IndexAction, for instance.
+![Showing specific fields](/images/2015/03/show-specific-fields.png)
+
+> Of note, you can also set these config options in specific actions, the same as you would to customize the crud plugin, but sometimes you can avoid that with very trivial hacks. I wouldn't do the above if there was 10 lines of configuration for the IndexAction, for instance.
 
 ### Exposing bulk actions
 
@@ -176,6 +182,8 @@ public function setStatus()
     return $this->Crud->execute();
 }
 ```
+
+![Showing specific fields](/images/2015/03/bulk-actions.png)
 
 Obviously the logic here can get incredibly complex, and you are welcome to integrate both Crud and CrudView to best express these sorts of experiences for your users.
 
