@@ -98,7 +98,7 @@ This will install our wrapper `TransformerView` class which does the heavy lifti
 The simplest setup will be to set the current `Controller::$viewClass` to the `TransformerView` and set your data for serialization:
 
 ```php
-$this->viewClass = 'FractalEntities.Transformer';
+$this->viewBuilder()->className('FractalEntities.Transformer')
 $this->set('_serialize', 'posts');
 ```
 

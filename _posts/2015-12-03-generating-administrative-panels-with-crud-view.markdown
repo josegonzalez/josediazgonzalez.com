@@ -19,9 +19,10 @@ Since time immemorial - okay, 2009 - it has been possible to set a custom view f
 
 ```php
 // Don't try this, there isn't an ExcelView in the core :P
+$this->viewBuilder()->className('ExcelView')
 $this->viewClass = 'ExcelView';
 
-// Who remembers this?
+// Who remembers this from 1.x?
 $this->viewClass = 'MediaView';
 ```
 
@@ -75,7 +76,7 @@ class AppController extends Controller
         $this->loadComponent('Flash');
 
         // setup the viewclass
-        $this->viewClass = 'CrudView\View\CrudView';
+        $this->viewBuilder()->className('CrudView\View\CrudView')
         $this->loadComponent('Crud.Crud', [
             'actions' => [
                 'Crud.Index',
