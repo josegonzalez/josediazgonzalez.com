@@ -1,6 +1,6 @@
 ---
   title:       "Uploading files and images with CakePHP 3"
-  date:        2015-12-04 12:00
+  date:        2015-12-05 12:00
   description: "Silly hacks you can use in your cakephp applications"
   category:    cakephp
   tags:
@@ -9,6 +9,8 @@
     - upload
     - files
     - images
+  redirects:
+    - /2015/12/04/uploading-files-and-images/
   comments:    true
   sharing:     true
   published:   true
