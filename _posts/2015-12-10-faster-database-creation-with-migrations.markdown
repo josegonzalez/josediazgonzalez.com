@@ -17,7 +17,7 @@
 
 > I posted about this last year, but since it has landed in the official plugin, I figured I may as well cover it again :)
 
-For developers coming from other RAD frameworks such as Ruby on Rails, you may be familiar with the ability to create table migrations. In the past, there were multiple migration plugins for CakePHP, and as of the 3.0 release, we finally have an official [cakephp/migrations](https://github.com/cakephp/migrations) plugin. Huge shoutout to [Yves Pikel](http://www.havokinspiration.fr/en/) ([@HavokInspiration](https://github.com/HavokInspiration)) for pushing the plugin forward.
+For developers coming from other RAD frameworks such as Ruby on Rails, you may be familiar with the ability to create table migrations. In the past, there were multiple migration plugins for CakePHP, and as of the 3.0 release, we finally have an official [cakephp/migrations](https://github.com/cakephp/migrations) plugin. Huge shoutout to [Yves Piquel](http://www.havokinspiration.fr/en/) ([@HavokInspiration](https://github.com/HavokInspiration)) for pushing the plugin forward.
 
 Here is a simple migration class:
 
