@@ -6,8 +6,7 @@
   tags:
     - cakeadvent-2015
     - cakephp
-    - table
-    - softdelete
+    - magic-methods
   comments:    true
   sharing:     true
   published:   true
