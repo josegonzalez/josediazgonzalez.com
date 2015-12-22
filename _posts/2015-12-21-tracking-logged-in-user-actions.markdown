@@ -15,6 +15,8 @@
   series:      CakeAdvent-2015
 ---
 
+> Note: for the purposes of this post, I chose an easy to understand plugin, but I recommend using the [footprint](https://github.com/usemuffin/footprint) plugin as it supports many more features than the one I cover here.
+
 This is a pretty straightforward post. In CakePHP 3, we've removed a lot of the ability to access the session except where there is a `Request` object. Static access to `CakeSession` is gone, and it's not coming back, so please stop asking for it. And stop using `$_SESSION`, that breaks the cake.
 
 One thing this affects is the ability to see user session data in the Model layer. Typically you want to track _who_ performed an action *when* the action happens. It's quite nice to hide this in your model layer, as opposed to mangling data when it's going into an entity.
