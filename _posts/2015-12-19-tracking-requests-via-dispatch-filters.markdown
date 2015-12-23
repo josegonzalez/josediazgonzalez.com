@@ -77,8 +77,8 @@ class StatsdFilter extends DispatcherFilter
 
         // Graphite uses folders for metrics
         // We dasherize the names to keep all metrics sane-looking
-        $controller = Inflector::dasherize($response->params['controller'])
-        $action = Inflector::dasherize($response->params['action'])
+        $controller = Inflector::dasherize($response->params['controller']);
+        $action = Inflector::dasherize($response->params['action']);
         $statusCode = $response->statusCode();
 
         // track controller/action pairs
