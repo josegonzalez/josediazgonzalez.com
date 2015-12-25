@@ -53,4 +53,4 @@ Note that not every tutorial will use the above tools, and you are free to use a
 
 ## How do I get started?
 
-I'll be posting new posts in the series each day of the Advent Calendar, and tweeting about it as [@savant](https://twitter.com/savant). If you'd like to subscribe to this blog, you may follow the [rss feed here](http://josediazgonzalez.com/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow (if you're reading this on the 1st of December!) for more delicious content.
+I'll be posting new posts in the series each day of the Advent Calendar, and tweeting about it as [@savant](https://twitter.com/savant). If you'd like to subscribe to this blog, you may follow the [rss feed here](/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow (if you're reading this on the 1st of December!) for more delicious content.

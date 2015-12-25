@@ -17,7 +17,7 @@
   series:      CakeAdvent-2013
 ---
 
-> This tutorial assumes you are using the FriendsOfCake/app-template project with Composer. Please see [this post for more information](http://josediazgonzalez.com/2013/12/08/composing-your-applications-from-plugins/).
+> This tutorial assumes you are using the FriendsOfCake/app-template project with Composer. Please see [this post for more information](/2013/12/08/composing-your-applications-from-plugins/).
 
 There is always a lot of boilerplate involved in creating a proper event listening setup. Martin Bean [wrote a small tutorial](http://martinbean.co.uk/blog/2013/11/22/getting-to-grips-with-cakephps-events-system/) on it's usage, and I'd like to propose a few small changes:
 

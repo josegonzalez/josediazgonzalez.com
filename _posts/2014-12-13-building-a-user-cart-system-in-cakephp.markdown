@@ -328,6 +328,6 @@ Your homework today is as follows:
 - Add a `total` to your cart page.
 - Require that user’s be authenticated before adding/removing/viewing their cart
 
-Be sure to follow along via twitter on [@savant](https://twitter.com/savant). If you’d like to subscribe to this blog, you may follow the [rss feed here](http://josediazgonzalez.com/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow for more delicious content.
+Be sure to follow along via twitter on [@savant](https://twitter.com/savant). If you’d like to subscribe to this blog, you may follow the [rss feed here](/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow for more delicious content.
 
 

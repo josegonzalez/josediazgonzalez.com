@@ -108,7 +108,7 @@ There are many good examples of mocking in the [Crud component](https://github.c
 
 ## Run tests automatically
 
-Use [TravisCI](http://travis-ci.com/) to automatically run tests. I detailed this in a [blog post for plugins earlier](http://josediazgonzalez.com/2013/12/01/testing-your-cakephp-plugins-with-travis/), but you should definitely consider doing it for your application as well.
+Use [TravisCI](http://travis-ci.com/) to automatically run tests. I detailed this in a [blog post for plugins earlier](/2013/12/01/testing-your-cakephp-plugins-with-travis/), but you should definitely consider doing it for your application as well.
 
 ## Use githooks for checking syntax
 

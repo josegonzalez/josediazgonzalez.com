@@ -173,6 +173,6 @@ While our cart is getting there - only two more posts to go! - we still need to 
 - Add a *Successful Payment* page that we redirect to once payment has been made.
 - Add an Order status page, as well as a page to view all of a user’s orders.
 
-Be sure to follow along via twitter on [@savant](https://twitter.com/savant). If you’d like to subscribe to this blog, you may follow the [rss feed here](http://josediazgonzalez.com/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow for more delicious content.
+Be sure to follow along via twitter on [@savant](https://twitter.com/savant). If you’d like to subscribe to this blog, you may follow the [rss feed here](/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow for more delicious content.
 
 

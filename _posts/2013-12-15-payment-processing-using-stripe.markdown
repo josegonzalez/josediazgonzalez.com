@@ -15,7 +15,7 @@
   series:      CakeAdvent-2013
 ---
 
-> This tutorial assumes you are using the FriendsOfCake/app-template project with Composer. Please see [this post for more information](http://josediazgonzalez.com/2013/12/08/composing-your-applications-from-plugins/).
+> This tutorial assumes you are using the FriendsOfCake/app-template project with Composer. Please see [this post for more information](/2013/12/08/composing-your-applications-from-plugins/).
 
 One thing lots of developers struggle with is collecting payment information. In recent years, there have been a few companies that have put out excellent apis, simplifying this process. Today we'll use Stripe to setup payment processing.
 

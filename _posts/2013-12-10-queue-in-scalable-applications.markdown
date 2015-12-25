@@ -15,7 +15,7 @@
   series:      CakeAdvent-2013
 ---
 
-> This tutorial assumes you are using the FriendsOfCake/app-template project with Composer. Please see [this post for more information](http://josediazgonzalez.com/2013/12/08/composing-your-applications-from-plugins/).
+> This tutorial assumes you are using the FriendsOfCake/app-template project with Composer. Please see [this post for more information](/2013/12/08/composing-your-applications-from-plugins/).
 
 One of the things I find developers doing - CakePHP and otherwise - is performing longer tasks when the user clicks a button. For example, in the application I work on, our main source of income depends upon inserting a record into a database table that is rapidly growing larger and slower. Boo. Our application could otherwise run off of a readonly database, and if we have to migrate our primary database, we are SOL.
 

@@ -26,7 +26,7 @@
 >
 > I've already corrected yesterdays post, so this change may not be necessary for some users.
 
-CakePHP has always had the Bake shell command - you saw it in action [yesterday](http://josediazgonzalez.com/2014/12/02/designing-a-store-application-in-cakephp/) - but it's always been a bit difficult to work with. You would need to escape your actual php code, making it difficult to actually think about the contents of the template. Thanks to some excellent work by [Andy Dawson](http://ad7six.com/), we now have quite a bit of flexibility in writing bake templates.
+CakePHP has always had the Bake shell command - you saw it in action [yesterday](/2014/12/02/designing-a-store-application-in-cakephp/) - but it's always been a bit difficult to work with. You would need to escape your actual php code, making it difficult to actually think about the contents of the template. Thanks to some excellent work by [Andy Dawson](http://ad7six.com/), we now have quite a bit of flexibility in writing bake templates.
 
 In CakePHP, we can use Helpers and elements in our bake templates. As well, CakePHP uses ASP-style tags - `<%`, `<%=`, and `%>` - to execute php code. This sounds weird, but here is an example:
 

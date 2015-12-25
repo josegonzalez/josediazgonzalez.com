@@ -27,7 +27,7 @@ You can also load the plugin's bootstrap or routes:
 bin/cake plugin load --bootstrap --routes Josegonzalez/Blog
 ```
 
-Most people installed CakePHP 3 using the [`cakephp/app` project template](http://josediazgonzalez.com/2015/12/09/customizing-your-app-template/), so you have access to both `bake` and `migrations`:
+Most people installed CakePHP 3 using the [`cakephp/app` project template](/2015/12/09/customizing-your-app-template/), so you have access to both `bake` and `migrations`:
 
 ```shell
 # migrate all the things!

@@ -95,5 +95,5 @@ You can actually do a few cool things with email - that I’ve done in other Cak
 - Make a PostPurchaseEmail class that can take all it’s configuration within the constructor. This way you can simply instantiate that particular email class and let it worry about how it should configure the email.
 - Send both an html and a text representation of the same email. [Mailchimp provides some templates](http://templates.mailchimp.com/) you can model your email layouts after to get wider email client support.
 
-Be sure to follow along via twitter on [@savant](https://twitter.com/savant). If you’d like to subscribe to this blog, you may follow the [rss feed here](http://josediazgonzalez.com/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow for more delicious content.
+Be sure to follow along via twitter on [@savant](https://twitter.com/savant). If you’d like to subscribe to this blog, you may follow the [rss feed here](/atom.xml). Also, all posts in the series will be conveniently linked on the sidebar of every post in the 2014 CakeAdvent Calendar. Come back tomorrow for more delicious content.
 
