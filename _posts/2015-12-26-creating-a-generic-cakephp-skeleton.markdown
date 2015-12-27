@@ -19,7 +19,7 @@
 
 ## "I've got a lot of problems with you people"
 
-A while back [^1], I <s>stole</s> built a [simple image upload tool](https://devcenter.heroku.com/articles/paperclip-s3) for our [marketing team](https://seatgeek.com/sgteam). The reason I built this was simple; I wanted to stop the marketing team from uploading large file assets to the main repository [^2], thereby bloating repository size. It's worked well enough, but has lately shown it's age:
+A while back [^1], I <s>stole</s> built a [simple image upload tool](https://devcenter.heroku.com/articles/paperclip-s3) for our [marketing team](https://seatgeek.com/sgteam). The reason I built this was simple; I wanted to stop the marketing team from uploading large file assets to the main repository [^2], thereby bloating repository size. Plus they get their assets out as soon as they need them, instead of waiting for some silly dev to press the deploy button. It's worked well enough, but has lately shown it's age:
 
 - Thumbnails are processed in a web request, slowing down large file uploads. We should *always* process any files in the background, to avoid slowing down the user's interaction with the site.
 - Thumbnails are created *regardless* of the file type. Uploading a large gif? Yeah that won't work.
@@ -60,7 +60,7 @@ Be sure to follow along via twitter on [@savant](https://twitter.com/savant). If
 
 [^1]: November 12, 2013 to be precise.
 
-[^2]: Our development staff is no better, the repository is still a lovely 300mb with images, binary blobs, etc. :)
+[^2]: Our development staff is no better - and in fact worse as they should know better. The repository is still a lovely 300mb with images, binary blobs, etc. :)
 
 [^3]: By the way, CloudApp is great. Our entire company uses it and I don't understand why anyone wouldn't. They even have a free tier, which is great of those times when I totally forget to renew my account...
 
