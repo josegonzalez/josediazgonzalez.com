@@ -23,7 +23,7 @@ I recently installed [Gitlab](http://gitlab.org/) on my [Digital Ocean](https://
 - Wanted to host my side-projects that I have been neglecting to version control
 - Always liked the idea of managing my own project management tool
 
-Luckily, Digital Ocean [wrote a post](https://www.digitalocean.com/community/articles/how-to-set-up-gitlab-as-your-very-own-private-github-clone) on setting up Gitlab. It's quite straightforward to install<sup>[1]</sup>, and once it was up and running, it was trivial to fall into my normal GitHub usage flow.
+Luckily, Digital Ocean [wrote a post](https://www.digitalocean.com/community/articles/how-to-set-up-gitlab-as-your-very-own-private-github-clone) on setting up Gitlab. It's quite straightforward to install [^1], and once it was up and running, it was trivial to fall into my normal GitHub usage flow.
 
 I have a tendency to start working on side-projects and never complete them, or sometimes even forget to create a git repository for them. It's very easy for me to fall into this pattern for multiple projects, always thinking to myself that I didn't want others to use it until it was in a working state. I also believed that certain things were private - some side-project where I create the next million dollar idea - and as such neglected basic software engineering principles.
 
@@ -44,4 +44,6 @@ Needless to say, I'm quite happy with my current setup. It allows me to continue
 Shameless Plug: Sign up for <a href="https://www.digitalocean.com/?refcode=fe06b043a083">Digital Ocean</a> using my <a href="https://www.digitalocean.com/?refcode=fe06b043a083">referral link</a> so I can get some money out of this :)
 {% endblockquote %}
 
-[1]: Like they mention, you may need some amount of swap. I was on a 1GB droplet, so I added a gigabyte of swap. All was well after this.
+---
+
+[^1]: Like they mention, you may need some amount of swap. I was on a 1GB droplet, so I added a gigabyte of swap. All was well after this.

@@ -14,7 +14,7 @@
   series:      CakeAdvent-2015
 ---
 
-Since upgrading to CakePHP 3, you may have noticed a few changes. Yes, it's faster, better for your cholesterol, and likely good for your Vitamin D intake<sup>[1]</sup>. However, what I'm referring to is the nicer debugging output.
+Since upgrading to CakePHP 3, you may have noticed a few changes. Yes, it's faster, better for your cholesterol, and likely good for your Vitamin D intake [^1]. However, what I'm referring to is the nicer debugging output.
 
 Typically when you debug an object in PHP, you use something like `print_r()` or `var_dump()`. With scalar types - `int`, `float`, `string` and `bool` - you'll get a pretty simple representation:
 
@@ -87,10 +87,10 @@ There are a few places where `__debugInfo()` has been useful:
 - `Cell` objects will output the environment in which they were created (view layer as well as the current request/response objects).
 - `Entities` will output a plethora of data regarding the current state of the entity. Useful for seeing if the entity is new or has been changed.
 
-You're also quite welcome to add your own `__debugInfo()` methods to custom classes. For those of you who are curious, I definitely recommend looking at the list of [PHP Magic Methods](https://secure.php.net/manual/en/language.oop5.magic.php), which might just be handy<sup>[2]</sup> in a pinch!
+You're also quite welcome to add your own `__debugInfo()` methods to custom classes. For those of you who are curious, I definitely recommend looking at the list of [PHP Magic Methods](https://secure.php.net/manual/en/language.oop5.magic.php), which might just be handy [^2] in a pinch!
 
 ---
 
-[1]: If you work less because you are working smarter, you are more likely to go outside and get some Sun. Remember to do that every so often!
+[^1]: If you work less because you are working smarter, you are more likely to go outside and get some Sun. Remember to do that every so often!
 
-[2]: My current favorite magic method is the `__invoke()` method :)
+[^2]: My current favorite magic method is the `__invoke()` method :)

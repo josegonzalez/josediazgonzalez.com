@@ -28,7 +28,7 @@ The reality of the matter is that their developers write in a subset of PHP - no
 
 The cool part about this is that PHP was with them until late 2009, and even in late 2010 they still had some [raw PHP in production](https://developers.facebook.com/blog/post/2010/02/02/hiphop-for-php--move-fast/). Not bad for a cat-photo-sharing site.
 
-No one ever says that deploying JRuby code is actually deploying Java code, yet that is what is happening here with Facebook's HipHop. The underlying Ruby interpreter was replaced with a JIT compiler and just so happens to be eleventy-times faster[1]. Same with PHP and HipHop. The codebase is the same, and can probably run on a commodity server, but the deployed code is quite a bit different.
+No one ever says that deploying JRuby code is actually deploying Java code, yet that is what is happening here with Facebook's HipHop. The underlying Ruby interpreter was replaced with a JIT compiler and just so happens to be eleventy-times faster[^1]. Same with PHP and HipHop. The codebase is the same, and can probably run on a commodity server, but the deployed code is quite a bit different.
 
 Most of your cat-photo sharing sites will never need to be rewritten to handle the sort of load they do. And it doesn't matter. Facebook developers will continue to write PHP code because it is easy to read and understand, and therefore they do not need to teach an already brilliant developer how to use slots, self, and general metaprogramming in Python. They can take one who is great at writing Java code and throw him at a PHP codebase and he'll be fine. Same with C++, Ruby, Objective-C, whatever. All those developers will be fine in PHP, and will be writing code earlier than if there was a lengthy training period.
 
@@ -109,6 +109,6 @@ Write your web applications in whatever language you find useful, but when your 
 
 PHP isn't great, and it's not the best at most things, but it's paying the fucking bills.
 
-## Notes
+---
 
-[1] Eleventy isn't a number. JRuby is actually Umpteen times faster.
+[^1] Eleventy isn't a number. JRuby is actually Umpteen times faster.
