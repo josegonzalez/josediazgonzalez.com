@@ -99,7 +99,7 @@ class AppController extends Controller
 
 That's it! We now have automatic view scaffolding for every controller that inherits from the `AppController`, *as well as* all the yummy api stuff the Crud plugin gives us by default.
 
-![Crud View Admin](/images/2015/03/admin.png)
+![Crud View Admin](/images/2015/12/03/admin.png)
 
 ### Hiding Sidebar Entries
 
@@ -118,7 +118,7 @@ public function beforeFilter(Event $event)
 }
 ```
 
-![Crud View Admin](/images/2015/03/limit-sidebar.png)
+![Crud View Admin](/images/2015/12/03/limit-sidebar.png)
 
 ### Showing specific fields for specific actions
 
@@ -133,7 +133,7 @@ public function beforeFilter(Event $event)
 }
 ```
 
-![Showing specific fields](/images/2015/03/show-specific-fields.png)
+![Showing specific fields](/images/2015/12/03/show-specific-fields.png)
 
 > Of note, you can also set these config options in specific actions, the same as you would to customize the crud plugin, but sometimes you can avoid that with very trivial hacks. I wouldn't do the above if there was 10 lines of configuration for the IndexAction, for instance.
 
@@ -184,7 +184,7 @@ public function setStatus()
 }
 ```
 
-![Showing specific fields](/images/2015/03/bulk-actions.png)
+![Showing specific fields](/images/2015/12/03/bulk-actions.png)
 
 Obviously the logic here can get incredibly complex, and you are welcome to integrate both Crud and CrudView to best express these sorts of experiences for your users.
 
