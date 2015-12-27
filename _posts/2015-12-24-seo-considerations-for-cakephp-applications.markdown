@@ -42,7 +42,7 @@ public function view($id)
 
 Not too bad. One thing I like to do is use annotations for stuff, so I wrote an annotation parser for just the above:
 
-```
+```php
 public function initialize()
 {
   $this->loadComponent('SeoAnnotation', [
