@@ -72,6 +72,13 @@ pre code {
     li p {
       margin-bottom: 0;
     }
+    p {
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+      }
+    }
     .gist table {
       margin-bottom: 0;
     }
