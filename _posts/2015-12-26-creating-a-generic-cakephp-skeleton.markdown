@@ -60,7 +60,7 @@ Be sure to follow along via twitter on [@savant](https://twitter.com/savant). If
 
 [^1]: November 12, 2013 to be precise.
 
-[^2]: Our development staff is no better - and in fact worse as they should know better. The repository is still a lovely 300mb with images, binary blobs, etc. :)
+[^2]: Our development staff is no better - and in fact worse as they should know better. Pesky devs, if only I had a good alternative for them...
 
 [^3]: By the way, CloudApp is great. Our entire company uses it and I don't understand why anyone wouldn't. They even have a free tier, which is great of those times when I totally forget to renew my account...
 
