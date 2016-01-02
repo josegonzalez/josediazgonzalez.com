@@ -433,11 +433,20 @@ pre code {
     .icon-cakephp3 {
       @include project-icon(#1ca0a5);
     }
+    .icon-chef {
+      @include project-icon(#f18b21);
+    }
+    .icon-dock {
+      @include project-icon(#22b8eb);
+    }
     .icon-java {
       @include project-icon(#edd243);
     }
     .icon-go {
       @include project-icon(#63a1d9);
+    }
+    .icon-homebrew {
+      @include project-icon(#884f1d);
     }
     .icon-php {
       @include project-icon(#6a68a7);

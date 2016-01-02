@@ -10,20 +10,142 @@ import urllib2
 CURRENT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PREFIXES = {
     'cake': ['cakephp'],
-    'java': ['java'],
+    'ch': ['chef'],
+    'dock': ['docker'],
     'go': ['go', 'golang'],
+    'hb': ['homebrew'],
+    'java': ['java'],
     'php': ['php'],
     'py': ['python'],
-    'rb': ['chef', 'ruby'],
+    'rb': ['ruby'],
     'sh': ['bash', 'dokku', 'shell'],
 }
 PREFIX_MAP = {
     'bash': 'shell',
-    'chef': 'ruby',
     'dokku': 'shell',
+    'docker': 'dock',
     'golang': 'go',
 }
-USERNAME = 'josegonzalez'
+PRIMARY_USERNAME = 'josegonzalez'
+USERNAMES = ['josegonzalez', 'dokku', 'python-beaver', 'seatgeek', 'homebrew', 'opschops', 'FriendsOfCake']
+FORCE_SKIP = [
+    'dokku/dokku-couchdb',
+    'dokku/dokku-daemon',
+    'dokku/dokku-graphite-grafana',
+    'dokku/dokku-http-auth',
+    'dokku/dokku-maintenance',
+    'dokku/dokku-nats',
+    'dokku/dokku-redirect',
+    'dokku/dokku-service-tests',
+    'dokku/smoke-test-plugin',
+
+    'FriendsOfCake/Authenticate',
+    'FriendsOfCake/Authorize',
+    'FriendsOfCake/awesome-cakephp',
+    'FriendsOfCake/blog',
+    'FriendsOfCake/bootstrap-ui',
+    'FriendsOfCake/builtwithcake',
+    'FriendsOfCake/CakePdf',
+    'FriendsOfCake/cakephp-test-utilities',
+    'FriendsOfCake/crud-demo-app',
+    'FriendsOfCake/FriendsOfCake.github.io',
+    'FriendsOfCake/process-manager',
+    'FriendsOfCake/process-mq',
+    'FriendsOfCake/vagrant-ansible',
+
+    'josegonzalez/dokku-compose-app',
+    'josegonzalez/dokku-test-hellodjango',
+    'Homebrew/BrewTestBotBrewfiles',
+    'Homebrew/homebrew',
+    'Homebrew/homebrew-aliases',
+    'Homebrew/homebrew-apache',
+    'Homebrew/homebrew-binary',
+    'Homebrew/homebrew-boneyard',
+    'Homebrew/homebrew-bundle',
+    'Homebrew/homebrew-command-not-found',
+    'Homebrew/homebrew-completions',
+    'Homebrew/homebrew-dev-tools',
+    'Homebrew/homebrew-devel-only',
+    'Homebrew/homebrew-dupes',
+    'Homebrew/homebrew-emacs',
+    'Homebrew/homebrew-fuse',
+    'Homebrew/homebrew-games',
+    'Homebrew/homebrew-head-only',
+    'Homebrew/homebrew-nginx',
+    'Homebrew/homebrew-python',
+    'Homebrew/homebrew-science',
+    'Homebrew/homebrew-services',
+    'Homebrew/homebrew-tex',
+    'Homebrew/homebrew-versions',
+    'Homebrew/homebrew-versions-unsupported',
+    'Homebrew/homebrew-x11',
+    'Homebrew/homebrew.github.io',
+    'Homebrew/install',
+    'Homebrew/linuxbrew',
+    'Homebrew/patches',
+    'Homebrew/tweetbrew',
+
+    'seatgeek/android-PlacesAutocompleteTextView',
+    'seatgeek/api-intro-presentation',
+    'seatgeek/api-support',
+    'seatgeek/businesstime',
+    'seatgeek/circus-logstash',
+    'seatgeek/conductor',
+    'seatgeek/dev-challenge-v1',
+    'seatgeek/eslint-config-seatgeek-react-standard',
+    'seatgeek/eslint-config-seatgeek-standard',
+    'seatgeek/geocoder-java',
+    'seatgeek/makesure',
+    'seatgeek/react-infinite',
+    'seatgeek/react-slider',
+    'seatgeek/seatgl',
+    'seatgeek/SGAPI',
+    'seatgeek/sgcli',
+    'seatgeek/SGHTTPRequest',
+    'seatgeek/SGImageCache',
+    'seatgeek/sixpack',
+    'seatgeek/sixpack-flask',
+    'seatgeek/sixpack-ios',
+    'seatgeek/sixpack-java',
+    'seatgeek/sixpack-js',
+    'seatgeek/sixpack-php',
+    'seatgeek/sixpack-py',
+    'seatgeek/sixpack-rb',
+    'seatgeek/slack-webhooks',
+    'seatgeek/soulmate',
+    'seatgeek/statsd_rb',
+]
+WHITELISTED = {
+    'dokku/dokku': 'shell',
+    'python-beaver/python-beaver': 'python',
+    'dokku/dokku-copy-files-to-image': 'shell',
+    'dokku/dokku-elasticsearch': 'shell',
+    'dokku/dokku-mariadb': 'shell',
+    'dokku/dokku-memcached': 'shell',
+    'dokku/dokku-mongo': 'shell',
+    'dokku/dokku-mysql': 'shell',
+    'dokku/dokku-postgres': 'shell',
+    'dokku/dokku-rabbitmq': 'shell',
+    'dokku/dokku-redis': 'shell',
+    'dokku/dokku-rethinkdb': 'shell',
+    'Homebrew/homebrew-php': 'homebrew',
+    'opschops/amqp-dispatcher': 'python',
+    'seatgeek/bash-aptfile': 'shell',
+    'seatgeek/build-artifacts': 'php',
+    'seatgeek/cronq': 'python',
+    'seatgeek/djjob': 'php',
+    'seatgeek/fuzzywuzzy': 'python',
+    'seatgeek/graphite-pager': 'python',
+    'seatgeek/hell': 'shell',
+    'seatgeek/homebrew-formulae': 'homebrew',
+    'FriendsOfCake/app-template': 'cakephp',
+    'FriendsOfCake/cakephp-csvview': 'cakephp',
+    'FriendsOfCake/crud': 'cakephp',
+    'FriendsOfCake/crud-users': 'cakephp',
+    'FriendsOfCake/crud-view': 'cakephp',
+    'FriendsOfCake/travis': 'shell',
+    'FriendsOfCake/vagrant-chef': 'chef',
+}
 
 
 def log_error(message):
@@ -95,8 +217,11 @@ def retrieve_data(template, query_args=None, single_request=False):
 
 @filecache.filecache(filecache.YEAR)
 def retrieve_repositories():
-    url = 'https://api.github.com/users/{0}/repos'.format(USERNAME)
-    return retrieve_data(url, single_request=False)
+    data = []
+    for username in USERNAMES:
+        url = 'https://api.github.com/users/{0}/repos'.format(username)
+        data += retrieve_data(url, single_request=False)
+    return data
 
 
 @filecache.filecache(filecache.YEAR)
@@ -125,7 +250,7 @@ def cake_version(name, prefix, description, composer=None):
 
         if 'cakephp2' in description:
             version = '2'
-        elif 'cakephp3' in description:
+        elif any(word in description for word in ['cakephp3', 'cakephp 3']):
             version = '3'
 
     if composer is not None:
@@ -134,9 +259,9 @@ def cake_version(name, prefix, description, composer=None):
         if 'cakephp/cakephp' in require:
             cake_version = require['cakephp/cakephp']
 
-            if cake_version.startswith('2.'):
+            if cake_version.startswith('2.') or cake_version.startswith('~2.'):
                 version = '2'
-            elif cake_version.startswith('3.'):
+            elif cake_version.startswith('3.') or cake_version.startswith('~3.'):
                 version = '3'
 
     return version
@@ -152,7 +277,7 @@ def project_data(name, label, prefix, description, repository):
         if _prefix == p:
             _prefix = PREFIX_MAP[p]
 
-    active = 'deprecated' not in description.lower()
+    active = 'deprecated' not in description.lower() and 'unmaintained' not in description.lower()
     composer = None
 
     if prefix == 'cakephp':
@@ -161,10 +286,15 @@ def project_data(name, label, prefix, description, repository):
         _label += version
         _prefix += version
 
+    name = name.replace('{0}-'.format(prefix), '')
     description = description.replace('CakePHP1:', '')
     description = description.replace('CakePHP2:', '')
     description = description.replace('CakePHP3:', '')
+    description = description.replace('BETA:', '')
     description = description.replace('Deprecated:', '')
+    description = description.replace(' Deprecated ', '')
+    description = description.replace('Unmaintained:', '')
+    description = description.replace(' Unmaintained ', '')
     description = description.strip(' \t\n\r')
     is_cakephp = _prefix in _cakephp
 
@@ -206,13 +336,24 @@ def main():
             continue
 
         name = repository.get('name')
+        full_name = repository.get('full_name')
         description = repository.get('description', '')
+
+        if full_name in FORCE_SKIP:
+            continue
+
+        if repository.get('owner', {}).get('login') != PRIMARY_USERNAME:
+            if full_name not in WHITELISTED:
+                print 'not whitelisted: {0}'.format(full_name)
+                continue
+
         matched = False
         for label, prefixes in PREFIXES.iteritems():
             for prefix in prefixes:
                 name_prefixed = name.startswith('{0}-'.format(prefix))
-                description_prefixed = description.startswith('{0} '.format(prefix))
-                if name_prefixed or description_prefixed:
+                description_prefixed = description.lower().startswith('{0}'.format(prefix))
+                is_whitelisted = full_name in WHITELISTED and WHITELISTED[full_name] == prefix
+                if name_prefixed or description_prefixed or is_whitelisted:
                     if len(description) == 0:
                         print '{0}: missing description'.format(name)
                     output.append(project_data(name,
@@ -225,8 +366,9 @@ def main():
             if matched:
                 break
         if not matched:
-            print '{0}: unmatched'.format(name)
+            print 'unmatched: {0}'.format(full_name)
 
+    output = sorted(output, key=lambda k: k['name'])
     output = sorted(output, key=lambda k: k['label'])
 
     with open('{0}/_data/projects.json'.format(CURRENT_PATH), 'w') as out:
