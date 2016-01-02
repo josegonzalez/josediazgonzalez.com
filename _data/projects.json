@@ -505,19 +505,19 @@
     },
     {
         "active": true,
-        "description": "Outputs a valid hostname for a given AWS instance",
+        "description": "python-based .travis.yml parser that poops out a simple dockerfile for php projects",
         "label": "py",
-        "link": "https://github.com/josegonzalez/python-aws-hostname",
-        "name": "python-aws-hostname",
+        "link": "https://github.com/josegonzalez/docker-travis-php",
+        "name": "docker-travis-php",
         "type": "python",
         "unmaintained": false
     },
     {
         "active": true,
-        "description": "python daemon that munches on logs and sends their contents to logstash",
+        "description": "Outputs a valid hostname for a given AWS instance",
         "label": "py",
-        "link": "https://github.com/josegonzalez/python-beaver",
-        "name": "python-beaver",
+        "link": "https://github.com/josegonzalez/python-aws-hostname",
+        "name": "python-aws-hostname",
         "type": "python",
         "unmaintained": false
     },
