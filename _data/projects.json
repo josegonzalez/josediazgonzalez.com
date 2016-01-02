@@ -361,6 +361,24 @@
     },
     {
         "active": true,
+        "description": "a composer project skeleton for the FUTURE",
+        "label": "cake3",
+        "link": "https://github.com/josegonzalez/app",
+        "name": "app",
+        "type": "cakephp3",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A thin wrapper around the CakePHP View layer to bring in League\\Fractal support",
+        "label": "cake3",
+        "link": "https://github.com/josegonzalez/cakephp-fractal-entities",
+        "name": "cakephp-fractal-entities",
+        "type": "cakephp3",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "handle file uploading sans ridiculous automagic",
         "label": "cake3",
         "link": "https://github.com/josegonzalez/cakephp-upload",
@@ -442,10 +460,28 @@
     },
     {
         "active": true,
+        "description": "Wrappers for popular error handling services",
+        "label": "php",
+        "link": "https://github.com/josegonzalez/php-error-handlers",
+        "name": "php-error-handlers",
+        "type": "php",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "A simple git-php project that enables github-like functionality with a not-so-bad stylesheet :)",
         "label": "php",
         "link": "https://github.com/josegonzalez/php-git",
         "name": "php-git",
+        "type": "php",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "The source for openrealty 2.x",
+        "label": "php",
+        "link": "https://github.com/josegonzalez/php-openrealty",
+        "name": "php-openrealty",
         "type": "php",
         "unmaintained": false
     },
@@ -568,7 +604,7 @@
     },
     {
         "active": true,
-        "description": "",
+        "description": "a hackathon project that generates \"music tour\" maps",
         "label": "rb",
         "link": "https://github.com/josegonzalez/ruby-music-tour",
         "name": "ruby-music-tour",
