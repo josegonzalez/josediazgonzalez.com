@@ -137,7 +137,7 @@ WHITELISTED = {
     'seatgeek/djjob': 'php',
     'seatgeek/fuzzywuzzy': 'python',
     'seatgeek/graphite-pager': 'python',
-    'seatgeek/hell': 'shell',
+    'seatgeek/hell': 'ruby',
     'seatgeek/homebrew-formulae': 'homebrew',
     'FriendsOfCake/app-template': 'cakephp',
     'FriendsOfCake/cakephp-csvview': 'cakephp',
