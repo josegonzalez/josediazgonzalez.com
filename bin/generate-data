@@ -53,6 +53,7 @@ FORCE_SKIP = [
     'FriendsOfCake/process-mq',
     'FriendsOfCake/vagrant-ansible',
 
+    'josegonzalez/cakephp-elastic-search-datasource',
     'josegonzalez/dokku-compose-app',
     'josegonzalez/dokku-test-hellodjango',
     'Homebrew/BrewTestBotBrewfiles',
