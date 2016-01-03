@@ -3,11 +3,13 @@
 import filecache
 import json
 import os
+import re
 import sys
 import urllib
 import urllib2
 
 CURRENT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RE_NAME = re.compile(r"name='([\w_-]+)'")
 PREFIXES = {
     'cake': ['cakephp'],
     'ch': ['chef'],
@@ -148,6 +150,11 @@ WHITELISTED = {
     'FriendsOfCake/vagrant-chef': 'chef',
 }
 
+RUBYGEMS = {
+    'seatgeek/hell': 'hell',
+    'josegonzalez/ruby-redis-backup': 'redis-backup'
+}
+
 
 def log_error(message):
     if type(message) == str:
@@ -226,9 +233,9 @@ def retrieve_repositories():
 
 
 @filecache.filecache(filecache.YEAR)
-def composer_data(name):
-    template = 'https://raw.githubusercontent.com/{0}/master/composer.json'
-    request = urllib2.Request(template.format(name))
+def github_data(name, filename):
+    template = 'https://raw.githubusercontent.com/{0}/master/{1}'
+    request = urllib2.Request(template.format(name, filename))
 
     try:
         r = urllib2.urlopen(request)
@@ -236,10 +243,10 @@ def composer_data(name):
         return None
 
     if int(r.getcode()) != 200:
-        log_error('Missing composer.json')
+        log_error('Missing {0}'.format(filename))
         return None
 
-    return json.loads(r.read())
+    return r.read()
 
 
 def cake_version(name, prefix, description, composer=None):
@@ -280,12 +287,34 @@ def project_data(name, label, prefix, description, repository):
 
     active = 'deprecated' not in description.lower() and 'unmaintained' not in description.lower()
     composer = None
+    python = None
+    external_link = None
+    external_link_type = None
+
+    if prefix in ['cakephp', 'php']:
+        data = github_data(repository.get('full_name'), 'composer.json')
+        if data:
+            composer = json.loads(data)
 
     if prefix == 'cakephp':
-        composer = composer_data(repository.get('full_name'))
         version = cake_version(name, prefix, description, composer)
         _label += version
         _prefix += version
+
+    if prefix in ['python', 'chef']:
+        python = github_data(repository.get('full_name'), 'setup.py')
+        if python:
+            external_link = 'https://pypi.python.org/pypi/{0}'
+            external_link = external_link.format(RE_NAME.search(python).group(1))
+            external_link_type = 'pypi'
+
+    if composer:
+        external_link = 'https://packagist.org/packages/{0}'.format(composer['name'])
+        external_link_type = 'packagist'
+
+    if repository.get('full_name') in RUBYGEMS:
+        external_link = 'https://rubygems.org/gems/{0}'.format(RUBYGEMS[repository.get('full_name')])
+        external_link_type = 'rubygems'
 
     name = name.replace('{0}-'.format(prefix), '')
     description = description.replace('CakePHP1:', '')
@@ -316,6 +345,8 @@ def project_data(name, label, prefix, description, repository):
         'name': name,
         'type': _prefix,
         'unmaintained': unmaintained,
+        'external_link_type': external_link_type,
+        'external_link': external_link,
     }
 
 

@@ -2,6 +2,8 @@
     {
         "active": false,
         "description": "builds a barebones app skeleton based on the db config",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-app-skellington",
         "name": "app-skellington",
@@ -11,6 +13,8 @@
     {
         "active": false,
         "description": "blueprintcss helper that facilitates some of the oft-repeated parts of the framework",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-blueprint-helper",
         "name": "blueprint-helper",
@@ -20,6 +24,8 @@
     {
         "active": false,
         "description": "repo from 2010 cakefest contact app",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-cakefest-contacts",
         "name": "cakefest-contacts",
@@ -29,6 +35,8 @@
     {
         "active": false,
         "description": "helper that can turn a list of events into a nice, tableized calendar",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-calendar-helper",
         "name": "calendar-helper",
@@ -38,6 +46,8 @@
     {
         "active": false,
         "description": "Shell than can calculate CodeBaseHQ time using git commit messages",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-codebasehq",
         "name": "codebasehq",
@@ -47,6 +57,8 @@
     {
         "active": false,
         "description": "behavior that allows any model to be commented upon",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-commentable-behavior",
         "name": "commentable-behavior",
@@ -56,6 +68,8 @@
     {
         "active": false,
         "description": "log anything to the database",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-database-logger",
         "name": "database-logger",
@@ -65,6 +79,8 @@
     {
         "active": false,
         "description": "An incomplete re-implementation of the CakePHP documentation as a series of tutorials. CakePHP 1.3 ONLY. Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-documentation",
         "name": "documentation",
@@ -74,6 +90,8 @@
     {
         "active": false,
         "description": "Deprecated",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-filter",
         "name": "filter",
@@ -83,6 +101,8 @@
     {
         "active": false,
         "description": "Deprecated",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-github-plugin-plugin",
         "name": "github-plugin-plugin",
@@ -92,6 +112,8 @@
     {
         "active": false,
         "description": "Inflect the heck out of your word(s)",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-inflection-shell",
         "name": "inflection-shell",
@@ -101,6 +123,8 @@
     {
         "active": false,
         "description": "Install packages (plugins, applications, utilities) using this plugin",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-package-installer",
         "name": "package-installer",
@@ -110,6 +134,8 @@
     {
         "active": false,
         "description": "Stop worrying about populating your translation data AFTER you have your app built and database populated",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-retranslatable",
         "name": "retranslatable",
@@ -119,6 +145,8 @@
     {
         "active": false,
         "description": "Store serializable data within relational databases in a snap",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-serializable",
         "name": "serializable",
@@ -128,6 +156,8 @@
     {
         "active": false,
         "description": "a simple helper that will help you build xml sitemaps and sitemap indexes",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-sitemap",
         "name": "sitemap",
@@ -137,6 +167,8 @@
     {
         "active": false,
         "description": "Creates Rails-style error messages in your view (with session messages included!). Just add \"echo $errors_for_layout;\"",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-stylish-errors",
         "name": "stylish-errors",
@@ -146,6 +178,8 @@
     {
         "active": false,
         "description": "packaging delicious validation rules into one behavior :)",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-supervalidatable",
         "name": "supervalidatable",
@@ -155,6 +189,8 @@
     {
         "active": false,
         "description": "behavior that creates a shorturl for the current record",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-trimmable",
         "name": "trimmable",
@@ -164,6 +200,8 @@
     {
         "active": false,
         "description": "Twilio datasource with support for the major Model methods",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake",
         "link": "https://github.com/josegonzalez/cakephp-twilio",
         "name": "twilio",
@@ -173,6 +211,8 @@
     {
         "active": false,
         "description": "in favor of https://github.com/FriendsOfCake/crud",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-admin",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-admin",
         "name": "admin",
@@ -182,6 +222,8 @@
     {
         "active": false,
         "description": "parent controller class that adds a helper _respond() method for ajax requests",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-ajax-controller",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-ajax-controller",
         "name": "ajax-controller",
@@ -191,6 +233,8 @@
     {
         "active": true,
         "description": "ACL system using controller action annotations",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-annotation-control-list",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-annotation-control-list",
         "name": "annotation-control-list",
@@ -200,6 +244,8 @@
     {
         "active": true,
         "description": "An empty 2.5 cakephp application template, for use with composer",
+        "external_link": "https://packagist.org/packages/friendsofcake/app-template",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/FriendsOfCake/app-template",
         "name": "app-template",
@@ -209,6 +255,8 @@
     {
         "active": false,
         "description": "helper that creates links to popular bookmarking web-applications",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-bookmark",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-bookmark",
         "name": "bookmark",
@@ -218,6 +266,8 @@
     {
         "active": false,
         "description": "unmaintained plugin that integrates seatgeek's djjob with CakePHP shells",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-cake-djjob",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-cake-djjob",
         "name": "cake-djjob",
@@ -227,6 +277,8 @@
     {
         "active": false,
         "description": "plugin that handles soft-deletion of database records",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-deleted-at",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-deleted-at",
         "name": "deleted-at",
@@ -236,6 +288,8 @@
     {
         "active": true,
         "description": "database-backed dynamic routes",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-dynamic-route",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-dynamic-route",
         "name": "dynamic-route",
@@ -243,17 +297,10 @@
         "unmaintained": false
     },
     {
-        "active": true,
-        "description": "ElasticSearch datasource that actually behaves like a real datasource",
-        "label": "cake2",
-        "link": "https://github.com/josegonzalez/cakephp-elastic-search-datasource",
-        "name": "elastic-search-datasource",
-        "type": "cakephp2",
-        "unmaintained": false
-    },
-    {
         "active": false,
         "description": "component that auto-gzips html output",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-gzip",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-gzip",
         "name": "gzip",
@@ -263,6 +310,8 @@
     {
         "active": false,
         "description": "Model behavior built that allows you easily store flexible data sets by using a key/value type system.",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-keyvalue",
         "name": "keyvalue",
@@ -272,6 +321,8 @@
     {
         "active": false,
         "description": "logable behavior packaged as a standalone plugin",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-log",
         "name": "log",
@@ -281,6 +332,8 @@
     {
         "active": true,
         "description": "Automagically route /:page style routes without any fuss",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-page-route",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-page-route",
         "name": "page-route",
@@ -290,6 +343,8 @@
     {
         "active": false,
         "description": "plugin that makes your model data so fresh so clean",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-purifiable",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-purifiable",
         "name": "purifiable",
@@ -299,6 +354,8 @@
     {
         "active": true,
         "description": "give sanction to your users when they intend to navigate to certain portions of your website",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-sanction",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-sanction",
         "name": "sanction",
@@ -308,6 +365,8 @@
     {
         "active": false,
         "description": "a simple plugin to track application settings",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-settings",
         "name": "settings",
@@ -317,6 +376,8 @@
     {
         "active": false,
         "description": "plugin that handles SEO-related information",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-sham",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-sham",
         "name": "sham",
@@ -326,6 +387,8 @@
     {
         "active": false,
         "description": "behavior that adds a simple interface for scoping finds",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-simple-scope",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-simple-scope",
         "name": "simple-scope",
@@ -335,6 +398,8 @@
     {
         "active": false,
         "description": "plugin for tracking who created/modified a record",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-trackable",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-trackable",
         "name": "trackable",
@@ -344,6 +409,8 @@
     {
         "active": false,
         "description": "Takes the data you set and automatically serves it as JSON and XML",
+        "external_link": null,
+        "external_link_type": null,
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-webservice",
         "name": "webservice",
@@ -353,6 +420,8 @@
     {
         "active": false,
         "description": "helper for various wysiwyg editors",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-wysiwyg",
+        "external_link_type": "packagist",
         "label": "cake2",
         "link": "https://github.com/josegonzalez/cakephp-wysiwyg",
         "name": "wysiwyg",
@@ -362,6 +431,8 @@
     {
         "active": true,
         "description": "a composer project skeleton for the FUTURE",
+        "external_link": "https://packagist.org/packages/josegonzalez/app",
+        "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/josegonzalez/app",
         "name": "app",
@@ -371,6 +442,8 @@
     {
         "active": true,
         "description": "CakePHP Application development on steroids - rapid prototyping / scaffolding & production ready code - JSON APIs and more",
+        "external_link": "https://packagist.org/packages/friendsofcake/crud",
+        "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/FriendsOfCake/crud",
         "name": "crud",
@@ -380,6 +453,8 @@
     {
         "active": true,
         "description": "CakePHP 3.0 Users plugin based on the CRUD action classes",
+        "external_link": "https://packagist.org/packages/friendsofcake/crud-users",
+        "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/FriendsOfCake/crud-users",
         "name": "crud-users",
@@ -389,6 +464,8 @@
     {
         "active": true,
         "description": "Automated admin backend based on your Crud configuration",
+        "external_link": "https://packagist.org/packages/friendsofcake/crud-view",
+        "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/FriendsOfCake/crud-view",
         "name": "crud-view",
@@ -398,6 +475,8 @@
     {
         "active": true,
         "description": "A view class for generating CSV",
+        "external_link": "https://packagist.org/packages/friendsofcake/cakephp-csvview",
+        "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/FriendsOfCake/cakephp-csvview",
         "name": "csvview",
@@ -407,6 +486,8 @@
     {
         "active": true,
         "description": "Environments Library as a plugin",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-environments",
+        "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/josegonzalez/cakephp-environments",
         "name": "environments",
@@ -416,6 +497,8 @@
     {
         "active": true,
         "description": "A thin wrapper around the CakePHP View layer to bring in League\\Fractal support",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-fractal-entities",
+        "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/josegonzalez/cakephp-fractal-entities",
         "name": "fractal-entities",
@@ -425,6 +508,8 @@
     {
         "active": true,
         "description": "handle file uploading sans ridiculous automagic",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-upload",
+        "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/josegonzalez/cakephp-upload",
         "name": "upload",
@@ -434,6 +519,8 @@
     {
         "active": true,
         "description": "plugin that facilitates versioned database entities",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-version",
+        "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/josegonzalez/cakephp-version",
         "name": "version",
@@ -443,6 +530,8 @@
     {
         "active": true,
         "description": "chef based os x management system",
+        "external_link": null,
+        "external_link_type": null,
         "label": "ch",
         "link": "https://github.com/josegonzalez/chefsen",
         "name": "chefsen",
@@ -452,6 +541,8 @@
     {
         "active": true,
         "description": "A set of generic cookbooks for chef",
+        "external_link": null,
+        "external_link_type": null,
         "label": "ch",
         "link": "https://github.com/josegonzalez/chef-cookbooks",
         "name": "cookbooks",
@@ -461,6 +552,8 @@
     {
         "active": true,
         "description": "python wrapper around chef-solo, for managing AWS instances",
+        "external_link": "https://pypi.python.org/pypi/chef-solo-cup",
+        "external_link_type": "pypi",
         "label": "ch",
         "link": "https://github.com/josegonzalez/chef-solo-cup",
         "name": "solo-cup",
@@ -470,6 +563,8 @@
     {
         "active": true,
         "description": "a vagrant installation with all the necessary chef cookbooks to run a basic cakephp application",
+        "external_link": null,
+        "external_link_type": null,
         "label": "ch",
         "link": "https://github.com/FriendsOfCake/vagrant-chef",
         "name": "vagrant-chef",
@@ -479,6 +574,8 @@
     {
         "active": true,
         "description": "python-based .travis.yml parser that poops out a simple dockerfile for php projects",
+        "external_link": null,
+        "external_link_type": null,
         "label": "dock",
         "link": "https://github.com/josegonzalez/docker-travis-php",
         "name": "travis-php",
@@ -487,7 +584,130 @@
     },
     {
         "active": true,
+        "description": "copies files from the host onto the container",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-copy-files-to-image",
+        "name": "copy-files-to-image",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A docker-powered PaaS that helps you build and manage the lifecycle of applications",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku",
+        "name": "dokku",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "an elasticsearch plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-elasticsearch",
+        "name": "elasticsearch",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a mariadb plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-mariadb",
+        "name": "mariadb",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a memcached plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-memcached",
+        "name": "memcached",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a mongo plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-mongo",
+        "name": "mongo",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a mysq plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-mysql",
+        "name": "mysql",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a postgres plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-postgres",
+        "name": "postgres",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a rabbitmq plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-rabbitmq",
+        "name": "rabbitmq",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a redis plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-redis",
+        "name": "redis",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a rethinkdb plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-rethinkdb",
+        "name": "rethinkdb",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "golang metrics collecting agent for linux",
+        "external_link": null,
+        "external_link_type": null,
         "label": "go",
         "link": "https://github.com/josegonzalez/metricsd",
         "name": "metricsd",
@@ -497,6 +717,8 @@
     {
         "active": true,
         "description": "Connect to database using a REDIS_URL and the radix redis client. \u2014 Edit",
+        "external_link": null,
+        "external_link_type": null,
         "label": "go",
         "link": "https://github.com/josegonzalez/go-radixurl",
         "name": "radixurl",
@@ -506,6 +728,8 @@
     {
         "active": true,
         "description": "Connect to database using a DATABASE_URL and the sqlx client.",
+        "external_link": null,
+        "external_link_type": null,
         "label": "go",
         "link": "https://github.com/josegonzalez/go-sqlxurl",
         "name": "sqlxurl",
@@ -515,6 +739,8 @@
     {
         "active": true,
         "description": "Connect to database using a DATABASE_URL and the sqlx client.",
+        "external_link": null,
+        "external_link_type": null,
         "label": "go",
         "link": "https://github.com/josegonzalez/go-statsdurl",
         "name": "statsdurl",
@@ -524,6 +750,8 @@
     {
         "active": true,
         "description": "Custom SeatGeek Formula for Homebrew",
+        "external_link": null,
+        "external_link_type": null,
         "label": "hb",
         "link": "https://github.com/seatgeek/homebrew-formulae",
         "name": "formulae",
@@ -533,6 +761,8 @@
     {
         "active": true,
         "description": ":earth_americas: PHP formulae repo for Homebrew",
+        "external_link": null,
+        "external_link_type": null,
         "label": "hb",
         "link": "https://github.com/Homebrew/homebrew-php",
         "name": "php",
@@ -542,6 +772,8 @@
     {
         "active": true,
         "description": "J2ME TodoList app for phones with CLDC-1.1 configuration and MIDP-2.1 profile",
+        "external_link": null,
+        "external_link_type": null,
         "label": "java",
         "link": "https://github.com/josegonzalez/java-todo-list",
         "name": "todo-list",
@@ -551,6 +783,8 @@
     {
         "active": true,
         "description": "php-based application that helps you track build artifacts from your continuous integration setup",
+        "external_link": "https://packagist.org/packages/slim/slim-skeleton",
+        "external_link_type": "packagist",
         "label": "php",
         "link": "https://github.com/seatgeek/build-artifacts",
         "name": "build-artifacts",
@@ -560,6 +794,8 @@
     {
         "active": true,
         "description": "PHP port of delayed_job, a database backed asynchronous priority queue",
+        "external_link": "https://packagist.org/packages/seatgeek/djjob",
+        "external_link_type": "packagist",
         "label": "php",
         "link": "https://github.com/seatgeek/djjob",
         "name": "djjob",
@@ -569,6 +805,8 @@
     {
         "active": true,
         "description": "dotenv file loader for PHP",
+        "external_link": "https://packagist.org/packages/josegonzalez/dotenv",
+        "external_link_type": "packagist",
         "label": "php",
         "link": "https://github.com/josegonzalez/php-dotenv",
         "name": "dotenv",
@@ -578,6 +816,8 @@
     {
         "active": true,
         "description": "a project aimed at allowing me to search my adium chatlogs outside of adium",
+        "external_link": null,
+        "external_link_type": null,
         "label": "php",
         "link": "https://github.com/josegonzalez/php-elastic-adium",
         "name": "elastic-adium",
@@ -587,6 +827,8 @@
     {
         "active": true,
         "description": "Wrappers for popular error handling services",
+        "external_link": "https://packagist.org/packages/josegonzalez/php-error-handlers",
+        "external_link_type": "packagist",
         "label": "php",
         "link": "https://github.com/josegonzalez/php-error-handlers",
         "name": "error-handlers",
@@ -596,6 +838,8 @@
     {
         "active": true,
         "description": "A simple git-php project that enables github-like functionality with a not-so-bad stylesheet :)",
+        "external_link": null,
+        "external_link_type": null,
         "label": "php",
         "link": "https://github.com/josegonzalez/php-git",
         "name": "git",
@@ -605,6 +849,8 @@
     {
         "active": true,
         "description": "The source for openrealty 2.x",
+        "external_link": null,
+        "external_link_type": null,
         "label": "php",
         "link": "https://github.com/josegonzalez/php-openrealty",
         "name": "openrealty",
@@ -614,6 +860,8 @@
     {
         "active": true,
         "description": "PHP job/worker system built to support various queuing systems",
+        "external_link": "https://packagist.org/packages/josegonzalez/queuesadilla",
+        "external_link_type": "packagist",
         "label": "php",
         "link": "https://github.com/josegonzalez/php-queuesadilla",
         "name": "queuesadilla",
@@ -623,6 +871,8 @@
     {
         "active": true,
         "description": "A daemon to run AMQP consumers",
+        "external_link": "https://pypi.python.org/pypi/amqp-dispatcher",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/opschops/amqp-dispatcher",
         "name": "amqp-dispatcher",
@@ -632,6 +882,8 @@
     {
         "active": true,
         "description": "Outputs a valid hostname for a given AWS instance",
+        "external_link": "https://pypi.python.org/pypi/aws-hostname",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/josegonzalez/python-aws-hostname",
         "name": "aws-hostname",
@@ -641,6 +893,8 @@
     {
         "active": true,
         "description": "python daemon that munches on logs and sends their contents to logstash",
+        "external_link": "https://pypi.python.org/pypi/Beaver",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/python-beaver/python-beaver",
         "name": "beaver",
@@ -650,6 +904,8 @@
     {
         "active": true,
         "description": "A very simple command-notification package based on SQS for distributed systems",
+        "external_link": "https://pypi.python.org/pypi/command-notifier",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/josegonzalez/python-command-notifier",
         "name": "command-notifier",
@@ -659,6 +915,8 @@
     {
         "active": true,
         "description": "read configuration files, conf.d style",
+        "external_link": "https://pypi.python.org/pypi/conf_d",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/josegonzalez/python-conf_d",
         "name": "conf_d",
@@ -668,6 +926,8 @@
     {
         "active": true,
         "description": "python-based distributed cron-like service backed by mysql",
+        "external_link": "https://pypi.python.org/pypi/cronq",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/seatgeek/cronq",
         "name": "cronq",
@@ -677,6 +937,8 @@
     {
         "active": true,
         "description": "Fuzzy String Matching in Python",
+        "external_link": "https://pypi.python.org/pypi/fuzzywuzzy",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/seatgeek/fuzzywuzzy",
         "name": "fuzzywuzzy",
@@ -686,6 +948,8 @@
     {
         "active": true,
         "description": "backup a github user or organization",
+        "external_link": "https://pypi.python.org/pypi/github-backup",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/josegonzalez/python-github-backup",
         "name": "github-backup",
@@ -695,6 +959,8 @@
     {
         "active": true,
         "description": "python-based alerting application for Graphite metrics",
+        "external_link": "https://pypi.python.org/pypi/graphitepager",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/seatgeek/graphite-pager",
         "name": "graphite-pager",
@@ -704,6 +970,8 @@
     {
         "active": false,
         "description": "A horridly implemented scrapy app that will scrape all (?) of Delicious' bookmarks.",
+        "external_link": null,
+        "external_link_type": null,
         "label": "py",
         "link": "https://github.com/josegonzalez/python-scrapilicious",
         "name": "scrapilicious",
@@ -713,6 +981,8 @@
     {
         "active": false,
         "description": "Python binary to losslessly compress images using smush.it",
+        "external_link": "https://pypi.python.org/pypi/smooshy",
+        "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/josegonzalez/python-smooshy",
         "name": "smooshy",
@@ -722,6 +992,8 @@
     {
         "active": false,
         "description": "Jekyll blogging at it's finest. No really, even finer than Octopress ;)",
+        "external_link": null,
+        "external_link_type": null,
         "label": "rb",
         "link": "https://github.com/josegonzalez/ruby-cimino",
         "name": "cimino",
@@ -729,8 +1001,21 @@
         "unmaintained": true
     },
     {
+        "active": false,
+        "description": "Hell is an open source web interface that exposes a set of capistrano recipes as a json api, for usage within large teams",
+        "external_link": "https://rubygems.org/gems/hell",
+        "external_link_type": "rubygems",
+        "label": "rb",
+        "link": "https://github.com/seatgeek/hell",
+        "name": "hell",
+        "type": "ruby",
+        "unmaintained": true
+    },
+    {
         "active": true,
         "description": "a periodic table of elements",
+        "external_link": null,
+        "external_link_type": null,
         "label": "rb",
         "link": "https://github.com/josegonzalez/ruby-mendeleev",
         "name": "mendeleev",
@@ -740,6 +1025,8 @@
     {
         "active": false,
         "description": "unmaintained hackathon project that generates \"music tour\" maps",
+        "external_link": null,
+        "external_link_type": null,
         "label": "rb",
         "link": "https://github.com/josegonzalez/ruby-music-tour",
         "name": "music-tour",
@@ -749,6 +1036,8 @@
     {
         "active": true,
         "description": "a small ruby gem that allows automated redis-backups",
+        "external_link": "https://rubygems.org/gems/redis-backup",
+        "external_link_type": "rubygems",
         "label": "rb",
         "link": "https://github.com/josegonzalez/ruby-redis-backup",
         "name": "redis-backup",
@@ -758,6 +1047,8 @@
     {
         "active": true,
         "description": "A simple method of defining apt-get dependencies for an application",
+        "external_link": null,
+        "external_link_type": null,
         "label": "sh",
         "link": "https://github.com/seatgeek/bash-aptfile",
         "name": "aptfile",
@@ -766,43 +1057,9 @@
     },
     {
         "active": true,
-        "description": "copies files from the host onto the container",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-copy-files-to-image",
-        "name": "copy-files-to-image",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "A docker-powered PaaS that helps you build and manage the lifecycle of applications",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku",
-        "name": "dokku",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "an elasticsearch plugin for dokku",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-elasticsearch",
-        "name": "elasticsearch",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": false,
-        "description": "Hell is an open source web interface that exposes a set of capistrano recipes as a json api, for usage within large teams",
-        "label": "sh",
-        "link": "https://github.com/seatgeek/hell",
-        "name": "hell",
-        "type": "shell",
-        "unmaintained": true
-    },
-    {
-        "active": true,
         "description": "Send hipchat notifications from the command line",
+        "external_link": null,
+        "external_link_type": null,
         "label": "sh",
         "link": "https://github.com/josegonzalez/bash-hipchat",
         "name": "hipchat",
@@ -811,79 +1068,9 @@
     },
     {
         "active": true,
-        "description": "a mariadb plugin for dokku",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-mariadb",
-        "name": "mariadb",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "a memcached plugin for dokku",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-memcached",
-        "name": "memcached",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "a mongo plugin for dokku",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-mongo",
-        "name": "mongo",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "a mysq plugin for dokku",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-mysql",
-        "name": "mysql",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "a postgres plugin for dokku",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-postgres",
-        "name": "postgres",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "a rabbitmq plugin for dokku",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-rabbitmq",
-        "name": "rabbitmq",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "a redis plugin for dokku",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-redis",
-        "name": "redis",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "a rethinkdb plugin for dokku",
-        "label": "sh",
-        "link": "https://github.com/dokku/dokku-rethinkdb",
-        "name": "rethinkdb",
-        "type": "shell",
-        "unmaintained": false
-    },
-    {
-        "active": true,
         "description": "Easy travis setup for CakePHP plugins",
+        "external_link": null,
+        "external_link_type": null,
         "label": "sh",
         "link": "https://github.com/FriendsOfCake/travis",
         "name": "travis",

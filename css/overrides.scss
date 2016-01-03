@@ -12,6 +12,21 @@
   background-image: radial-gradient(5% 5%, $light 0%, $dark 50px);
 }
 
+@mixin opensource-header-link {
+  color: #555555;
+  font-size: 1.2em;
+  font-size: 100%;
+  white-space: nowrap;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
 body {
   background: none;
   .site {
@@ -384,32 +399,33 @@ pre code {
       font-size: 1em;
       padding-bottom: .5em;
       padding-top: .5em;
+      &.has-external-link {
+        padding-bottom: .2em;
+        padding-top: .05em;
+      }
+      a {
+        @include opensource-header-link();
+      }
     }
-    h4 a {
-      font-size: 100%;
-      white-space: nowrap;
-      font-size: 1.2em;
-      color: #555555;
-      -webkit-transition: color 0.3s;
-      -moz-transition: color 0.3s;
-      -o-transition: color 0.3s;
-      transition: color 0.3s;
-      -webkit-transition: background-color 0.3s;
-      -moz-transition: background-color 0.3s;
-      -o-transition: background-color 0.3s;
-      transition: background-color 0.3s;
+    .external-project-link {
+      @include opensource-header-link();
+      display: block;
+      font-size: .8em;
+      font-weight: bold;
+      padding-bottom: .35em;;
+      text-decoration: none;
     }
     .icon {
       background-position: 0% 0%;
       background-repeat: repeat;
       color: #fff;
       display: inline-block;
-      height: 50px;
       float: left;
       font-family: FontAwesome;
       font-size: 12px;
       font-style: normal;
       font-weight: normal;
+      height: 50px;
       left: 0;
       line-height: 50px;
       margin-right: .75em;

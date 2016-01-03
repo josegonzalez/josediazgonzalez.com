@@ -1,5 +1,6 @@
 <div class="project">
     <div class="icon icon-{{ project.type }}">.{{ project.label }}</div>
-    <h4><a href="{{ project.link }}">{{ project.name }}</a></h4>
+    <h4 class="{% if project.external_link %}has-external-link{% endif %}"><a href="{{ project.link }}">{{ project.name }}</a></h4>
+    {% if project.external_link %} <a href="{{ project.external_link }}" class="external-project-link external-link-{{ project.external_link_type }}">{{ project.external_link_type }} <img src="/images/external-link.png"></a>{% endif %}
     <p>{{ project.description }}</p>
 </div>
