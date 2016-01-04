@@ -59,10 +59,10 @@ Note, I *do* have some legacy files I need to import into the new system, but I 
 
 ## Initializing our new project
 
-First, lets use composer to generate a project. I'm going to be basing it off of the `0.1.9` release of my [own app skeleton](/2015/12/26/creating-a-generic-cakephp-skeleton/:
+First, lets use composer to generate a project. I'm going to be basing it off of the `0.1.10` release of my [own app skeleton](/2015/12/26/creating-a-generic-cakephp-skeleton/:
 
 ```shell
-composer create-project --prefer-dist josegonzalez/app:0.1.9 media-manager
+composer create-project --prefer-dist josegonzalez/app:0.1.10 media-manager
 ```
 
 > From now on, assume you will be working inside of the media-manager root folder.
@@ -154,7 +154,9 @@ This will create all of the above tables and two others:
 
 ## Baking my cake as fast as I can
 
-The last step for today is generating some application defaults. We'll be using the [CrudView](/2015/12/03/generating-administrative-panels-with-crud-view/) plugin - and therefore [Bootstrap 3](https://getbootstrap.com/) - for the majority of our UI, and will be baking CrudView-compatible templates for things. Lets start off by baking all of the tables and entities:
+The last step for today is generating some application defaults. We'll be using the [CrudView](/2015/12/03/generating-administrative-panels-with-crud-view/) plugin - and therefore [Bootstrap 3](https://getbootstrap.com/) - for the majority of our UI, and will be baking CrudView-compatible templates for things.
+
+Lets start off by baking all of the tables and entities:
 
 ```shell
 bin/cake bake model all
@@ -167,6 +169,8 @@ bin/cake bake Controller Assets -t Crud
 bin/cake bake Controller Categories -t Crud
 bin/cake bake Controller Tags -t Crud
 ```
+
+And now we'll turn on CrudView for the entire application. Simply change the `$isAdmin` property of `src/Controller/AppController.php` to `true`. This can be done on a per-controller basis, but as we are using CrudView everywhere, it doesn't hurt to turn it on universally.
 
 And thats it for now. Why didn't we bake templates or certain tables:
 
