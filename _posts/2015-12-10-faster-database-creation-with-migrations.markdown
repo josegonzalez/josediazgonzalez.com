@@ -86,11 +86,12 @@ I normally deploy my code on platforms such as [Heroku](https://www.heroku.com/)
 "scripts": {
     "compile": [
         "bin/cake migrations migrate",
-        "bin/cake migrations migrate --plugin Blog"
+        "bin/cake migrations migrate --plugin Blog",
+        "bin/cake orm_cache build"
     ],
     "post-install-cmd": "App\\Console\\Installer::postInstall",
     "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
 },
 ```
 
-Other than the normal stuff in there for application installation, you'll notice I have a `scripts.compile` key which maps to a list of migration commands to run. I run the migrations for my core application as well as the blog plugin I use in this particular application. Migrations are now fully automatic for this application, and I don't need to worry about going in and manually altering anything!
+Other than the normal stuff in there for application installation, you'll notice I have a `scripts.compile` key which maps to a list of migration commands to run. I run the migrations for my core application as well as the blog plugin I use in this particular application. Of course, don't forget to rebuild your orm cache, otherwise your app might not be aware of schema changes! Migrations are now fully automatic for this application, and I don't need to worry about going in and manually altering anything!
