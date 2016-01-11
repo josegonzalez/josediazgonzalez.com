@@ -1,12 +1,12 @@
 ---
-  title:       "Implementing Custom Authenication Classes"
+  title:       "Implementing Custom Authentication Classes"
   date:        2016-01-10 12:00
   description: "Implementing both Form Authentication and a custom Authentication class in CakePHP"
   category:    cakephp
   tags:
     - cakephp
     - scaffold
-    - authenication
+    - authentication
   comments:    true
   sharing:     true
   published:   true
