@@ -2,7 +2,7 @@
 
     {% unless page.full_page %}<aside class="widget widget_categories widget_search">
             <input class="typeahead tt-query" type="text" placeholder="search for articles" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; width: 94%">{% else %}<aside class="widget widget_categories">{% endunless %}
-        {% unless page.disable_categories %}{% include advertisement.html %}{% include post_series.html %}<h3 class="widget-title">Categories</h3>
+        {% unless page.disable_categories %}{% unless page.disable_advertisement %}{% include advertisement.html %}{% endunless %}{% include post_series.html %}<h3 class="widget-title">Categories</h3>
         <ul>{% assign sorted_categories = site.categories | categories_sorted %}
             {% for topic in sorted_categories %}
                 <li class="cat-item"><a href="/categories/{{ topic | replace:' ', '-' | downcase }}"title="View all posts filed under {{ topic | titleize }}">{{ topic | titleize }}</a></li>
