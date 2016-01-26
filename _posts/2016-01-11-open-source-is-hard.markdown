@@ -32,7 +32,7 @@ An open source project differs in a way from open source software. For instance,
 <?php
 /**
  * The MIT License (MIT)
- * Copyright (c) <year> <copyright holders>
+ * Copyright (c) 2015 Jose Diaz-Gonzalez
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the "Software"),
