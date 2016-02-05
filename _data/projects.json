@@ -232,17 +232,6 @@
     },
     {
         "active": true,
-        "description": "ACL system using controller action annotations",
-        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-annotation-control-list",
-        "external_link_type": "packagist",
-        "label": "cake2",
-        "link": "https://github.com/josegonzalez/cakephp-annotation-control-list",
-        "name": "annotation-control-list",
-        "type": "cakephp2",
-        "unmaintained": false
-    },
-    {
-        "active": true,
         "description": "An empty 2.5 cakephp application template, for use with composer",
         "external_link": "https://packagist.org/packages/friendsofcake/app-template",
         "external_link_type": "packagist",
@@ -427,6 +416,17 @@
         "name": "wysiwyg",
         "type": "cakephp2",
         "unmaintained": true
+    },
+    {
+        "active": true,
+        "description": "ACL system using controller action annotations",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-annotation-control-list",
+        "external_link_type": "packagist",
+        "label": "cake3",
+        "link": "https://github.com/josegonzalez/cakephp-annotation-control-list",
+        "name": "annotation-control-list",
+        "type": "cakephp3",
+        "unmaintained": false
     },
     {
         "active": true,
