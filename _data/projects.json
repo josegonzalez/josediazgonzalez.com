@@ -918,7 +918,7 @@
         "external_link": "https://pypi.python.org/pypi/conf_d",
         "external_link_type": "pypi",
         "label": "py",
-        "link": "https://github.com/josegonzalez/python-conf_d",
+        "link": "https://github.com/python-beaver/python-conf_d",
         "name": "conf_d",
         "type": "python",
         "unmaintained": false
