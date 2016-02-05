@@ -738,7 +738,7 @@
     },
     {
         "active": true,
-        "description": "Connect to database using a DATABASE_URL and the sqlx client.",
+        "description": "Connect to database using a STATSD_URL and the statsd client.",
         "external_link": null,
         "external_link_type": null,
         "label": "go",
