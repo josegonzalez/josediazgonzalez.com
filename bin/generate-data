@@ -121,6 +121,7 @@ FORCE_SKIP = [
 WHITELISTED = {
     'dokku/dokku': 'dokku',
     'python-beaver/python-beaver': 'python',
+    'python-beaver/python-conf_d': 'python',
     'dokku/dokku-copy-files-to-image': 'dokku',
     'dokku/dokku-elasticsearch': 'dokku',
     'dokku/dokku-mariadb': 'dokku',
