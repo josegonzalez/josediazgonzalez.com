@@ -52,6 +52,22 @@ and then load it in your `config/bootstrap.php`
 Plugin::load('Josegonzalez/Upload');
 ```
 
+Here is the database schema I am using in this example.
+
+```sql
+CREATE TABLE `users` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` varchar(255) NOT NULL,
+  `photo` varchar(255) DEFAULT NULL,
+  `dir` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `BY_USERNAME` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
 This is a sample `UsersTable` that implements file uploading:
 
 ```php
@@ -144,6 +160,12 @@ Want to create a thumbnail and upload both the original and your new file to S3?
 
 ```shell
 composer require league/flysystem-aws-s3-v3
+```
+
+And the Imagine PHP image manipulation library:
+
+```shell
+composer require imagine/imagine
 ```
 
 And follow along as we rock your socks off
