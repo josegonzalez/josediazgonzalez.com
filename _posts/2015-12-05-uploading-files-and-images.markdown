@@ -105,6 +105,18 @@ class UsersTable extends Table
 ?>
 ```
 
+Lastly, any forms where you will upload files will need to be modified with the following changes:
+
+- `Form::create` must be of type file:
+    ```
+    <?= $this->Form->create($user, ['type' => file]) ?>
+    ```
+- `Form::input` for the field must be of type file:
+    ```
+    <?= echo $this->Form->input('photo', ['type' => 'file']); ?>
+    ```
+- You should hide/remove the extra fields. In particular, the plugin is automatically configured to use the `dir`, `type`, and `size` fields. These are configurable, but keep this in mind.
+
 Pretty basic. It will upload anything to the path `webroot/files/Users/photo/ID`, and save metadata about the file to the `photo` field. We still have a few of the same config options, with many of the same defaults. For instance, we may wish to change the upload path to be outside of `webroot`:
 
 ```php
