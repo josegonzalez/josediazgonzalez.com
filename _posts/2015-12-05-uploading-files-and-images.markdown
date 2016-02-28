@@ -220,7 +220,7 @@ $this->addBehavior('Josegonzalez/Upload.Upload', [
 
         // This can also be in a class that implements
         // the TransformerInterface or any callable type.
-        'transformer' => function (Table $table, Entity $entity, $data, $field, $settings) {
+        'transformer' => function (\Cake\Datasource\RepositoryInterface $table, \Cake\Datasource\EntityInterface $entity, $data, $field, $settings) {
             // Store the thumbnail in a temporary file
             $tmp = tmpfile();
 
