@@ -49,7 +49,7 @@ composer require josegonzalez/cakephp-upload
 and then load it in your `config/bootstrap.php`
 
 ```php
-Plugin::load('Josegonzalez/Upload');
+bin/cake plugin load Josegonzalez/Upload
 ```
 
 Here is the database schema I am using in this example.
