@@ -95,9 +95,12 @@ class UsersTable extends Table
         $this->table('users');
         $this->displayField('name');
         $this->primaryKey('id');
+
+        // START: IMPORTANT PART HERE
         $this->addBehavior('Josegonzalez/Upload.Upload', [
             'photo',
         ]);
+        // END: IMPORTANT PART ABOVE
     }
 ?>
 ```
