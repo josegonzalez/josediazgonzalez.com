@@ -52,7 +52,17 @@ and then load it in your `config/bootstrap.php`
 bin/cake plugin load Josegonzalez/Upload
 ```
 
-Here is the database schema I am using in this example.
+Here is the database migration I am using in this example (more on migrations in a separate post).
+
+```shell
+# create the migration
+bin/cake bake migration CreateUsers name username password role photo dir created modified
+
+# apply it
+bin/cake migrations migrate
+```
+
+Or use the following schema file directly:
 
 ```sql
 CREATE TABLE `users` (
