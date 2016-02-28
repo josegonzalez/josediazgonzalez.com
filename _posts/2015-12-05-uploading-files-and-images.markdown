@@ -221,8 +221,13 @@ $this->addBehavior('Josegonzalez/Upload.Upload', [
         // This can also be in a class that implements
         // the TransformerInterface or any callable type.
         'transformer' => function (\Cake\Datasource\RepositoryInterface $table, \Cake\Datasource\EntityInterface $entity, $data, $field, $settings) {
+            // get the extension from the file
+            // there could be better ways to do this, and it will fail
+            // if the file has no extension
+            $extension = pathinfo($data['name'], PATHINFO_EXTENSION);
+
             // Store the thumbnail in a temporary file
-            $tmp = tmpfile();
+            $tmp = tempnam(sys_get_temp_dir(), 'upload') . '.' . $extension;
 
             // Use the Imagine library to DO THE THING
             $size = new \Imagine\Image\Box(40, 40);
