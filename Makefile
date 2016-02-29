@@ -16,3 +16,20 @@ remove-cache:
 .PHONY: generate-data
 generate-data:
 	bin/generate-data
+
+.PHONY: new-post
+new-post:
+ifndef POST_TITLE
+	$(error POST_TITLE is undefined)
+endif
+	bash -c \
+		'TITLE=$$(echo $${POST_TITLE//[^[:alnum:]-]/-} | tr '[:upper:]' '[:lower:]' | tr -cs 'a-zA-Z0-9' '') ; \
+		TITLE=$${TITLE%-} ; \
+		POST_DATE=$$(date +"%Y-%m-%d") ; \
+		POST_DATETIME=$$(date +"%Y-%m-%d %H:%M") ; \
+		POST_FILENAME=_posts/$$POST_DATE-$$TITLE.markdown ; \
+		cp _template.markdown $$POST_FILENAME ; \
+		sed -i "" -e "s/POST_TITLE/$$POST_TITLE/g" $$POST_FILENAME ; \
+		sed -i "" -e "s/POST_DESCRIPTION/$$POST_DESCRIPTION/g" $$POST_FILENAME ; \
+		sed -i "" -e "s/POST_DATETIME/$$POST_DATETIME/g" $$POST_FILENAME ; \
+		echo $$POST_FILENAME'
