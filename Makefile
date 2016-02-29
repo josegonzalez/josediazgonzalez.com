@@ -22,7 +22,7 @@ new-post:
 ifndef POST_TITLE
 	$(error POST_TITLE is undefined)
 endif
-	bash -c \
+	@bash -c \
 		'TITLE=$$(echo $${POST_TITLE//[^[:alnum:]-]/-} | tr '[:upper:]' '[:lower:]' | tr -cs 'a-zA-Z0-9' '') ; \
 		TITLE=$${TITLE%-} ; \
 		POST_DATE=$$(date +"%Y-%m-%d") ; \
