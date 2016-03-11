@@ -6,7 +6,7 @@
   tags:
     - cakeadvent-2014
     - cakephp
-    - models
+    - model
     - events
   comments:    true
   sharing:     true
