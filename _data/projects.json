@@ -507,6 +507,17 @@
     },
     {
         "active": true,
+        "description": "",
+        "external_link": "https://packagist.org/packages/friendsofcake/search",
+        "external_link_type": "packagist",
+        "label": "cake3",
+        "link": "https://github.com/FriendsOfCake/search",
+        "name": "search",
+        "type": "cakephp3",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "handle file uploading sans ridiculous automagic",
         "external_link": "https://packagist.org/packages/josegonzalez/cakephp-upload",
         "external_link_type": "packagist",
@@ -595,6 +606,17 @@
     },
     {
         "active": true,
+        "description": "a couchdb plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-couchdb",
+        "name": "couchdb",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "A docker-powered PaaS that helps you build and manage the lifecycle of applications",
         "external_link": null,
         "external_link_type": null,
@@ -612,6 +634,17 @@
         "label": "dokku",
         "link": "https://github.com/dokku/dokku-elasticsearch",
         "name": "elasticsearch",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "Dokku statsd, carbon, graphite plugin with grafana dashboad",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-graphite-grafana",
+        "name": "graphite-grafana",
         "type": "dokku",
         "unmaintained": false
     },
@@ -656,6 +689,17 @@
         "label": "dokku",
         "link": "https://github.com/dokku/dokku-mysql",
         "name": "mysql",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a nats plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-nats",
+        "name": "nats",
         "type": "dokku",
         "unmaintained": false
     },
@@ -1063,6 +1107,17 @@
         "label": "sh",
         "link": "https://github.com/josegonzalez/bash-hipchat",
         "name": "hipchat",
+        "type": "shell",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "Turn SSH into a thin client specifically for your app",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "sh",
+        "link": "https://github.com/dokku/sshcommand",
+        "name": "sshcommand",
         "type": "shell",
         "unmaintained": false
     },
