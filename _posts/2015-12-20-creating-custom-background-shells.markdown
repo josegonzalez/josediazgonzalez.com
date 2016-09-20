@@ -15,6 +15,8 @@
   series:      CakeAdvent-2015
 ---
 
+> The code in this blog post is available on [GitHub](https://github.com/josegonzalez/cakephp-queuesadilla) as a [composer package](https://packagist.org/packages/josegonzalez/cakephp-queuesadilla).
+
 In a previous post, I mentioned how awesome it would be to have a background queueing system to perform long-running tasks. While there are many queueing systems, today I will re-introduce Queuesadilla, with an aim to explain how CakePHP shells work.
 
 ## Shell Skeleton
