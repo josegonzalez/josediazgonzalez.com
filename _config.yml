@@ -96,7 +96,9 @@ exclude:
   - Vagrantfile
 # A list of directories and files to include in the conversion
 include:
+  - .buildpacks
   - .nojekyll
+  - .static
 # Timezone for timestamp conversion
 timezone: UTC
 
