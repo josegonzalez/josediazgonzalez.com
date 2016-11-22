@@ -131,7 +131,7 @@ An entry is stored in the execution table. The entry has a reference to the orig
 
 There is a Lambda function that is executed which prunes the executed events DynamoDB table. You probably don't care about whether the command executed three months ago, so storing only relevant recent data here is important.
 
-> Aside MongoDB's capped collection functionality would be pretty useful in this situation, as then its somewhat fire and forget.
+> Aside: MongoDB's capped collection functionality would be pretty useful in this situation, as then its somewhat fire and forget.
 
 Lambda can execute a function every minute. Even with a 10 second start-time overhead, that gives us roughly 50 seconds to schedule tasks for that minute interval. Each iteration will:
 
