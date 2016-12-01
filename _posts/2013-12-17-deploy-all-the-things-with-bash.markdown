@@ -7,7 +7,7 @@
     - bash
     - cakeadvent-2013
     - cakephp
-    - deploy
+    - deployment
   comments:    true
   sharing:     true
   published:   true
