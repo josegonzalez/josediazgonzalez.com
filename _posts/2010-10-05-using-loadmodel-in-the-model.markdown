@@ -3,7 +3,6 @@
   category:    cakephp
   tags:
     - cakephp
-    - cakephp-1.3
     - code
     - loadmodel
     - model

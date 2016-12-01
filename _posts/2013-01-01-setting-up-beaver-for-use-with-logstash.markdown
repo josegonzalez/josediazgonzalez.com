@@ -5,7 +5,7 @@
   category:    opschops
   tags:
     - beaver
-    - logs
+    - logging
     - logstash
   comments:    true
   sharing:     true

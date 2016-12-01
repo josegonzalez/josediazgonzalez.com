@@ -6,7 +6,6 @@
     - authorization
     - authsome-plugin
     - cakephp
-    - cakephp-1.3
     - component
     - github
   description: One of the things I am working on is Authentication and Access Control. While Authsome Component takes care of authentication, we still need something more.

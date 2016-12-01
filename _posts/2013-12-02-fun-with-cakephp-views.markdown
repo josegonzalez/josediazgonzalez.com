@@ -7,7 +7,7 @@
     - cakeadvent-2013
     - cakephp
     - identicon
-    - view
+    - views
   comments:    true
   sharing:     true
   published:   true

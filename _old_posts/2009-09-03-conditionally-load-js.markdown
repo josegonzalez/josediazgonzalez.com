@@ -9,7 +9,7 @@
     - javascript
     - quicktip
     - cakephp 1.2
-    - view
+    - views
   comments:    true
   sharing:     true
   published:   true

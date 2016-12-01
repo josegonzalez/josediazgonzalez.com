@@ -6,7 +6,7 @@
   tags:
     - cakeadvent-2014
     - cakephp
-    - custom find
+    - custom-find
     - email
     - entities
   comments:    true

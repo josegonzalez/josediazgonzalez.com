@@ -4,7 +4,7 @@
   tags:
     - behaviors
     - cakephp
-    - cakephp-1.3
+    - cakephp
     - github
     - html-purifier
     - licensing

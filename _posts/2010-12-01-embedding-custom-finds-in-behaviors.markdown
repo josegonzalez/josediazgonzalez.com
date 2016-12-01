@@ -3,7 +3,7 @@
   category:    cakephp
   tags:
     - behaviors
-    - cakephp-1.3
+    - cakephp
     - code
     - custom-find
     - model

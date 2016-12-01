@@ -8,7 +8,7 @@
     - json
     - layout
     - quicktip
-    - view
+    - views
   comments:    true
   sharing:     true
   published:   false
