@@ -1,6 +1,6 @@
 ---
   title:       "Creating a microblogging platform"
-  date:        2016-12-01 02:04
+  date:        2016-12-01 01:56
   description: "Part 1 of a series of posts that will help you build out a personal CMS"
   category:    cakephp
   tags:

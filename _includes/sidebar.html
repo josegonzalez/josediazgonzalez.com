@@ -1,6 +1,6 @@
 <div class="widget-area" role="complementary">
 
-    {% unless page.full_page %}<aside class="widget widget_categories widget_search">
+    {% unless page.full_page %}<aside class="sidebar widget widget_categories widget_search">
             <input class="typeahead tt-query" type="text" placeholder="search for articles" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; width: 94%">{% else %}<aside class="widget widget_categories">{% endunless %}
         {% unless page.disable_categories %}{% unless page.disable_advertisement %}{% include advertisement.html %}{% endunless %}{% include post_series.html %}<h3 class="widget-title">Categories</h3>
         <ul>{% assign sorted_categories = site.categories | categories_sorted %}
@@ -11,7 +11,7 @@
     </aside>
 
     {% if site.recent_posts %}
-    {% if page.full_page %}<aside class="widget widget_recent_entries widget_search">
+    {% if page.full_page %}<aside class="sidebar widget widget_recent_entries widget_search">
         <input class="typeahead tt-query" type="text" placeholder="search for articles" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; width: 94%">{% else %}<aside class="widget widget_recent_entries">{% endif %}
         <h3 class="widget-title">Recent Posts</h3>
         <ul>

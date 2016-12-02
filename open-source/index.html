@@ -1,7 +1,27 @@
 ---
-layout: projects
+layout: default
 title: Open source projects
-page_id: open-source-page
-is_nav: '/open-source/'
+body: open-source-page
+full_page: true
 disable_categories: true
+comments: false
 ---
+<h3>Active Projects</h3>
+
+{% for project in site.data.projects %}
+
+    {% if project.active == true %}
+        {% include project.html %}
+    {% endif %}
+
+{% endfor %}
+
+<h3>Unmaintained Projects</h3>
+
+{% for project in site.data.projects %}
+
+    {% if project.unmaintained == true %}
+        {% include project.html %}
+    {% endif %}
+
+{% endfor %}

@@ -1,15 +1,21 @@
-<article class="type-post">
-  {% include post_header.html %}
+<article class="post">
+    {% if page.title or title %}
+        <h2>{{ page.title }}{{ title }}</h2>
+    {% endif %}
 
-  <div class="entry-content">
-    {% include post_image.html %}
+    {% if page.lead or lead %}
+        <h3>{{ page.lead }}{{ lead }}</h3>
+    {% endif %}
 
-    {% include post_things.html %}
+    <div class="post-content">
+        {% include post_image.html %}
 
-    {{ content }}
-  </div>
+        {% include post_things.html %}
 
-  {% include post_category.html %}
+        {{ content }}
+    </div>
+
+    {% include post_category.html %}
 </article>
 
 {% include post_related.html %}
