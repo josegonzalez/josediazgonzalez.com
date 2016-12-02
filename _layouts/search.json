@@ -27,5 +27,10 @@ layout: nil
     "url": "/tags/{{ tag[0] | replace:' ', '-' | downcase  }}/",
     "tokens": {{ tag[0] | tokenize: '' | to_json }}{% raw %}
   },{% endraw %}{% endfor %}
-  false
+  {
+    "type": "null",
+    "title": "",
+    "url": "/",
+    "tokens": []
+  }
 ]
