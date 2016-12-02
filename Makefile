@@ -33,3 +33,7 @@ endif
 		sed -i "" -e "s/POST_DESCRIPTION/$$POST_DESCRIPTION/g" $$POST_FILENAME ; \
 		sed -i "" -e "s/POST_DATETIME/$$POST_DATETIME/g" $$POST_FILENAME ; \
 		echo $$POST_FILENAME'
+
+.PHONY: tags
+tags:
+	ls _site/tags
