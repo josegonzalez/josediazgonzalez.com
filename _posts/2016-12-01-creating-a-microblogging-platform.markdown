@@ -14,7 +14,7 @@
   series:      CakeAdvent-2016
 ---
 
-A friend of mine asked for a custom website, so here I am, writing a custom cms. I know, there are plenty of systems out there that would handle their needs, but it's also a good excuse to play around with CakePHP 3, so here we are.
+A friend of mine asked for a custom website, so here I am, writing a custom cms. I know, there are plenty of systems out there that would handle his needs, but it's also a good excuse to play around with CakePHP 3, so here we are.
 
 > For the lazy, the codebase we'll be working on will be available on [GitHub](https://github.com/josegonzalez/cakeadvent-2016). I will be pushing each set of changes on the date when each blog post in this series is published. No cheating!
 
@@ -175,7 +175,7 @@ git commit -m "Add baked files for initial application"
 
 Yay!
 
---
+---
 
 > For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.1](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.1).
 
