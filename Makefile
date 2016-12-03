@@ -9,6 +9,10 @@ build:
 server:
 	bundle exec jekyll serve
 
+.PHONY: dev-server
+dev-server:
+	bundle exec jekyll serve --limit_posts 1
+
 .PHONY: remove-cache
 remove-cache:
 	rm -f bin/generate-data.cache.db
