@@ -37,7 +37,7 @@ First, we'll start by locking everything down. I'm going to centralize all my au
             'authorize' => ['Controller'],
             'loginAction' => [
                 'plugin' => null,
-                'admin' => false,
+                'prefix' => false,
                 'controller' => 'Users',
                 'action' => 'login'
             ],
@@ -72,7 +72,7 @@ I'm going to call this method from my `AppController::initialize()`, right befor
      *   If empty the user fetched from storage will be used.
      * @return bool True if $user is authorized, otherwise false
      */
-    public function isAuthorized(array $user = null)
+    public function isAuthorized($user = null)
     {
         return false;
     }
@@ -209,7 +209,7 @@ LOTS OF CODE! A few notes:
 You can run this shell - and answer the questions - via the following command:
 
 ```shell
-bin/cake user --username-field emails
+bin/cake user --username-field email
 ```
 
 And you'll get an error. Why? Because you cannot save `null` to the `avatar` and `avatar_dir` fields. Poo. Lets fix that by creating a migration. First, lets generate a scaffold for the migration:
@@ -227,7 +227,7 @@ bin/cake migrations migrate
 Now run the `users` shell:
 
 ```shell
-bin/cake user --username-field emails
+bin/cake user --username-field email
 ```
 
 If you run it again with the same options, you'll see it happily inserts the same email address *again*. Boo. Delete that record however you wish, but lets create a migration to ensure that doesn't happen again:
@@ -356,9 +356,9 @@ To allow logging out, we'll need to explicitely whitelist it for authenticated u
      *   If empty the user fetched from storage will be used.
      * @return bool True if $user is authorized, otherwise false
      */
-    public function isAuthorized(array $user = null)
+    public function isAuthorized($user = null)
     {
-        if ($this->request->params['action'] == 'logout') {
+        if ($this->request->param('action') == 'logout') {
             return true;
         }
         return parent::isAuthorized($user);
