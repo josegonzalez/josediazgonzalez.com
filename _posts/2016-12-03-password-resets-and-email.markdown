@@ -1,7 +1,7 @@
 ---
   title:       "Password Resets and Email"
   date:        2016-12-03 21:40
-  description: "Part 2 of a series of posts that will help you build out a personal CMS"
+  description: "Part 3 of a series of posts that will help you build out a personal CMS"
   category:    cakephp
   tags:
     - passwords
