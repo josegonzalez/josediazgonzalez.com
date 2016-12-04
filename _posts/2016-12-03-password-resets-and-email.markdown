@@ -1,6 +1,6 @@
 ---
   title:       "Password Resets and Email"
-  date:        2016-12-03 21:40
+  date:        2016-12-03 1:40
   description: "Part 3 of a series of posts that will help you build out a personal CMS"
   category:    cakephp
   tags:
@@ -505,7 +505,7 @@ git add config/routes.php src/Controller/PostsController.php
 git commit -m "Allow logged in and anonymous access to an initial / route"
 ```
 
---
+---
 
 > For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.3](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.3).
 
