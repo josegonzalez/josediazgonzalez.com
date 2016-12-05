@@ -1,8 +1,8 @@
 ---
   title:       "Preparing our Posts Admin"
-  date:        2016-12-05 00:23
-  description: ""
-  category:    other
+  date:        2016-12-05 02:00
+  description: "Part 5 of a series of posts that will help you build out a personal CMS"
+  category:    cakephp
   tags:
     - admin
     - crud
@@ -160,9 +160,9 @@ git add src/Controller/AppController.php src/Controller/PostsController.php src/
 git commit -m "CrudView now handles /posts admin panels"
 ```
 
---
+---
 
-> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.4](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.5).
+> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.5](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.5).
 
 This was a short post, but we actually did quite a bit of work. We now have a programmatic admin dashboard that can be melded to our use case in future posts. It's been a long week, and our CMS is starting to take shape. Tomorrow we'll look at modifying what exactly is shown on our `/posts` dashboard, and make sure our database tables line up with our needs.
 

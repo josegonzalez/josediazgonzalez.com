@@ -4,9 +4,9 @@
   description: "Part 4 of a series of posts that will help you build out a personal CMS"
   category:    cakephp
   tags:
+    - files
     - user-accounts
     - upload
-    - files
     - cakeadvent-2016
     - cakephp
   comments:    true
