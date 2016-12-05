@@ -15,7 +15,7 @@
   layout:      post
   disable_advertisement: true
   series:      CakeAdvent-2016
-  og_image:    /images/2016/12/05/generated-posts-admin.png
+  og_image:    /images/2016/12/05/og.png
 ---
 
 A friend of mine asked for a custom website, so here I am, writing a custom cms. I know, there are plenty of systems out there that would handle his needs, but it's also a good excuse to play around with CakePHP 3, so here we are.
