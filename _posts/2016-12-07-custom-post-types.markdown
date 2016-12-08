@@ -20,6 +20,13 @@ A friend of mine asked for a custom website, so here I am, writing a custom cms.
 
 > For the lazy, the codebase we'll be working on will be available on [GitHub](https://github.com/josegonzalez/cakeadvent-2016). I will be pushing each set of changes on the date when each blog post in this series is published. No cheating!
 
+## Errata from last post
+
+- I was missing a few semicolons in the `AbstractPostType`. Oops?.
+- I added some missing class `use` statements to `AbstractPostType` to properly scope the used classes.
+
+Thanks to those who've pointed out my derps. These fixes are available as the first commit in the current release.
+
 ## Custom Post Types
 
 For our cms, the following post types are things my client wants to have on their site:
@@ -42,7 +49,7 @@ If any of the above sounds familiar, its because I've described a `Form` class. 
 
 ```php
 <?php
-BlogPostType extends Form
+class BlogPostType extends Form
 {
     protected function _buildSchema(Schema $schema)
     {
@@ -74,7 +81,10 @@ Pretty neat. One thing is that the optional fields cannot be saved into the `pos
 <?php
 namespace App\PostType;
 
+use Cake\Form\Form;
+use Cake\Form\Schema;
 use Cake\ORM\TableRegistry;
+use Cake\Validation\Validator;
 use Cake\Utility\Inflector;
 
 abstract class AbstractPostType extends Form
@@ -145,12 +155,12 @@ And finally, a few methods for deciding what template to use for `index` and `vi
 ```php
 public function indexTemplate()
 {
-    return $this->templatePrefix() . '-index.ctp'
+    return $this->templatePrefix() . '-index.ctp';
 }
 
 public function viewTemplate()
 {
-    return $this->templatePrefix() . '-view.ctp'
+    return $this->templatePrefix() . '-view.ctp';
 }
 
 protected function templatePrefix()
@@ -216,7 +226,7 @@ git commit -m "Lay out infrastructure for custom post types"
 
 ---
 
-> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.8](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.7).
+> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.7](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.7).
 
 We now have an - unproven - post type system. We still have yet to have a way to display this on the site, nor have we started on what it looks like to edit the page, but we'll get there. I'm pretty happy with what we have so far, and hopefully we can figure out any specific issues as we start using this system.
 
