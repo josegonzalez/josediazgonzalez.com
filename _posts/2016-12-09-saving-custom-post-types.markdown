@@ -1,7 +1,7 @@
 ---
   title:       "Saving Custom Post Types"
   date:        2016-12-09 10:40
-  description: "Part 8 of a series of posts that will help you build out a personal CMS"
+  description: "Part 9 of a series of posts that will help you build out a personal CMS"
   category:    cakephp
   tags:
     - crud
