@@ -247,21 +247,20 @@ public function beforeHandleForgotPassword(Event $event)
 
 ```php
 /**
- * Before Handle Login Action
+ * Before Handle ResetPassword Action
  *
  * @param \Cake\Event\Event $event Event
  * @return void
  */
-public function beforeHandleLogin(Event $event)
+public function beforeHandleResetPassword(Event $event)
 {
     $this->_controller()->set([
-        'viewVar' => 'login',
-        'login' => null,
+        'viewVar' => 'resetPassword',
+        'resetPassword' => null,
     ]);
     $this->_controller()->viewBuilder()->template('add');
-    $this->_action()->config('scaffold.page_title', 'Login');
+    $this->_action()->config('scaffold.page_title', 'Enter a new password to reset your account');
     $this->_action()->config('scaffold.fields', [
-        'email',
         'password',
     ]);
     $this->_action()->config('scaffold.viewblocks', [
@@ -269,7 +268,7 @@ public function beforeHandleLogin(Event $event)
     ]);
     $this->_action()->config('scaffold.sidebar_navigation', false);
     $this->_action()->config('scaffold.disable_extra_buttons', true);
-    $this->_action()->config('scaffold.submit_button_text', 'Login');
+    $this->_action()->config('scaffold.submit_button_text', 'Reset Password');
 }
 ```
 
