@@ -41,7 +41,7 @@ git commit -m "Update unpinned dependencies"
 
 ## Today's todolist
 
-We'll take care of the following two items today.
+We'll take care of the following three items today.
 
 - The login screen looks different from the rest of the site.
 - The `/users/edit` page has the wrong look and wrong sidebar.
