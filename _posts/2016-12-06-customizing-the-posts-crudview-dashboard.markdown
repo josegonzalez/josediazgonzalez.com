@@ -25,7 +25,7 @@ A friend of mine asked for a custom website, so here I am, writing a custom cms.
 
 Before we continue, lets be sure we've updated all our plugins. I like to do this each day so that I can get any bugfixes that come out for libraries my application depends upon. In this case, there are a few bugfixes for some CakePHP plugins, so we'll grab those with the following `composer` command:
 
-```php
+```shell
 composer update
 ```
 
