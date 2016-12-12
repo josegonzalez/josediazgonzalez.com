@@ -157,8 +157,12 @@ public static function isValidPostType($passedArgs)
 }
 ```
 
-Now we should redirect back *even if* the user tries to set an invalid post type.
+Now we should redirect back *even if* the user tries to set an invalid post type. Commit time!
 
+```shell
+git add src/Listener/PostsListener.php src/Model/Table/Traits/PostTypesTrait.php
+git commit -m "Ensure users do not try to add a non-existent post type"
+```
 
 ## Homework!
 
