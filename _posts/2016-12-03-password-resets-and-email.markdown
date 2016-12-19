@@ -225,7 +225,7 @@ class UsersListener extends BaseListener
      * @var array
      */
     protected $_defaultConfig = [
-        'mailer' => 'Users.User',
+        'mailer' => 'User',
     ];
 
     /**
