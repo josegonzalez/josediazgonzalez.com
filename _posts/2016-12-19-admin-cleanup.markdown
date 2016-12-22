@@ -21,7 +21,7 @@ A friend of mine asked for a custom website, so here I am, writing a custom cms.
 
 ## Errata from previous post
 
-The connected routes in `config/routes.php` for `/forgot-password` and `/reset-password` were incorrect and should be as follows
+The connected routes in `config/routes.php` for `/forgot-password` and `/reset-password` were incorrect and should be as follows:
 
 ```php
 $routes->connect('/forgot-password', ['controller' => 'Users', 'action' => 'forgotPassword']);
