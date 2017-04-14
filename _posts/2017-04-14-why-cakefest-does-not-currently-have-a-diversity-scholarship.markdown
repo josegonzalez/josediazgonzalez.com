@@ -1,5 +1,5 @@
 ---
-  title:       "Why CakePHP (CakeFest) does not currently have a Diversity Scholarship"
+  title:       "Why CakeFest does not (currently) have a Diversity Scholarship"
   date:        2017-04-14 13:51
   description: "A summary of why CakePHP does not currently offer a Diversity Scholarship and where we stand in regards to diversity."
   category:    cakephp
@@ -66,7 +66,7 @@ Aside from sponsors and ticket sales, CakeDC has traditionally footed the bill f
 
 We also occasionally have core members or speakers pay for things out of their pocket or a company per diem. These usually cover small group events, offsite lunch/dinners. This is generally appreciated but not required of anyone.
 
-> I personally gave $1k of my money for the SF conference to cover a group event, after which I had trouble finding money to pay for a hostel I was staying at during the rest of my stay in SF.
+> I personally gave $1k of my money for the SF conference to cover a group event, after which I had trouble finding money to pay for a hostel I was staying at during the rest of my stay in SF. Derp.
 
 ### Core Team Attendance
 
