@@ -1,6 +1,6 @@
 ---
   title:       The Daily Dev Log - 2
-  category:    dev log
+  category:    dev-log
   tags:
     - daily-dev-log
   description: Always remember to include the host in the protocol when using the EmailComponent

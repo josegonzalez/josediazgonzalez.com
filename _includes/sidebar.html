@@ -5,7 +5,7 @@
         {% unless page.disable_categories %}{% unless page.disable_advertisement %}{% include advertisement.html %}{% endunless %}{% include post_series.html %}<h3 class="widget-title">Categories</h3>
         <ul>{% assign sorted_categories = site.categories | categories_sorted %}
             {% for topic in sorted_categories %}
-                <li class="cat-item"><a href="/categories/{{ topic | replace:' ', '-' | downcase }}"title="View all posts filed under {{ topic | titleize }}">{{ topic | titleize }}</a></li>
+                <li class="cat-item"><a href="/categories/{{ topic | replace:' ', '-' | downcase }}"title="View all posts filed under {{ topic | replace:'-', ' ' | titleize }}">{{ topic  | replace:'-', ' ' | titleize }}</a></li>
             {% endfor %}
         </ul>{% endunless %}
     </aside>

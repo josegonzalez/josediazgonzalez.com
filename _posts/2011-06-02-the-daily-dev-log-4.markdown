@@ -1,6 +1,6 @@
 ---
   title:       The Daily Dev Log - 4
-  category:    dev log
+  category:    dev-log
   tags:
     - daily-dev-log
   description: On the subject of updating urls in a web framework that gives you access to a router, it's important to have flexibility in writing those routes.

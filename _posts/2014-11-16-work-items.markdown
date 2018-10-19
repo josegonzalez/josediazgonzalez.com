@@ -2,7 +2,7 @@
   title:       "Work Items"
   date:        2014-11-16 19:47
   description: "Big projects I will screw up over the next few months"
-  category:    dev log
+  category:    dev-log
   tags:
     - development
   comments:    true
