@@ -80,7 +80,7 @@ git commit -m "Implement DefaultTheme"
 
 In CakePHP 3, all helpers output html fragments based on a simple templating language. It uses string fragments to specify what the "template" should be for an html element, such as a `link` or `image` tag. It's used throughout CakePHP, which is good as in our case, we're going to modify what pagination looks like.
 
-> Templates use {{var}} style placeholders. It is important to not add any spaces around the {{}} or the replacements will not work.
+> Templates use `{% raw %}{{var}}{% endraw %}` style placeholders. It is important to not add any spaces around the `{% raw %}{{}}{% endraw %}` or the replacements will not work.
 
 Here is what I've placed in my theme's `home.ctp` to customize what the `PaginatorHelper` uses for building next/previous links:
 
