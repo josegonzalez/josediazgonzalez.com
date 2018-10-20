@@ -318,7 +318,7 @@ def project_data(name, label, prefix, description, repository):
             external_link = external_link.format(RE_NAME.search(python).group(1))
             external_link_type = 'pypi'
 
-    if composer:
+    if composer and 'name' in composer:
         external_link = 'https://packagist.org/packages/{0}'.format(composer['name'])
         external_link_type = 'packagist'
 
