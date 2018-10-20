@@ -285,6 +285,20 @@ def cake_version(name, prefix, description, composer=None):
     return version
 
 
+def is_active(description):
+    description = description.lower()
+    if 'deprecated' in description:
+        return False
+
+    if 'unmaintained' in description:
+        return False
+
+    if 'needs maintainer' in description:
+        return False
+
+    return True
+
+
 def project_data(name, label, prefix, description, repository):
     _cakephp = ['cakephp', 'cakephp2', 'cakephp3']
 
@@ -295,7 +309,7 @@ def project_data(name, label, prefix, description, repository):
         if _prefix == p:
             _prefix = PREFIX_MAP[p]
 
-    active = 'deprecated' not in description.lower() and 'unmaintained' not in description.lower()
+    active = is_active(description)
     composer = None
     python = None
     external_link = None
@@ -335,6 +349,7 @@ def project_data(name, label, prefix, description, repository):
     description = description.replace(' Deprecated ', '')
     description = description.replace('Unmaintained:', '')
     description = description.replace(' Unmaintained ', '')
+    description = description.replace('Needs Maintainer:', '')
     description = description.strip(' \t\n\r')
     is_cakephp = _prefix in _cakephp
 
