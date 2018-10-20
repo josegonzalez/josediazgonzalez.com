@@ -143,6 +143,17 @@
         "unmaintained": true
     },
     {
+        "active": true,
+        "description": "CakePHP: Easy model searching",
+        "external_link": "https://packagist.org/packages/friendsofcake/search",
+        "external_link_type": "packagist",
+        "label": "cake",
+        "link": "https://github.com/FriendsOfCake/search",
+        "name": "search",
+        "type": "cakephp",
+        "unmaintained": false
+    },
+    {
         "active": false,
         "description": "Store serializable data within relational databases in a snap",
         "external_link": null,
@@ -209,6 +220,17 @@
         "unmaintained": true
     },
     {
+        "active": true,
+        "description": "A simple wrapper for various projects to make crud and user management a breeze",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-users",
+        "external_link_type": "packagist",
+        "label": "cake",
+        "link": "https://github.com/josegonzalez/cakephp-users",
+        "name": "users",
+        "type": "cakephp",
+        "unmaintained": false
+    },
+    {
         "active": false,
         "description": "in favor of https://github.com/FriendsOfCake/crud",
         "external_link": "https://packagist.org/packages/josegonzalez/cakephp-admin",
@@ -232,7 +254,7 @@
     },
     {
         "active": true,
-        "description": "An empty 2.5 cakephp application template, for use with composer",
+        "description": "An empty application template, for use with composer",
         "external_link": "https://packagist.org/packages/friendsofcake/app-template",
         "external_link_type": "packagist",
         "label": "cake2",
@@ -441,7 +463,7 @@
     },
     {
         "active": true,
-        "description": "CakePHP Application development on steroids - rapid prototyping / scaffolding & production ready code - JSON APIs and more",
+        "description": "Production-grade rapid controller development with built in love for API and Search",
         "external_link": "https://packagist.org/packages/friendsofcake/crud",
         "external_link_type": "packagist",
         "label": "cake3",
@@ -452,7 +474,7 @@
     },
     {
         "active": true,
-        "description": "CakePHP 3.0 Users plugin based on the CRUD action classes",
+        "description": "Users plugin based on the CRUD action classes",
         "external_link": "https://packagist.org/packages/friendsofcake/crud-users",
         "external_link_type": "packagist",
         "label": "cake3",
@@ -463,7 +485,7 @@
     },
     {
         "active": true,
-        "description": "Automated admin backend based on your Crud configuration",
+        "description": "Automated admin backend based on your CRUD configuration",
         "external_link": "https://packagist.org/packages/friendsofcake/crud-view",
         "external_link_type": "packagist",
         "label": "cake3",
@@ -484,7 +506,7 @@
         "unmaintained": false
     },
     {
-        "active": true,
+        "active": false,
         "description": "Environments Library as a plugin",
         "external_link": "https://packagist.org/packages/josegonzalez/cakephp-environments",
         "external_link_type": "packagist",
@@ -492,7 +514,7 @@
         "link": "https://github.com/josegonzalez/cakephp-environments",
         "name": "environments",
         "type": "cakephp3",
-        "unmaintained": false
+        "unmaintained": true
     },
     {
         "active": true,
@@ -506,13 +528,24 @@
         "unmaintained": false
     },
     {
-        "active": true,
-        "description": "",
-        "external_link": "https://packagist.org/packages/friendsofcake/search",
+        "active": false,
+        "description": "preview emails during development",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-mail-preview",
         "external_link_type": "packagist",
         "label": "cake3",
-        "link": "https://github.com/FriendsOfCake/search",
-        "name": "search",
+        "link": "https://github.com/josegonzalez/cakephp-mail-preview",
+        "name": "mail-preview",
+        "type": "cakephp3",
+        "unmaintained": true
+    },
+    {
+        "active": true,
+        "description": "easily run background jobs on various message backends",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-queuesadilla",
+        "external_link_type": "packagist",
+        "label": "cake3",
+        "link": "https://github.com/josegonzalez/cakephp-queuesadilla",
+        "name": "queuesadilla",
         "type": "cakephp3",
         "unmaintained": false
     },
@@ -522,7 +555,7 @@
         "external_link": "https://packagist.org/packages/josegonzalez/cakephp-upload",
         "external_link_type": "packagist",
         "label": "cake3",
-        "link": "https://github.com/josegonzalez/cakephp-upload",
+        "link": "https://github.com/FriendsOfCake/cakephp-upload",
         "name": "upload",
         "type": "cakephp3",
         "unmaintained": false
@@ -584,6 +617,28 @@
     },
     {
         "active": true,
+        "description": "",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dock",
+        "link": "https://github.com/josegonzalez/docker-python-tutorial",
+        "name": "python-tutorial",
+        "type": "dock",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dock",
+        "link": "https://github.com/josegonzalez/docker-run-nomad",
+        "name": "run-nomad",
+        "type": "dock",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "python-based .travis.yml parser that poops out a simple dockerfile for php projects",
         "external_link": null,
         "external_link_type": null,
@@ -617,6 +672,17 @@
     },
     {
         "active": true,
+        "description": "A daemon wrapper around dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-daemon",
+        "name": "daemon",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "A docker-powered PaaS that helps you build and manage the lifecycle of applications",
         "external_link": null,
         "external_link_type": null,
@@ -639,7 +705,29 @@
     },
     {
         "active": true,
-        "description": "Dokku statsd, carbon, graphite plugin with grafana dashboad",
+        "description": "Dokku plugin for displaying the current running env",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/josegonzalez/dokku-env",
+        "name": "env",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "allows setting a global certificate for applications",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/josegonzalez/dokku-global-cert",
+        "name": "global-cert",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a graphite, grafana, statsd, carbon plugin for dokku",
         "external_link": null,
         "external_link_type": null,
         "label": "dokku",
@@ -683,7 +771,7 @@
     },
     {
         "active": true,
-        "description": "a mysq plugin for dokku",
+        "description": "a mysql plugin for dokku",
         "external_link": null,
         "external_link_type": null,
         "label": "dokku",
@@ -711,6 +799,17 @@
         "label": "dokku",
         "link": "https://github.com/dokku/dokku-postgres",
         "name": "postgres",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/josegonzalez/dokku-procfile-picker",
+        "name": "procfile-picker",
         "type": "dokku",
         "unmaintained": false
     },
@@ -749,12 +848,45 @@
     },
     {
         "active": true,
+        "description": "[EXPERIMENTAL] Creates and links a dokku-mysql instance if an app's docker-compose.yml has the correct label",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/josegonzalez/dokku-service-attacher",
+        "name": "service-attacher",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a solr plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-solr",
+        "name": "solr",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "golang metrics collecting agent for linux",
         "external_link": null,
         "external_link_type": null,
         "label": "go",
         "link": "https://github.com/josegonzalez/metricsd",
         "name": "metricsd",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A tool for interacting with Procfiles",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/josegonzalez/go-procfile-util",
+        "name": "procfile-util",
         "type": "go",
         "unmaintained": false
     },
@@ -803,15 +935,15 @@
         "unmaintained": false
     },
     {
-        "active": true,
-        "description": ":earth_americas: PHP formulae repo for Homebrew",
+        "active": false,
+        "description": "\ud83d\udc80 Homebrew/php (deprecated)",
         "external_link": null,
         "external_link_type": null,
         "label": "hb",
         "link": "https://github.com/Homebrew/homebrew-php",
         "name": "php",
         "type": "homebrew",
-        "unmaintained": false
+        "unmaintained": true
     },
     {
         "active": true,
@@ -880,7 +1012,7 @@
         "unmaintained": false
     },
     {
-        "active": true,
+        "active": false,
         "description": "A simple git-php project that enables github-like functionality with a not-so-bad stylesheet :)",
         "external_link": null,
         "external_link_type": null,
@@ -888,7 +1020,7 @@
         "link": "https://github.com/josegonzalez/php-git",
         "name": "git",
         "type": "php",
-        "unmaintained": false
+        "unmaintained": true
     },
     {
         "active": true,
@@ -935,7 +1067,7 @@
         "unmaintained": false
     },
     {
-        "active": true,
+        "active": false,
         "description": "python daemon that munches on logs and sends their contents to logstash",
         "external_link": "https://pypi.python.org/pypi/Beaver",
         "external_link_type": "pypi",
@@ -943,7 +1075,7 @@
         "link": "https://github.com/python-beaver/python-beaver",
         "name": "beaver",
         "type": "python",
-        "unmaintained": false
+        "unmaintained": true
     },
     {
         "active": true,
@@ -969,12 +1101,23 @@
     },
     {
         "active": true,
-        "description": "python-based distributed cron-like service backed by mysql",
+        "description": "python-based distributed cron-like service backed by mysql and rabbitmq",
         "external_link": "https://pypi.python.org/pypi/cronq",
         "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/seatgeek/cronq",
         "name": "cronq",
+        "type": "python",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A simple service for managing a dnsimple account.",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "py",
+        "link": "https://github.com/josegonzalez/python-dns-api",
+        "name": "dns-api",
         "type": "python",
         "unmaintained": false
     },
@@ -1002,12 +1145,34 @@
     },
     {
         "active": true,
+        "description": "backup a gitlab user or organization",
+        "external_link": "https://pypi.python.org/pypi/gitlab-backup",
+        "external_link_type": "pypi",
+        "label": "py",
+        "link": "https://github.com/josegonzalez/python-gitlab-backup",
+        "name": "gitlab-backup",
+        "type": "python",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "python-based alerting application for Graphite metrics",
         "external_link": "https://pypi.python.org/pypi/graphitepager",
         "external_link_type": "pypi",
         "label": "py",
         "link": "https://github.com/seatgeek/graphite-pager",
         "name": "graphite-pager",
+        "type": "python",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a friendly http interface to the aws api",
+        "external_link": "https://pypi.python.org/pypi/haldane",
+        "external_link_type": "pypi",
+        "label": "py",
+        "link": "https://github.com/seatgeek/haldane",
+        "name": "haldane",
         "type": "python",
         "unmaintained": false
     },
@@ -1021,6 +1186,17 @@
         "name": "scrapilicious",
         "type": "python",
         "unmaintained": true
+    },
+    {
+        "active": true,
+        "description": "send slack away music notifications from itunes or spotify",
+        "external_link": "https://pypi.python.org/pypi/slack-tunes",
+        "external_link_type": "pypi",
+        "label": "py",
+        "link": "https://github.com/josegonzalez/python-slack-tunes",
+        "name": "slack-tunes",
+        "type": "python",
+        "unmaintained": false
     },
     {
         "active": false,
@@ -1078,7 +1254,7 @@
         "unmaintained": true
     },
     {
-        "active": true,
+        "active": false,
         "description": "a small ruby gem that allows automated redis-backups",
         "external_link": "https://rubygems.org/gems/redis-backup",
         "external_link_type": "rubygems",
@@ -1086,7 +1262,7 @@
         "link": "https://github.com/josegonzalez/ruby-redis-backup",
         "name": "redis-backup",
         "type": "ruby",
-        "unmaintained": false
+        "unmaintained": true
     },
     {
         "active": true,
@@ -1096,6 +1272,17 @@
         "label": "sh",
         "link": "https://github.com/seatgeek/bash-aptfile",
         "name": "aptfile",
+        "type": "shell",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A command line tool for manipulating a simple, flat-file database.",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "sh",
+        "link": "https://github.com/josegonzalez/bash-filedb",
+        "name": "filedb",
         "type": "shell",
         "unmaintained": false
     },
