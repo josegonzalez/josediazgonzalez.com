@@ -393,6 +393,8 @@ def main():
         for label, prefixes in PREFIXES.iteritems():
             for prefix in prefixes:
                 name_prefixed = name.startswith('{0}-'.format(prefix))
+                if not description:
+                    description = ''
                 description_prefixed = description.lower().startswith('{0}'.format(prefix))
                 is_whitelisted = full_name in WHITELISTED and WHITELISTED[full_name] == prefix
                 if name_prefixed or description_prefixed or is_whitelisted:
