@@ -936,7 +936,7 @@
     },
     {
         "active": false,
-        "description": "\ud83d\udc80 Homebrew/php (deprecated)",
+        "description": "Homebrew/php (deprecated)",
         "external_link": null,
         "external_link_type": null,
         "label": "hb",
