@@ -81,6 +81,7 @@ lsi:                false
 markdown: kramdown
 kramdown:
   input: GFM
+  syntax_highlighter: false
 highlighter: false
 # Controls the URLs that posts are generated with.
 permalink:          /:year/:month/:day/:title/
