@@ -44,6 +44,6 @@ tags:
 
 docker-build:
 	docker run --rm \
-	  --volume="$PWD:/srv/jekyll" \
+	  --volume="$(PWD):/srv/jekyll" \
 	  -it jekyll/jekyll:$(shell cat Gemfile | grep jekyll | head -n1 | cut -d '"' -f4 | xargs -n1 | tail -n1) \
 	  jekyll build
