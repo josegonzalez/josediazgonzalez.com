@@ -4,19 +4,25 @@ set -eo pipefail
 main() {
   local REPOSITORY_URL="https://${GITHUB_TOKEN}@github.com/${SITE_REPOSITORY}.git"
 
-  git clone "$REPOSITORY_URL" _site > /dev/null 2>&1
+  echo "-----> Cloning site repository"
+  git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed "s/^/       /"
 
-  jekyll build
+  echo "-----> Building site"
+  jekyll build | sed "s/^/       /"
 
   pushd _site > /dev/null
 
-  git remote add push "$REPOSITORY_URL"
-  git config user.name "$GITHUB_ACTOR"
-  git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+  echo "-----> Configuring git for push"
+  git config user.name "$GITHUB_ACTOR" | sed "s/^/       /"
+  git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" | sed "s/^/       /"
 
-  git add . && \
-    git commit -m 'jekyll build from Action' && \
-    git push push master
+  echo "-----> Pushing code"
+  git add . | sed "s/^/       /"
+  git commit -m 'jekyll build from Action' | sed "s/^/       /"
+  git push origin master | sed "s/^/       /"
+
+  popd > /dev/null
+  echo "=====> Push complete"
 }
 
 main "$@"
