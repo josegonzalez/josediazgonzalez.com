@@ -9,7 +9,7 @@ action "Jekyll Action" {
   needs = "On master branch"
   uses = "./action-build/"
   secrets = [
-    "GITHUB_TOKEN",
+    "JEKYLL_GITHUB_ACCESS_TOKEN",
     "SITE_REPOSITORY",
   ]
 }
