@@ -1,16 +1,22 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-git clone "https://${GITHUB_TOKEN}@github.com/${SITE_REPOSITORY}.git" _site > /dev/null 2>&1
+main() {
+  local REPOSITORY_URL="https://${GITHUB_TOKEN}@github.com/${SITE_REPOSITORY}.git"
 
-jekyll build
+  git clone "$REPOSITORY_URL" _site > /dev/null 2>&1
 
-pushd _site > /dev/null
+  jekyll build
 
-git remote add push "https://${GITHUB_TOKEN}@github.com/${SITE_REPOSITORY}.git"
-git config user.name "${GITHUB_ACTOR}"
-git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+  pushd _site > /dev/null
 
-git add . && \
-  git commit -m 'jekyll build from Action' && \
-  git push push master
+  git remote add push "$REPOSITORY_URL"
+  git config user.name "$GITHUB_ACTOR"
+  git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
+  git add . && \
+    git commit -m 'jekyll build from Action' && \
+    git push push master
+}
+
+main "$@"
