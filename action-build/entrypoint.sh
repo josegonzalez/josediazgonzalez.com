@@ -2,7 +2,7 @@
 set -eo pipefail
 
 main() {
-  local MAINTAINER="$(GITHUB_REPOSITORY | cut -d '/' -f1)"
+  local MAINTAINER="$(echo "$GITHUB_REPOSITORY" | cut -d '/' -f1)"
   local REPOSITORY_URL="https://${MAINTAINER}:${GITHUB_TOKEN}@github.com/${SITE_REPOSITORY}.git"
 
   echo "-----> Cloning site repository"
