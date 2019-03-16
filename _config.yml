@@ -82,7 +82,9 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: false
-highlighter: false
+  syntax_highlighter_opts:
+    disable : true
+highlighter: none
 # Controls the URLs that posts are generated with.
 permalink:          /:year/:month/:day/:title/
 # A list of directories and files to exclude from the conversion
@@ -95,6 +97,7 @@ exclude:
   - README.textile
   - requirements.txt
   - Vagrantfile
+  - vendor
 # A list of directories and files to include in the conversion
 include:
   - .buildpacks
