@@ -20,9 +20,9 @@
 >
 > You will also need to regenerate your model classes and clear out the cache:
 >
->   bin/cake bake model comments --force
->   bin/cake bake model issues --force
->   bin/cake orm_cache clear
+>     bin/cake bake model comments --force
+>     bin/cake bake model issues --force
+>     bin/cake orm_cache clear
 >
 > I've already corrected yesterdays post, so this change may not be necessary for some users.
 
