@@ -9,6 +9,6 @@ action "Jekyll Action" {
   uses = "./action-build/"
   secrets = [
     "GITHUB_TOKEN",
-    "GITHUB_SITE_REPOSITORY",
+    "SITE_REPOSITORY",
   ]
 }
