@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-make _site
+git clone "https://${GITHUB_TOKEN}@github.com/${SITE_REPOSITORY}.git" _site > /dev/null 2>&1
 
 jekyll build
 

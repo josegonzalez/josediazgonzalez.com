@@ -45,7 +45,7 @@ tags:
 	ls _site/tags
 
 _site:
-	git clone git@github.com:{SITE_REPOSITORY}.git _site
+	git clone "git@github.com:${SITE_REPOSITORY}.git" _site
 
 docker-build: _site
 	docker run --rm \
