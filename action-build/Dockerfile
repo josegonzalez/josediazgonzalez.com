@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:3.8.5
+FROM jekyll/builder:3.8.5
 
 LABEL "com.github.actions.name"="jekyll-build-and-push"
 LABEL "com.github.actions.description"="Builds a jekyll blog and pushes it to a remote site"

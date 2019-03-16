@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -eo pipefail
 
 make _site
 
