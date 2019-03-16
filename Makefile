@@ -1,3 +1,5 @@
+GITHUB_SITE_REPOSITORY ?= josegonzalez/josegonzalez.github.io
+
 .PHONY: all
 all: remove-cache generate-data build
 
@@ -42,7 +44,10 @@ endif
 tags:
 	ls _site/tags
 
-docker-build:
+_site:
+	git clone git@github.com:{GITHUB_SITE_REPOSITORY}.git _site
+
+docker-build: _site
 	docker run --rm \
 	  --volume="$(PWD):/srv/jekyll" \
 	  --volume="$(PWD)/vendor/bundle:/usr/local/bundle" \
