@@ -16,4 +16,4 @@ jobs:
         uses: ./.github/actions/build-and-deploy
         env:
           JEKYLL_GITHUB_ACCESS_TOKEN: ${{ secrets.JEKYLL_GITHUB_ACCESS_TOKEN }}
-          SITE_REPOSITORY: josegonzalez.github.io
+          SITE_REPOSITORY: josegonzalez/josegonzalez.github.io
