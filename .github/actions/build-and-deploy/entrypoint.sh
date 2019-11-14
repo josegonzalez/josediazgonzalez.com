@@ -3,7 +3,12 @@ set -eo pipefail
 
 main() {
   local MAINTAINER="$(echo "$GITHUB_REPOSITORY" | cut -d '/' -f1)"
-  local REPOSITORY_URL="https://${MAINTAINER}:${JEKYLL_GITHUB_ACCESS_TOKEN}@github.com/${SITE_REPOSITORY}.git"
+  local REPOSITORY_URL="https://${MAINTAINER}:${JEKYLL_GITHUB_ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+  if [[ -z "$JEKYLL_GITHUB_ACCESS_TOKEN" ]]; then
+    echo "::error file=entrypoint.sh,line=8,col=2::Missing JEKYLL_GITHUB_ACCESS_TOKEN"
+    return 1
+  fi
 
   echo "-----> Cloning site repository"
   git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed "s/^/       /"

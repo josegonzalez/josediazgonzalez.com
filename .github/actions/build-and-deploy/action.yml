@@ -1,0 +1,6 @@
+# action.yml
+name: 'Build and Deploy'
+description: 'Builds and deploys the blog'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
