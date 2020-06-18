@@ -18,6 +18,7 @@ PREFIXES = {
     'go': ['go', 'golang'],
     'hb': ['homebrew'],
     'java': ['java'],
+    'js': ['javascript', 'js'],
     'php': ['php'],
     'py': ['python'],
     'rb': ['ruby'],
