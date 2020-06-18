@@ -5,11 +5,12 @@ import json
 import os
 import re
 import sys
-import urllib
-import urllib2
+import urllib.error
+import urllib.parse
+import urllib.request
 
 CURRENT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RE_NAME = re.compile(r"name='([\w_-]+)'")
+RE_NAME = re.compile(r"name=[\"']([\w_-]+)[\"']")
 PREFIXES = {
     'cake': ['cakephp'],
     'ch': ['chef'],
@@ -307,13 +308,15 @@ def retrieve_data(template, query_args=None, single_request=False):
 
     while True:
         page = page + 1
-        querystring = urllib.urlencode(dict({
+        query_args.update({
             'per_page': per_page,
             'page': page
-        }.items() + query_args.items()))
+        })
 
-        request = urllib2.Request(template + '?' + querystring)
-        r = urllib2.urlopen(request)
+        querystring = urllib.parse.urlencode(query_args)
+
+        request = urllib.request.Request(template + '?' + querystring)
+        r = urllib.request.urlopen(request)
 
         errors = []
         if int(r.getcode()) != 200:
@@ -326,7 +329,7 @@ def retrieve_data(template, query_args=None, single_request=False):
         if int(r.getcode()) != 200:
             log_error(errors)
 
-        response = json.loads(r.read())
+        response = json.loads(r.read().decode('utf-8'))
         if len(errors) == 0:
             if type(response) == list:
                 data.extend(response)
@@ -356,18 +359,18 @@ def retrieve_repositories():
 @filecache.filecache(filecache.YEAR)
 def github_data(name, filename):
     template = 'https://raw.githubusercontent.com/{0}/master/{1}'
-    request = urllib2.Request(template.format(name, filename))
+    request = urllib.request.Request(template.format(name, filename))
 
     try:
-        r = urllib2.urlopen(request)
-    except urllib2.HTTPError:
+        r = urllib.request.urlopen(request)
+    except urllib.error.HTTPError:
         return None
 
     if int(r.getcode()) != 200:
         log_error('Missing {0}'.format(filename))
         return None
 
-    return r.read()
+    return r.read().decode('utf-8')
 
 
 def cake_version(name, prefix, description, composer=None):
@@ -488,12 +491,12 @@ def project_data(name, label, prefix, description, repository):
 
 
 def main():
-    class HTTPErrorProcessor(urllib2.BaseHandler):
+    class HTTPErrorProcessor(urllib.request.BaseHandler):
         def http_error_default(self, request, response, code, msg, hdrs):
             return response
 
-    opener = urllib2.build_opener(HTTPErrorProcessor)
-    urllib2.install_opener(opener)
+    opener = urllib.request.build_opener(HTTPErrorProcessor)
+    urllib.request.install_opener(opener)
 
     output = []
     repositories = retrieve_repositories()
@@ -513,11 +516,11 @@ def main():
 
         if repository.get('owner', {}).get('login') != PRIMARY_USERNAME:
             if full_name not in WHITELISTED:
-                print 'not whitelisted: {0}'.format(full_name)
+                print('not whitelisted: {0}'.format(full_name))
                 continue
 
         matched = False
-        for label, prefixes in PREFIXES.iteritems():
+        for label, prefixes in PREFIXES.items():
             for prefix in prefixes:
                 name_prefixed = name.startswith('{0}-'.format(prefix))
                 if not description:
@@ -526,7 +529,7 @@ def main():
                 is_whitelisted = full_name in WHITELISTED and WHITELISTED[full_name] == prefix
                 if name_prefixed or description_prefixed or is_whitelisted:
                     if len(description) == 0:
-                        print '{0}: missing description'.format(name)
+                        print('{0}: missing description'.format(name))
                     output.append(project_data(name,
                                                label,
                                                prefix,
@@ -537,7 +540,7 @@ def main():
             if matched:
                 break
         if not matched:
-            print 'unmatched: {0}'.format(full_name)
+            print('unmatched: {0}'.format(full_name))
 
     output = sorted(output, key=lambda k: k['name'])
     output = sorted(output, key=lambda k: k['label'])
