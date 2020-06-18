@@ -66,6 +66,39 @@
         "unmaintained": true
     },
     {
+        "active": true,
+        "description": "Production-grade rapid controller development with built in love for API and Search",
+        "external_link": "https://packagist.org/packages/friendsofcake/crud",
+        "external_link_type": "packagist",
+        "label": "cake",
+        "link": "https://github.com/FriendsOfCake/crud",
+        "name": "crud",
+        "type": "cakephp",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "CakePHP: Automated admin backend based on your CRUD configuration",
+        "external_link": "https://packagist.org/packages/friendsofcake/crud-view",
+        "external_link_type": "packagist",
+        "label": "cake",
+        "link": "https://github.com/FriendsOfCake/crud-view",
+        "name": "crud-view",
+        "type": "cakephp",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "CakePHP: A view class for generating CSV",
+        "external_link": "https://packagist.org/packages/friendsofcake/cakephp-csvview",
+        "external_link_type": "packagist",
+        "label": "cake",
+        "link": "https://github.com/FriendsOfCake/cakephp-csvview",
+        "name": "csvview",
+        "type": "cakephp",
+        "unmaintained": false
+    },
+    {
         "active": false,
         "description": "log anything to the database",
         "external_link": null,
@@ -218,6 +251,17 @@
         "name": "twilio",
         "type": "cakephp",
         "unmaintained": true
+    },
+    {
+        "active": true,
+        "description": "CakePHP: Handle file uploading sans ridiculous automagic",
+        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-upload",
+        "external_link_type": "packagist",
+        "label": "cake",
+        "link": "https://github.com/FriendsOfCake/cakephp-upload",
+        "name": "upload",
+        "type": "cakephp",
+        "unmaintained": false
     },
     {
         "active": true,
@@ -463,45 +507,12 @@
     },
     {
         "active": true,
-        "description": "Production-grade rapid controller development with built in love for API and Search",
-        "external_link": "https://packagist.org/packages/friendsofcake/crud",
-        "external_link_type": "packagist",
-        "label": "cake3",
-        "link": "https://github.com/FriendsOfCake/crud",
-        "name": "crud",
-        "type": "cakephp3",
-        "unmaintained": false
-    },
-    {
-        "active": true,
         "description": "Users plugin based on the CRUD action classes",
         "external_link": "https://packagist.org/packages/friendsofcake/crud-users",
         "external_link_type": "packagist",
         "label": "cake3",
         "link": "https://github.com/FriendsOfCake/crud-users",
         "name": "crud-users",
-        "type": "cakephp3",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "Automated admin backend based on your CRUD configuration",
-        "external_link": "https://packagist.org/packages/friendsofcake/crud-view",
-        "external_link_type": "packagist",
-        "label": "cake3",
-        "link": "https://github.com/FriendsOfCake/crud-view",
-        "name": "crud-view",
-        "type": "cakephp3",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "A view class for generating CSV",
-        "external_link": "https://packagist.org/packages/friendsofcake/cakephp-csvview",
-        "external_link_type": "packagist",
-        "label": "cake3",
-        "link": "https://github.com/FriendsOfCake/cakephp-csvview",
-        "name": "csvview",
         "type": "cakephp3",
         "unmaintained": false
     },
@@ -528,6 +539,17 @@
         "unmaintained": false
     },
     {
+        "active": true,
+        "description": "JsHelper for CakePHP 3.x",
+        "external_link": "https://packagist.org/packages/oldskool/cakephp-js",
+        "external_link_type": "packagist",
+        "label": "cake3",
+        "link": "https://github.com/josegonzalez/cakephp-js",
+        "name": "js",
+        "type": "cakephp3",
+        "unmaintained": false
+    },
+    {
         "active": false,
         "description": "preview emails during development",
         "external_link": "https://packagist.org/packages/josegonzalez/cakephp-mail-preview",
@@ -546,17 +568,6 @@
         "label": "cake3",
         "link": "https://github.com/josegonzalez/cakephp-queuesadilla",
         "name": "queuesadilla",
-        "type": "cakephp3",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "handle file uploading sans ridiculous automagic",
-        "external_link": "https://packagist.org/packages/josegonzalez/cakephp-upload",
-        "external_link_type": "packagist",
-        "label": "cake3",
-        "link": "https://github.com/FriendsOfCake/cakephp-upload",
-        "name": "upload",
         "type": "cakephp3",
         "unmaintained": false
     },
@@ -617,23 +628,12 @@
     },
     {
         "active": true,
-        "description": "",
+        "description": "A maintained version of the ambassador linking pattern",
         "external_link": null,
         "external_link_type": null,
         "label": "dock",
-        "link": "https://github.com/josegonzalez/docker-python-tutorial",
-        "name": "python-tutorial",
-        "type": "dock",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "",
-        "external_link": null,
-        "external_link_type": null,
-        "label": "dock",
-        "link": "https://github.com/josegonzalez/docker-run-nomad",
-        "name": "run-nomad",
+        "link": "https://github.com/dokku/docker-ambassador",
+        "name": "ambassador",
         "type": "dock",
         "unmaintained": false
     },
@@ -646,6 +646,17 @@
         "link": "https://github.com/josegonzalez/docker-travis-php",
         "name": "travis-php",
         "type": "dock",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "Integrates avahi-register to register your apps with avahi/bonjour",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/josegonzalez/dokku-avahi-register",
+        "name": "avahi-register",
+        "type": "dokku",
         "unmaintained": false
     },
     {
@@ -716,6 +727,17 @@
     },
     {
         "active": true,
+        "description": "Service that listens to docker events and runs dokku commands",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-event-listener",
+        "name": "event-listener",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "allows setting a global certificate for applications",
         "external_link": null,
         "external_link_type": null,
@@ -731,8 +753,8 @@
         "external_link": null,
         "external_link_type": null,
         "label": "dokku",
-        "link": "https://github.com/dokku/dokku-graphite-grafana",
-        "name": "graphite-grafana",
+        "link": "https://github.com/dokku/dokku-graphite",
+        "name": "graphite",
         "type": "dokku",
         "unmaintained": false
     },
@@ -782,12 +804,34 @@
     },
     {
         "active": true,
+        "description": "name plugin for dokku (sets docker run --name=myname)",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/josegonzalez/dokku-name",
+        "name": "name",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "a nats plugin for dokku",
         "external_link": null,
         "external_link_type": null,
         "label": "dokku",
         "link": "https://github.com/dokku/dokku-nats",
         "name": "nats",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "an omnisci plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-omnisci",
+        "name": "omnisci",
         "type": "dokku",
         "unmaintained": false
     },
@@ -804,12 +848,23 @@
     },
     {
         "active": true,
-        "description": "",
+        "description": "allows you to specify a procfile to use for an app deployed on dokku",
         "external_link": null,
         "external_link_type": null,
         "label": "dokku",
         "link": "https://github.com/josegonzalez/dokku-procfile-picker",
         "name": "procfile-picker",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a pushpin plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-pushpin",
+        "name": "pushpin",
         "type": "dokku",
         "unmaintained": false
     },
@@ -837,12 +892,45 @@
     },
     {
         "active": true,
+        "description": "Manages interaction with remote Docker Registries",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-registry",
+        "name": "registry",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "a rethinkdb plugin for dokku",
         "external_link": null,
         "external_link_type": null,
         "label": "dokku",
         "link": "https://github.com/dokku/dokku-rethinkdb",
         "name": "rethinkdb",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "Scheduler plugin for deploying applications to kubernetes",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-scheduler-kubernetes",
+        "name": "scheduler-kubernetes",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "Scheduler plugin for deploying applications to nomad",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-scheduler-nomad",
+        "name": "scheduler-nomad",
         "type": "dokku",
         "unmaintained": false
     },
@@ -866,6 +954,39 @@
         "link": "https://github.com/dokku/dokku-solr",
         "name": "solr",
         "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A tool for registering services against avahi/bonjour",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/josegonzalez/go-avahi-register",
+        "name": "avahi-register",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "Tool for managing a homebrew installation",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/josegonzalez/go-brew-manage",
+        "name": "brew-manage",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a golang version of the dc2 server",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/josegonzalez/dc2",
+        "name": "dc2",
+        "type": "go",
         "unmaintained": false
     },
     {
@@ -914,12 +1035,45 @@
     },
     {
         "active": true,
+        "description": "A tool for manipulating an sshd_config file",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/josegonzalez/sshd-config",
+        "name": "sshd-config",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "Connect to database using a STATSD_URL and the statsd client.",
         "external_link": null,
         "external_link_type": null,
         "label": "go",
         "link": "https://github.com/josegonzalez/go-statsdurl",
         "name": "statsdurl",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A tool for reading xunit xml output files",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/josegonzalez/go-xunit-reader",
+        "name": "xunit-reader",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A tool for sending xunit xml as comments to github.",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/josegonzalez/go-xunit-to-github",
+        "name": "xunit-to-github",
         "type": "go",
         "unmaintained": false
     },
@@ -936,7 +1090,7 @@
     },
     {
         "active": false,
-        "description": "Homebrew/php (deprecated)",
+        "description": "\ud83d\udc80 Homebrew/php (deprecated)",
         "external_link": null,
         "external_link_type": null,
         "label": "hb",
@@ -947,6 +1101,17 @@
     },
     {
         "active": true,
+        "description": "My personal tap",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "hb",
+        "link": "https://github.com/josegonzalez/homebrew-tap",
+        "name": "tap",
+        "type": "homebrew",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "J2ME TodoList app for phones with CLDC-1.1 configuration and MIDP-2.1 profile",
         "external_link": null,
         "external_link_type": null,
@@ -954,6 +1119,17 @@
         "link": "https://github.com/josegonzalez/java-todo-list",
         "name": "todo-list",
         "type": "java",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "Make the aws status page a bit more useful during outages",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "js",
+        "link": "https://github.com/josegonzalez/real-aws-status",
+        "name": "real-aws-status",
+        "type": "js",
         "unmaintained": false
     },
     {
@@ -1050,8 +1226,19 @@
         "external_link": "https://pypi.python.org/pypi/amqp-dispatcher",
         "external_link_type": "pypi",
         "label": "py",
-        "link": "https://github.com/opschops/amqp-dispatcher",
+        "link": "https://github.com/seatgeek/amqp-dispatcher",
         "name": "amqp-dispatcher",
+        "type": "python",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "Ansible modules for installing and configuring Dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "py",
+        "link": "https://github.com/dokku/ansible-dokku",
+        "name": "ansible-dokku",
         "type": "python",
         "unmaintained": false
     },
@@ -1101,17 +1288,6 @@
     },
     {
         "active": true,
-        "description": "python-based distributed cron-like service backed by mysql and rabbitmq",
-        "external_link": "https://pypi.python.org/pypi/cronq",
-        "external_link_type": "pypi",
-        "label": "py",
-        "link": "https://github.com/seatgeek/cronq",
-        "name": "cronq",
-        "type": "python",
-        "unmaintained": false
-    },
-    {
-        "active": true,
         "description": "A simple service for managing a dnsimple account.",
         "external_link": null,
         "external_link_type": null,
@@ -1151,17 +1327,6 @@
         "label": "py",
         "link": "https://github.com/josegonzalez/python-gitlab-backup",
         "name": "gitlab-backup",
-        "type": "python",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "python-based alerting application for Graphite metrics",
-        "external_link": "https://pypi.python.org/pypi/graphitepager",
-        "external_link_type": "pypi",
-        "label": "py",
-        "link": "https://github.com/seatgeek/graphite-pager",
-        "name": "graphite-pager",
         "type": "python",
         "unmaintained": false
     },
@@ -1272,6 +1437,17 @@
         "label": "sh",
         "link": "https://github.com/seatgeek/bash-aptfile",
         "name": "aptfile",
+        "type": "shell",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A setup script for the dc2 container instances",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "sh",
+        "link": "https://github.com/josegonzalez/bash-dc2-setup",
+        "name": "dc2-setup",
         "type": "shell",
         "unmaintained": false
     },
