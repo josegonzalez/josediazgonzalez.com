@@ -14,8 +14,18 @@ I'm an Infrastructure Engineer based in New York, New York with an [extremely ac
 
 ### Currently
 
+- Technical Director @ Plotly, Inc.
+  <div class="time-period">2019 - Current</div>
+  - Managed internal sales engineering team
+  - Lead migration of infrastructure from GCP to Azure
+  - Prototyped Dash Enterprise Workspaces, an IDE for Analytic applications in the cloud
+  - Contributed to Kubernetes support for our Dash Enterprise PaaS
+  - Worked on team that developed Heroku-like PaaS functionality for Dash Enterprise
+
+### Past
+
 - Lead Infrastructure Engineer @ SeatGeek, Inc.
-  <div class="time-period">2010 - Present</div>
+  <div class="time-period">2010 - 2019</div>
   - Lead rebuild of application deployment methods from Git+SSH to Debian Package Deployment and finally Docker deployment on top of Hashicorp's Nomad Scheduler.
   - Built and maintained internal tools for self-service docker deployments via web admin/api, CI/CD pipeline via TravisCI and Gitlab, as well as our internal tooling for integrating with the AWS and Hashicorp toolchain.
   - One of a small team dedicated to the "lift and shift" of a legacy Windows-based application into the cloud.
@@ -36,16 +46,21 @@ I'm an Infrastructure Engineer based in New York, New York with an [extremely ac
 
 ### Professional Skills
 
-- Application Deployment: Debian Packaging, Docker/Swarm, ECS, Hashicorp Nomad, Heroku, Kubernetes
-- Application Development: Golang (Buffalo, Gin), Lua, Java (Android), NodeJS (Express) PHP (CakePHP, Laravel, Symfony), Python (Flask, Tornado), Ruby (Rails, Sinatra), Powershell, Shell
+- Application Deployment: Capistrano, Debian Packaging, Hashicorp Nomad, Heroku, Kubernetes
+  - Passing Knowledge: Docker/Swarm, ECS
+- Application Development: Golang (Gin), Lua, PHP (CakePHP, Laravel, Symfony 1.x), Python (Dash, Flask), Ruby (Sinatra), Powershell, Shell
+  - Passing Knowledge: Golang (Buffalo), Java (Android), NodeJS (Express), Python (Tornado), Ruby (Rails)
+- Programming Languages: Golang, PHP, Python, Ruby, Shell, SQL
+  - Passing Knowledge: C#, JavaScript, Julia, Lua, R, Powershell, Scala
 - Configuration Management: Ansible, Chef, Puppet
-- Datastore deployment and maintenance: ElasticSearch, MongoDB, MySQL, Postgres, SQL Server, RabbitMQ, Redis
-- Hosting Providers: AWS, Digital Ocean, Linode, Rackspace
+- Datastore deployment and maintenance: MySQL, Postgres, RabbitMQ, Redis
+  - Passing Knowledge: ElasticSearch, MongoDB, SQL Server
+- Hosting Providers: Azure, AWS, Digital Ocean, GCP, Linode, Rackspace
 - Operating Systems: Debian, Redhat, Ubuntu, Windows Server 2016
-- Server Orchestration: Cloudformation, Packer, Terraform, Vagrant
+- Server Orchestration: Cloudformation/Sparkleformation, Packer, Terraform, Vagrant
 - [CakePHP Core Developer](https://github.com/cakephp/)
 - Speaker:
-  - CakeFest [2011](http://lanyrd.com/2011/cakefest/), [2012](http://lanyrd.com/2012/cakefest/), [2013](http://lanyrd.com/2013/cakefest/), [2014](http://lanyrd.com/2014/cakefest/), and [2017](http://lanyrd.com/2017/cakefest2017/)
+  - CakeFest [2011](http://lanyrd.com/2011/cakefest/), [2012](http://lanyrd.com/2012/cakefest/), [2013](https://cakefest.org/archive/sanfrancisco-2013), [2014](https://cakefest.org/archive/madrid-2014), [2017](https://cakefest.org/archive/newyork-2017), and [2019](https://cakefest.org/archive/tokyo-2019)
   - [Southeast PHP 2018](https://speakerdeck.com/josegonzalez/12-factor-php-applications-the-remix-1)
 
 ---
