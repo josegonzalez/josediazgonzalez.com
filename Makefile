@@ -17,7 +17,7 @@ dev-server:
 
 .PHONY: remove-cache
 remove-cache:
-	rm -f bin/generate-data.cache.db
+	rm -f bin/generate-data.cache
 
 .PHONY: generate-data
 generate-data:
