@@ -42,7 +42,11 @@ endif
 
 .PHONY: tags
 tags:
-	ls _site/tags
+	@ls _site/tags
+
+.PHONY: categories
+categories:
+	@ls _site/categories
 
 _site:
 	git clone "git@github.com:${SITE_REPOSITORY}.git" _site
