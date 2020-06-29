@@ -51,13 +51,16 @@ I'm an Infrastructure Engineer based in New York, New York with an [extremely ac
 - Application Development: Golang (Gin), Lua, PHP (CakePHP, Laravel, Symfony 1.x), Python (Dash, Flask), Ruby (Sinatra), Powershell, Shell
   - Passing Knowledge: Golang (Buffalo), Java (Android), NodeJS (Express), Python (Tornado), Ruby (Rails)
 - Programming Languages: Golang, PHP, Python, Ruby, Shell, SQL
-  - Passing Knowledge: C#, JavaScript, Julia, Lua, R, Powershell, Scala
-- Configuration Management: Ansible, Chef, Puppet
+  - Passing Knowledge: C#, JavaScript, Julia, Lua, .NET, R, Powershell, Scala
+- Configuration Management: Ansible, Chef
+  - Passing Knowledge: Puppet
 - Datastore deployment and maintenance: MySQL, Postgres, RabbitMQ, Redis
   - Passing Knowledge: ElasticSearch, MongoDB, SQL Server
-- Hosting Providers: Azure, AWS, Digital Ocean, GCP, Linode, Rackspace
+- Hosting Providers: AWS, Digital Ocean, Linode
+  - Passing Knowledge: Azure, GCP, Rackspace
 - Operating Systems: Debian, Redhat, Ubuntu, Windows Server 2016
-- Server Orchestration: Cloudformation/Sparkleformation, Packer, Terraform, Vagrant
+- Server Orchestration: Packer, Terraform, Vagrant
+  - Passing Knowledge: Cloudformation/Sparkleformation
 - [CakePHP Core Developer](https://github.com/cakephp/)
 - Speaker:
   - CakeFest [2011](http://lanyrd.com/2011/cakefest/), [2012](http://lanyrd.com/2012/cakefest/), [2013](https://cakefest.org/archive/sanfrancisco-2013), [2014](https://cakefest.org/archive/madrid-2014), [2017](https://cakefest.org/archive/newyork-2017), and [2019](https://cakefest.org/archive/tokyo-2019)
@@ -68,7 +71,6 @@ I'm an Infrastructure Engineer based in New York, New York with an [extremely ac
 ### Me on the Internet
 
 - Github: <a target="_blank" href="http://github.com/josegonzalez">josegonzalez</a>
-- Lanyrd: <a target="_blank" href="http://lanyrd.com/profile/savant/">savant</a>
 - LinkedIn: <a target="_blank" href="http://www.linkedin.com/in/josediazgonzalez">josediazgonzalez</a>
 - Speaker Deck: <a target="_blank" href="https://speakerdeck.com/josegonzalez">josediazgonzalez</a>
 - Stackoverflow: <a target="_blank" href="http://stackoverflow.com/users/1515875/jose-diaz-gonzalez">jose-diaz-gonzalez</a>
