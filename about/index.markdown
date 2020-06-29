@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Jose Diaz-Gonzalez
-lead: Infrastructure Engineer @ SeatGeek
+lead: Technical Director @ Plotly
 full_page: true
 disable_categories: true
 ---
 
 ## Summary
 
-I'm an Infrastructure Engineer based in New York, New York with an [extremely active github account](https://github.com/josegonzalez/) and an interest in Application Deployment and Server Monitoring. My background is originally as a software developer, something which I continue to do in my spare time through open source. I've been doing this since around 2008 and sometimes I blog [on this website](/).
+I'm a Technical Directory based in New York, New York with an [extremely active github account](https://github.com/josegonzalez/) and an interest in Application Deployment and Server Monitoring. My background is originally as a software developer, something which I continue to do in my spare time through open source. I've been doing this since around 2008 and sometimes I blog [on this website](/).
 
 ---
 
