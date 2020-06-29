@@ -7,7 +7,7 @@
     - deployment
   comments:    true
   sharing:     true
-  published:   false
+  published:   true
   layout:      post
   disable_advertisement: false
 ---
