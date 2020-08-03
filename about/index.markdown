@@ -18,6 +18,7 @@ I'm a Technical Director based in New York, New York with an interest in Applica
   - Lead migration of infrastructure from GCP to Azure via Terraform
   - Prototyped Dash Enterprise Workspaces, an IDE for Analytic applications in the cloud
   - Worked on team that developed Heroku-like PaaS functionality for Dash Enterprise
+  - General support for sales processes (calls, customer visits, POCs)
   - Tech: Bash, Golang, Julia, Python, R, Ansible, Packer, Kubernetes (AKS, EKS, GKE), Terraform
 
 ### Previously
