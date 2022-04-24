@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 group :development do
   gem "jekyll",                  "~> 4.0.1"
-  gem "jekyll-sass-converter",   "~> 2.1.0"
+  gem "jekyll-sass-converter",   "~> 2.2.0"
   gem "multi_json",              "~> 1.14.1"
   gem "nokogiri",                "~> 1.13.4"
   gem "rb-fsevent",              "~> 0.10.4"
