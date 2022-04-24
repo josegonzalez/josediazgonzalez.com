@@ -31,7 +31,8 @@ PREFIX_MAP = {
     'golang': 'go',
 }
 PRIMARY_USERNAME = 'josegonzalez'
-USERNAMES = ['josegonzalez', 'dokku', 'python-beaver', 'seatgeek', 'homebrew', 'opschops', 'FriendsOfCake']
+USERNAMES = ['josegonzalez', 'dokku', 'python-beaver',
+             'seatgeek', 'homebrew', 'opschops', 'FriendsOfCake']
 FORCE_SKIP = [
     'dokku/arch-herokuish',
     'dokku/arch-plugn',
@@ -42,6 +43,7 @@ FORCE_SKIP = [
     'dokku/dokku-http-auth',
     'dokku/dokku-letsencrypt',
     'dokku/dokku-maintenance',
+    'dokku/dokku-registry',
     'dokku/dokku-redirect',
     'dokku/dokku-service-tests',
     'dokku/dokku.github.io',
@@ -224,11 +226,13 @@ WHITELISTED = {
     'python-beaver/python-conf_d': 'python',
     'dokku/ansible-dokku': 'python',
     'dokku/dokku-event-listener': 'go',
+    'dokku/dokku-clickhouse': 'dokku',
     'dokku/dokku-copy-files-to-image': 'dokku',
     'dokku/dokku-couchdb': 'dokku',
     'dokku/dokku-elasticsearch': 'dokku',
     'dokku/dokku-graphite': 'dokku',
     'dokku/dokku-mariadb': 'dokku',
+    'dokku/dokku-meilisearch': 'dokku',
     'dokku/dokku-memcached': 'dokku',
     'dokku/dokku-mongo': 'dokku',
     'dokku/dokku-mysql': 'dokku',
@@ -243,12 +247,18 @@ WHITELISTED = {
     'dokku/dokku-scheduler-kubernetes': 'dokku',
     'dokku/dokku-scheduler-nomad': 'dokku',
     'dokku/dokku-solr': 'dokku',
+    'dokku/docker-image-labeler': 'go',
+    'dokku/lambda-builder': 'go',
+    'dokku/netrc': 'go',
+    'dokku/procfile-util': 'go',
+    'dokku/prop': 'go',
     'dokku/sshcommand': 'shell',
     'dokku/docker-ambassador': 'docker',
     'Homebrew/homebrew-php': 'homebrew',
     'josegonzalez/dc2': 'go',
     'josegonzalez/dokku-avahi-register': 'dokku',
     'josegonzalez/dokku-procfile-picker': 'dokku',
+    'josegonzalez/hashi-report': 'go',
     'josegonzalez/real-aws-status': 'js',
     'josegonzalez/sshd-config': 'go',
     'seatgeek/amqp-dispatcher': 'python',
@@ -368,7 +378,6 @@ def github_data(name, filename):
 
     if int(r.getcode()) != 200:
         log_error('Missing {0}'.format(filename))
-        return None
 
     return r.read().decode('utf-8')
 
@@ -443,15 +452,18 @@ def project_data(name, label, prefix, description, repository):
         python = github_data(repository.get('full_name'), 'setup.py')
         if python:
             external_link = 'https://pypi.python.org/pypi/{0}'
-            external_link = external_link.format(RE_NAME.search(python).group(1))
+            external_link = external_link.format(
+                RE_NAME.search(python).group(1))
             external_link_type = 'pypi'
 
     if composer and 'name' in composer:
-        external_link = 'https://packagist.org/packages/{0}'.format(composer['name'])
+        external_link = 'https://packagist.org/packages/{0}'.format(
+            composer['name'])
         external_link_type = 'packagist'
 
     if repository.get('full_name') in RUBYGEMS:
-        external_link = 'https://rubygems.org/gems/{0}'.format(RUBYGEMS[repository.get('full_name')])
+        external_link = 'https://rubygems.org/gems/{0}'.format(
+            RUBYGEMS[repository.get('full_name')])
         external_link_type = 'rubygems'
 
     name = name.replace('{0}-'.format(prefix), '')
@@ -525,7 +537,8 @@ def main():
                 name_prefixed = name.startswith('{0}-'.format(prefix))
                 if not description:
                     description = ''
-                description_prefixed = description.lower().startswith('{0}'.format(prefix))
+                description_prefixed = description.lower(
+                ).startswith('{0}'.format(prefix))
                 is_whitelisted = full_name in WHITELISTED and WHITELISTED[full_name] == prefix
                 if name_prefixed or description_prefixed or is_whitelisted:
                     if len(description) == 0:

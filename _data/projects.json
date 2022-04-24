@@ -507,7 +507,7 @@
     },
     {
         "active": true,
-        "description": "Users plugin based on the CRUD action classes",
+        "description": "CakePHP: Users plugin based on the CRUD action classes",
         "external_link": "https://packagist.org/packages/friendsofcake/crud-users",
         "external_link_type": "packagist",
         "label": "cake3",
@@ -639,6 +639,17 @@
     },
     {
         "active": true,
+        "description": "Adds and removes labels from docker images",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dock",
+        "link": "https://github.com/dokku/docker-image-labeler",
+        "name": "image-labeler",
+        "type": "dock",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "python-based .travis.yml parser that poops out a simple dockerfile for php projects",
         "external_link": null,
         "external_link_type": null,
@@ -656,6 +667,17 @@
         "label": "dokku",
         "link": "https://github.com/josegonzalez/dokku-avahi-register",
         "name": "avahi-register",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a clickhouse plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-clickhouse",
+        "name": "clickhouse",
         "type": "dokku",
         "unmaintained": false
     },
@@ -766,6 +788,17 @@
         "label": "dokku",
         "link": "https://github.com/dokku/dokku-mariadb",
         "name": "mariadb",
+        "type": "dokku",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "a meillisearch plugin for dokku",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "dokku",
+        "link": "https://github.com/dokku/dokku-meilisearch",
+        "name": "meilisearch",
         "type": "dokku",
         "unmaintained": false
     },
@@ -892,17 +925,6 @@
     },
     {
         "active": true,
-        "description": "Manages interaction with remote Docker Registries",
-        "external_link": null,
-        "external_link_type": null,
-        "label": "dokku",
-        "link": "https://github.com/dokku/dokku-registry",
-        "name": "registry",
-        "type": "dokku",
-        "unmaintained": false
-    },
-    {
-        "active": true,
         "description": "a rethinkdb plugin for dokku",
         "external_link": null,
         "external_link_type": null,
@@ -969,6 +991,17 @@
     },
     {
         "active": true,
+        "description": "Writes out a test script to retry failing bats tests",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/josegonzalez/go-bats-retry",
+        "name": "bats-retry",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "Tool for managing a homebrew installation",
         "external_link": null,
         "external_link_type": null,
@@ -991,6 +1024,28 @@
     },
     {
         "active": true,
+        "description": "Generate a usage report for hashicorp product clusters",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/josegonzalez/hashi-report",
+        "name": "hashi-report",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A tool for building lambda function images or zips via Docker",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/dokku/lambda-builder",
+        "name": "lambda-builder",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "golang metrics collecting agent for linux",
         "external_link": null,
         "external_link_type": null,
@@ -1002,12 +1057,34 @@
     },
     {
         "active": true,
+        "description": "Utility that allows users to manage netrc files",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/dokku/netrc",
+        "name": "netrc",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
         "description": "A tool for interacting with Procfiles",
         "external_link": null,
         "external_link_type": null,
         "label": "go",
-        "link": "https://github.com/josegonzalez/go-procfile-util",
+        "link": "https://github.com/dokku/procfile-util",
         "name": "procfile-util",
+        "type": "go",
+        "unmaintained": false
+    },
+    {
+        "active": true,
+        "description": "A golang-based cli interface for manipulating config backed by various datastores",
+        "external_link": null,
+        "external_link_type": null,
+        "label": "go",
+        "link": "https://github.com/dokku/prop",
+        "name": "prop",
         "type": "go",
         "unmaintained": false
     },
@@ -1089,15 +1166,15 @@
         "unmaintained": false
     },
     {
-        "active": false,
-        "description": "Homebrew/php (deprecated)",
+        "active": true,
+        "description": "A homebrew repo for all my random scripts",
         "external_link": null,
         "external_link_type": null,
         "label": "hb",
-        "link": "https://github.com/Homebrew/homebrew-php",
-        "name": "php",
+        "link": "https://github.com/josegonzalez/homebrew-repo",
+        "name": "repo",
         "type": "homebrew",
-        "unmaintained": true
+        "unmaintained": false
     },
     {
         "active": true,
@@ -1130,17 +1207,6 @@
         "link": "https://github.com/josegonzalez/real-aws-status",
         "name": "real-aws-status",
         "type": "js",
-        "unmaintained": false
-    },
-    {
-        "active": true,
-        "description": "php-based application that helps you track build artifacts from your continuous integration setup",
-        "external_link": "https://packagist.org/packages/slim/slim-skeleton",
-        "external_link_type": "packagist",
-        "label": "php",
-        "link": "https://github.com/seatgeek/build-artifacts",
-        "name": "build-artifacts",
-        "type": "php",
         "unmaintained": false
     },
     {
