@@ -8,3 +8,7 @@ updates:
     directory: "/.github/actions/build-and-deploy"
     schedule:
       interval: "daily"
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
