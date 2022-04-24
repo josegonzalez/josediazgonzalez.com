@@ -1,4 +1,4 @@
-FROM jekyll/builder:4.0.1
+FROM jekyll/builder:4.2.2
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
