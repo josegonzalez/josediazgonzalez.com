@@ -42,7 +42,7 @@ endif
 
 .PHONY: tags
 tags:
-	@ls _site/tags
+	bin/tags
 
 .PHONY: categories
 categories:
