@@ -1,7 +1,7 @@
 ---
-  title:       "rotating-aws-credentials"
+  title:       "Rotating AWS Credentials"
   date:        2022-04-24 16:04
-  description: ""
+  description: "Keeping your credentials fresh for general infra hygiene"
   category:    installation
   tags:
     - aws
