@@ -6,7 +6,7 @@
   tags:
     - cakeadvent-2015
     - cakephp
-    - upload
+    - uploads
     - files
     - images
   redirects:

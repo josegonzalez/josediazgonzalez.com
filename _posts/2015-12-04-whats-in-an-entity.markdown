@@ -7,7 +7,7 @@
     - cakeadvent-2015
     - cakephp
     - table
-    - entity
+    - entities
   comments:    true
   sharing:     true
   published:   true

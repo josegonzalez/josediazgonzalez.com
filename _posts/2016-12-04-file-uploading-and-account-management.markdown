@@ -6,7 +6,7 @@
   tags:
     - files
     - user-accounts
-    - upload
+    - uploads
     - cakeadvent-2016
     - cakephp
   comments:    true
