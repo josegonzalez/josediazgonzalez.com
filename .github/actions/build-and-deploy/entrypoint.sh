@@ -21,10 +21,10 @@ main() {
 
   echo "-----> Cloning site repository"
   if [[ -n "$TRACE" ]]; then
-    git clone "$REPOSITORY_URL" _site | sed -u "s/^/       /"
+    su-exec jekyll git clone "$REPOSITORY_URL" _site | sed -u "s/^/       /"
     ls -lah _site | sed -u "s/^/       /"
   else
-    git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed -u "s/^/       /"
+    su-exec jekyll git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed -u "s/^/       /"
   fi
 
   echo "-----> Building site"
@@ -34,15 +34,15 @@ main() {
   ls -lah . | sed -u "s/^/       /"
 
   echo "-----> Configuring git for push"
-  git config user.name "$GITHUB_ACTOR" | sed -u "s/^/       /"
-  git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" | sed -u "s/^/       /"
+  su-exec jekyll git config user.name "$GITHUB_ACTOR" | sed -u "s/^/       /"
+  su-exec jekyll git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" | sed -u "s/^/       /"
 
   echo "-----> Committing changes"
-  git add . | sed -u "s/^/       /"
-  git commit -m 'Jekyll Build from Action' | sed -u "s/^/       /"
+  su-exec jekyll git add . | sed -u "s/^/       /"
+  su-exec jekyll git commit -m 'Jekyll Build from Action' | sed -u "s/^/       /"
 
   echo "-----> Pushing code"
-  git push origin master | sed -u "s/^/       /"
+  su-exec jekyll git push origin master | sed -u "s/^/       /"
 
   popd > /dev/null
   echo "=====> Push complete"
