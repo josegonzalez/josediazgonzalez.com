@@ -17,10 +17,14 @@ main() {
   fi
 
   echo "-----> Ruby version"
-  ruby -v > /dev/null 2>&1 | sed -u "s/^/       /"
+  ruby -v | sed -u "s/^/       /"
 
   echo "-----> Cloning site repository"
-  git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed -u "s/^/       /"
+  if [[ -n "$TRACE" ]]; then
+    git clone "$REPOSITORY_URL" _site | sed -u "s/^/       /"
+  else
+    git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed -u "s/^/       /"
+  fi
 
   echo "-----> Building site"
   jekyll build | sed -u "s/^/       /"
