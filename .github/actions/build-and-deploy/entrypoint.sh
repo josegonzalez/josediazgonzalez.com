@@ -22,6 +22,7 @@ main() {
   echo "-----> Cloning site repository"
   if [[ -n "$TRACE" ]]; then
     git clone "$REPOSITORY_URL" _site | sed -u "s/^/       /"
+    ls -lah _site
   else
     git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed -u "s/^/       /"
   fi
@@ -30,6 +31,7 @@ main() {
   jekyll build | sed -u "s/^/       /"
 
   pushd _site > /dev/null
+  ls -lah .
 
   echo "-----> Configuring git for push"
   git config user.name "$GITHUB_ACTOR" | sed -u "s/^/       /"
