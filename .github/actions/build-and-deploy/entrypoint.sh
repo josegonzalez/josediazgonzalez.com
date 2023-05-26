@@ -42,7 +42,7 @@ main() {
   su-exec jekyll git commit -m 'Jekyll Build from Action' | sed -u "s/^/       /"
 
   echo "-----> Pushing code"
-  su-exec jekyll git remote set origin "$REPOSITORY_URL" | sed -u "s/^/       /"
+  su-exec jekyll git remote set-url origin "$REPOSITORY_URL" | sed -u "s/^/       /"
   su-exec jekyll git push origin master | sed -u "s/^/       /"
 
   popd > /dev/null
