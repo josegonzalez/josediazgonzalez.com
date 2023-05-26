@@ -16,6 +16,9 @@ main() {
     return 1
   fi
 
+  echo "-----> Ruby version"
+  ruby -v > /dev/null 2>&1 | sed "s/^/       /"
+
   echo "-----> Cloning site repository"
   git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed "s/^/       /"
 
