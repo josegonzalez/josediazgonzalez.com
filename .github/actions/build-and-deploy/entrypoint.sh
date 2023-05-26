@@ -17,26 +17,26 @@ main() {
   fi
 
   echo "-----> Ruby version"
-  ruby -v > /dev/null 2>&1 | sed "s/^/       /"
+  ruby -v > /dev/null 2>&1 | sed -u "s/^/       /"
 
   echo "-----> Cloning site repository"
-  git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed "s/^/       /"
+  git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed -u "s/^/       /"
 
   echo "-----> Building site"
-  jekyll build | sed "s/^/       /"
+  jekyll build | sed -u "s/^/       /"
 
   pushd _site > /dev/null
 
   echo "-----> Configuring git for push"
-  git config user.name "$GITHUB_ACTOR" | sed "s/^/       /"
-  git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" | sed "s/^/       /"
+  git config user.name "$GITHUB_ACTOR" | sed -u "s/^/       /"
+  git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" | sed -u "s/^/       /"
 
   echo "-----> Committing changes"
-  git add . | sed "s/^/       /"
-  git commit -m 'Jekyll Build from Action' | sed "s/^/       /"
+  git add . | sed -u "s/^/       /"
+  git commit -m 'Jekyll Build from Action' | sed -u "s/^/       /"
 
   echo "-----> Pushing code"
-  git push origin master | sed "s/^/       /"
+  git push origin master | sed -u "s/^/       /"
 
   popd > /dev/null
   echo "=====> Push complete"
