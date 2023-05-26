@@ -1,19 +1,28 @@
 ---
 layout: default
 title: Jose Diaz-Gonzalez
-lead: Technical Director @ Plotly
+lead: Software Engineer
 full_page: true
 disable_categories: true
 ---
 
 ## Summary
 
-I'm a Technical Director based in New York, New York with an interest in Application Deployment and Server Monitoring. My background is originally as a software developer, something which I continue to do in my spare time through open source. I've been doing this since around 2008 and sometimes I blog [on this website]({{ site.url }}/).
+I'm a Software Engineer based in New York, New York with an interest in Application Deployment and Server Monitoring. I've been doing this since around 2008 and sometimes I blog [on this website]({{ site.url }}/).
 
-### Current
+### Previously
+
+- Staff Engineer @ SeatGeek, Inc.
+  <div class="time-period">Oct 2020 - June 2023</div>
+  - Led technical work to modernize our deployment tooling, enabling an SaaS approach to the software supporting back office operations for the Cowboys, Saints, Cavaliers, and other Big 4 sports clients
+  - Worked in partnership with RnD teams to onboard all CI - mobile and otherwise - to our cloud platform
+  - Rewrote release tooling to support ongoing migration from Nomad to Kubernetes with minimal engineering interaction
+  - Worked with HRBPs and other tech leads to bring both education, mentorship, cross-departmental training opportunities to the broader engineering organization
+  - Product Manager for Release Engineering team, working to both increase velocity as well as improve the teams ability to understand, design, and build resilient systems in a manner that proves value to the business before major investment
+  - Active participant in incident management process, including on-call, postmortem, and remediation work
 
 - Technical Director @ Plotly, Inc.
-  <div class="time-period">2019 - Current</div>
+  <div class="time-period">Mar 2019 - Oct 2020</div>
   - Managed internal engineering team
   - Lead migration of infrastructure from GCP to Azure via Terraform
   - Prototyped Dash Enterprise Workspaces, an IDE for Analytic applications in the cloud
@@ -21,10 +30,8 @@ I'm a Technical Director based in New York, New York with an interest in Applica
   - General support for sales processes (calls, customer visits, POCs)
   - Tech: Bash, Golang, Julia, Python, R, Ansible, Packer, Kubernetes (AKS, EKS, GKE), Terraform
 
-### Previously
-
 - Lead Infrastructure Engineer @ SeatGeek, Inc.
-  <div class="time-period">2010 - 2019</div>
+  <div class="time-period">Feb 2010 - Feb 2019</div>
   - Lead rebuild of application deployment methods from Git+SSH to Debian Package Deployment and finally Docker deployment on top of Hashicorp's Nomad Scheduler.
   - Built and maintained internal tools for self-service docker deployments via web admin/api, CI/CD pipeline via TravisCI and Gitlab, as well as our internal tooling for integrating with the AWS and Hashicorp toolchain.
   - One of a small team dedicated to the "lift and shift" of a legacy Windows-based application into the cloud.
@@ -35,21 +42,21 @@ I'm a Technical Director based in New York, New York with an interest in Applica
 
 ### Professional Skills
 
-- Application Deployment: Capistrano, Debian Packaging, Hashicorp Nomad, Heroku, Kubernetes; Passing Knowledge: Docker/Swarm, ECS
-- Application Development: Golang (Gin), Lua, PHP (CakePHP, Laravel, Symfony 1.x), Python (Dash, Flask), Ruby (Sinatra), Powershell, Shell; Passing Knowledge: Golang (Buffalo), Java (Android), NodeJS (Express), Python (Tornado), Ruby (Rails)
-- Programming Languages: Golang, PHP, Python, Ruby, Shell, SQL; Passing Knowledge: C#, JavaScript, Julia, Lua, .NET, R, Powershell, Scala
+- Application Deployment: Capistrano, Debian Packaging, Hashicorp Nomad, Heroku, Kubernetes; Passing Knowledge: Docker Swarm, ECS
+- Application Development: Golang (Gin), Lua, PHP (CakePHP, Laravel, Symfony 1.x), Python (Dash, FastAPI. Flask), Ruby (Sinatra), Powershell, Shell; Passing Knowledge: Golang (Buffalo), Java (Android), NodeJS (Express), Python (Tornado), Ruby (Rails)
+- Programming Languages: Golang, PHP, Python, Ruby, Shell, SQL; Passing Knowledge: C#, JavaScript, Julia, Lua, .NET, R, Rust, Powershell, Scala
 - Configuration Management: Ansible, Chef; Passing Knowledge: Puppet
 - Datastore deployment and maintenance: MySQL, Postgres, RabbitMQ, Redis; Passing Knowledge: ElasticSearch, MongoDB, SQL Server
 - Hosting Providers: AWS, Digital Ocean, Linode; Passing Knowledge: Azure, GCP, Rackspace
-- Operating Systems: Debian, Redhat, Ubuntu, Windows Server 2016
-- Server Orchestration: Packer, Terraform, Vagrant; Passing Knowledge: Cloudformation/Sparkleformation
+- Operating Systems: Debian, Redhat, Ubuntu, Windows Server 2019
+- Server Orchestration: Packer, Pulumi, Terraform, Vagrant; Passing Knowledge: Cloudformation/Sparkleformation
 
 ### Highlighted Works <small><small>(<a href="{{ site.url }}/open-source/">a non-exhaustive set of examples</a>)</small></small>
 
 - [beaver](https://github.com/python-beaver/python-beaver): A python daemon python daemon that consumes log messages and sends their contents to intermediate brokers for use with [Logstash](http://logstash.net/).
 - [Dokku](https://github.com/dokku/dokku): Current co-maintainer of a Docker-powered, single-server heroku clone.
 - [metricsd](https://github.com/josegonzalez/metricsd): A server metrics collector similar to [Diamond](https://github.com/python-diamond/Diamond) written in golang.
-- homebrew-php: Original maintainer of php-related homebrew formulae for the popular OS X package manager, <a href="http://mxcl.github.com/homebrew/">Homebrew</a>.
+- homebrew-php: Original maintainer of php-related homebrew formulae for the popular OS X package manager, <a href="https://brew.sh/">Homebrew</a>.
 
 ### Errata
 
@@ -61,8 +68,9 @@ I'm a Technical Director based in New York, New York with an interest in Applica
 
 #### Speaker
 
-- CakeFest [2011](http://lanyrd.com/2011/cakefest/), [2012](http://lanyrd.com/2012/cakefest/), [2013](https://cakefest.org/archive/sanfrancisco-2013), [2014](https://cakefest.org/archive/madrid-2014), [2017](https://cakefest.org/archive/newyork-2017), and [2019](https://cakefest.org/archive/tokyo-2019)
+- CakeFest [2011](http://lanyrd.com/2011/cakefest/), [2012](http://lanyrd.com/2012/cakefest/), [2013](https://cakefest.org/archive/sanfrancisco-2013), [2014](https://cakefest.org/archive/madrid-2014), [2017](https://cakefest.org/archive/newyork-2017), [2019](https://cakefest.org/archive/tokyo-2019), and [2020](https://cakefest.org/archive/virtual-2020)
 - [Southeast PHP 2018](https://speakerdeck.com/josegonzalez/12-factor-php-applications-the-remix-1)
+- [Hashiconf 2022](https://youtu.be/PoZrKZOVK64)
 
 ### Education
 
