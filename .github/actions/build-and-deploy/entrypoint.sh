@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -eo pipefail
+[[ -n "$TRACE" ]] && set -x
 
 main() {
   local MAINTAINER="$(echo "$GITHUB_REPOSITORY" | cut -d '/' -f1)"
