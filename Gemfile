@@ -7,7 +7,7 @@ group :development do
   gem "nokogiri",                "~> 1.13.4"
   gem "rb-fsevent",              "~> 0.11.1"
   gem "sass",                    "~> 3.7.4"
-  gem "tilt",                    "~> 2.0.10"
+  gem "tilt",                    "~> 2.1.0"
 end
 
 gem "sinatra",                   "~> 2.2.0"
