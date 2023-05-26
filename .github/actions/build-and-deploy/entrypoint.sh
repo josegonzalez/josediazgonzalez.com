@@ -21,10 +21,10 @@ main() {
 
   echo "-----> Cloning site repository"
   if [[ -n "$TRACE" ]]; then
-    su-exec jekyll git clone "$REPOSITORY_URL" _site | sed -u "s/^/       /"
+    git clone "$REPOSITORY_URL" _site | sed -u "s/^/       /"
     ls -lah _site | sed -u "s/^/       /"
   else
-    su-exec jekyll git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed -u "s/^/       /"
+    git clone "$REPOSITORY_URL" _site > /dev/null 2>&1 | sed -u "s/^/       /"
   fi
 
   echo "-----> Building site"
