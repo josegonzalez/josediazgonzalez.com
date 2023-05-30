@@ -53,7 +53,7 @@ I'm a Software Engineer based in New York, New York with an interest in Applicat
 
 ### Highlighted Works <small><small>(<a href="{{ site.url }}/open-source/">a non-exhaustive set of examples</a>)</small></small>
 
-- [beaver](https://github.com/python-beaver/python-beaver): A python daemon python daemon that consumes log messages and sends their contents to intermediate brokers for use with [Logstash](http://logstash.net/).
+- [beaver](https://github.com/python-beaver/python-beaver): A python daemon that consumes log messages and sends their contents to intermediate brokers for use with [Logstash](http://logstash.net/).
 - [Dokku](https://github.com/dokku/dokku): Current co-maintainer of a Docker-powered, single-server heroku clone.
 - [metricsd](https://github.com/josegonzalez/metricsd): A server metrics collector similar to [Diamond](https://github.com/python-diamond/Diamond) written in golang.
 - homebrew-php: Original maintainer of php-related homebrew formulae for the popular OS X package manager, <a href="https://brew.sh/">Homebrew</a>.
