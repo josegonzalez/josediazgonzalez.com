@@ -10,4 +10,4 @@ group :development do
   gem "tilt",                    "~> 2.3.0"
 end
 
-gem "sinatra",                   "~> 3.1.0"
+gem "sinatra",                   "~> 4.0.0"
