@@ -51,7 +51,7 @@ I'm a Software Engineer based in New York, New York with an interest in Applicat
 ### Professional Skills
 
 - Application Deployment: Capistrano, Debian Packaging, Hashicorp Nomad, Helm, Heroku, Kubernetes; Passing Knowledge: Docker Swarm, ECS
-- Application Development: Golang (Gin), Lua, PHP (CakePHP, Laravel, Symfony 1.x), Python (Dash, FastAPI. Flask), Ruby (Sinatra), Powershell, Shell; Passing Knowledge: Golang (Buffalo), Java (Android), NodeJS (Express), Python (Tornado), Ruby (Rails)
+- Application Development: Golang (Gin), Lua, PHP (CakePHP, Laravel, Symfony 1.x), Python (Dash, FastAPI, Flask), Ruby (Sinatra), Powershell, Shell; Passing Knowledge: Golang (Buffalo), Java (Android), NodeJS (Express, React, VueJS), Python (Tornado), Ruby (Rails)
 - Programming Languages: Golang, PHP, Python, Ruby, Shell, SQL; Passing Knowledge: C#, JavaScript, Julia, Lua, .NET, R, Rust, Powershell, Scala
 - Configuration Management: Ansible, Chef; Passing Knowledge: Puppet
 - Datastore deployment and maintenance: MySQL, Postgres, RabbitMQ, Redis; Passing Knowledge: ElasticSearch, MongoDB, SQL Server
