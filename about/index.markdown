@@ -26,7 +26,7 @@ I'm a Software Engineer based in New York, New York with an interest in Applicat
   - Worked in partnership with RnD teams to onboard all CI - mobile and otherwise - to our cloud platform
   - Rewrote release tooling to support ongoing migration from Nomad to Kubernetes with minimal engineering interaction
   - Worked with HRBPs and other tech leads to bring both education, mentorship, cross-departmental training opportunities to the broader engineering organization
-  - Product Manager for Release Engineering team, working to both increase velocity as well as improve the teams ability to understand, design, and build resilient systems in a manner that proves value to the business before major investment
+  - Tech Lead for Release Engineering team, working to both increase velocity as well as improve the teams ability to understand, design, and build resilient systems in a manner that proves value to the business before major investment
   - Active participant in incident management process, including on-call, postmortem, and remediation work
 
 - Technical Director @ Plotly, Inc.
