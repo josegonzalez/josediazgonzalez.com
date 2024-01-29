@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 group :development do
-  gem "jekyll",                  "~> 4.3.2"
+  gem "jekyll",                  "~> 4.3.3"
   gem "jekyll-sass-converter",   "~> 2.2.0"
   gem "multi_json",              "~> 1.15.0"
   gem "nokogiri",                "~> 1.16.0"
