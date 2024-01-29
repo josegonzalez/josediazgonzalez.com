@@ -12,6 +12,14 @@ I'm a Software Engineer based in New York, New York with an interest in Applicat
 
 ### Previously
 
+- Engineer @ Porter
+  <div class="time-period">Aug 2023 - Jan 2024</div>
+  - Designed and led implementation of new app notifications system for improving visibility into application issues
+  - Rebuilt customer-facing app metric reporting for surfacing CPU/Memory, Scaling, and HTTP request data
+  - Architected and built backend (Golang) and frontend (React) for Datastore Provisioning
+  - Research and implementation for creating SOC2-compliant AWS EKS clusters on behalf of customers
+  - Implemented new framework for generating testable app tutorials for a variety of backend and frontend frameworks
+
 - Staff Engineer @ SeatGeek, Inc.
   <div class="time-period">Oct 2020 - June 2023</div>
   - Led technical work to modernize our deployment tooling, enabling an SaaS approach to the software supporting back office operations for the Cowboys, Saints, Cavaliers, and other Big 4 sports clients
@@ -42,7 +50,7 @@ I'm a Software Engineer based in New York, New York with an interest in Applicat
 
 ### Professional Skills
 
-- Application Deployment: Capistrano, Debian Packaging, Hashicorp Nomad, Heroku, Kubernetes; Passing Knowledge: Docker Swarm, ECS
+- Application Deployment: Capistrano, Debian Packaging, Hashicorp Nomad, Helm, Heroku, Kubernetes; Passing Knowledge: Docker Swarm, ECS
 - Application Development: Golang (Gin), Lua, PHP (CakePHP, Laravel, Symfony 1.x), Python (Dash, FastAPI. Flask), Ruby (Sinatra), Powershell, Shell; Passing Knowledge: Golang (Buffalo), Java (Android), NodeJS (Express), Python (Tornado), Ruby (Rails)
 - Programming Languages: Golang, PHP, Python, Ruby, Shell, SQL; Passing Knowledge: C#, JavaScript, Julia, Lua, .NET, R, Rust, Powershell, Scala
 - Configuration Management: Ansible, Chef; Passing Knowledge: Puppet
