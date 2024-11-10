@@ -104,6 +104,7 @@ include:
   - .buildpacks
   - .nojekyll
   - .static
+  - .well-known
 # Timezone for timestamp conversion
 timezone: UTC
 
