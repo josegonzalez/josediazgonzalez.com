@@ -1,15 +1,15 @@
 ---
-  title:       "Generating an offline PyPI cache"
-  date:        2020-06-29 03:04
-  description: ""
-  category:    opschops
-  tags:
-    - deployment
-  comments:    true
-  sharing:     true
-  published:   true
-  layout:      post
-  disable_advertisement: false
+category: opschops
+comments: true
+date: 2020-06-29 03:04
+description: ""
+disable_advertisement: false
+layout: post
+published: true
+sharing: true
+tags:
+- deployment
+title: Generating an offline PyPI cache
 ---
 
 When deploying Python applications to airgapped environments, it becomes necessary to ship application dependencies either with the app or provide a PyPI-like repository. I typically do this by using `pip2pi` within a docker container.
