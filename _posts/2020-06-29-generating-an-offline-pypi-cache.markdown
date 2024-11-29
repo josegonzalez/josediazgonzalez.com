@@ -73,4 +73,4 @@ docker image build -t pypiserver .
 docker container run -p 8081:80 --rm pypiserver
 ```
 
-I'm exposing the server on port 8081, and am now able to browse to `http://localhost:8081/packages.tar.gz` to fetch a tarball that contains my pypiserver. This container can also be served `directly`, in which case the pip index-url would be `http://localhost:8081/packages/simple/`.
+I'm exposing the server on port 8081, and am now able to browse to `http://localhost:8081/packages.tar.gz` to fetch a tarball that contains my pypiserver. This container can also be served directly, in which case the pip index-url would be `http://localhost:8081/packages/simple/`.
