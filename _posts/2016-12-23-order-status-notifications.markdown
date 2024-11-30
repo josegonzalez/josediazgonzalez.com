@@ -102,6 +102,7 @@ I've defined three different types of emails:
 - \`newOrder\`: Sent to the email configured at \`Primary.email\` when we get a new order
 - \`received\`: Sent to the orderer when we've received their order
 - \`shipped\`: Sent to the orderer when we've shipped their email
+
 I added the following to my `config/.env` and `config/.env.default` to configure the `Primary.email`:
 
 ```shell
@@ -272,6 +273,7 @@ It's pretty straightforward. I am reusing the `MailerJob` to send the emails in 
 
 - The order was just created
 - The order was shipped
+
 The `push` method comes from our `QueueTrait`, which helpfully uses the default queue handler to push jobs.
 
 Next, we'll link it up to our `PhotoPostType.Orders::initialize()` method:
@@ -294,6 +296,7 @@ You'll notice that the CMS user has no idea what was actually ordered - they'd n
 - Track the post id that is being purchased.
 - Save that relation to the \`orders\` table.
 - Display a link to what is being purchased on the \`/admin/orders\` page.
+
 ---
 
 > For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.23](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.23).
