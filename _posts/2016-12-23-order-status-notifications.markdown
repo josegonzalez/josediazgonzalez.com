@@ -20,7 +20,7 @@ title: Order status notifications
 
 A friend of mine asked for a custom website, so here I am, writing a custom cms. I know, there are plenty of systems out there that would handle his needs, but it's also a good excuse to play around with CakePHP 3, so here we are.
 
-> For the lazy, the codebase we'll be working on will be available on GitHub. I will be pushing each set of changes on the date when each blog post in this series is published. No cheating!
+> For the lazy, the codebase we'll be working on will be available on [GitHub](https://github.com/josegonzalez/cakeadvent-2016). I will be pushing each set of changes on the date when each blog post in this series is published. No cheating!
 
 ## Order Mailer for email notifications
 
@@ -109,7 +109,7 @@ export PRIMARY_EMAIL="example@example.com"
 
 Here are my html templates for each email, which I've placed in `plugins/PhotoPostType/Template/Email/html/`. You can create equivalent text templates as well:
 
-#### plugins/PhotoPostType/Template/Email/html/new\_order.ctp
+#### `plugins/PhotoPostType/Template/Email/html/new_order.ctp`
 
 ```php
 <h2>There was a new order</h2>
@@ -147,7 +147,7 @@ Here are my html templates for each email, which I've placed in `plugins/PhotoPo
 </dl>
 ```
 
-#### plugins/PhotoPostType/Template/Email/html/received.ctp
+#### `plugins/PhotoPostType/Template/Email/html/received.ctp`
 
 ```php
 <h2>Your order was recieved</h2>
@@ -176,7 +176,7 @@ Here are my html templates for each email, which I've placed in `plugins/PhotoPo
 <p>Thanks again, and enjoy!</p>
 ```
 
-#### plugins/PhotoPostType/Template/Email/html/shipped.ctp
+#### `plugins/PhotoPostType/Template/Email/html/shipped.ctp`
 
 ```php
 <h2>Your order was shipped</h2>
@@ -297,7 +297,7 @@ You'll notice that the CMS user has no idea what was actually ordered - they'd n
 
 ---
 
-> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as 0.0.23.
+> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.23](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.23).
 
 It's been almost a month, but our CMS is rounding to a close. Our next task is to actually place it online somewhere so our client can view it and suggest any changes. Ideally this happens earlier in the process, but we've only just completed the initial functionality, so it's a reasonable compromise.
 
