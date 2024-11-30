@@ -1,46 +1,36 @@
 ---
-  title:       "Deploying our application"
-  date:        2016-12-24 05:04
-  description: "Part 24 of a series of posts that will help you build out a personal CMS"
-  category:    cakephp
-  tags:
-    - deployment
-    - heroku
-    - cakeadvent-2016
-    - cakephp
-  comments:    true
-  sharing:     true
-  published:   true
-  layout:      post
-  disable_advertisement: true
-  series:      CakeAdvent-2016
+category: cakephp
+comments: true
+date: 2016-12-24 05:04
+description: Part 24 of a series of posts that will help you build out a personal
+  CMS
+disable_advertisement: true
+layout: post
+published: true
+series: CakeAdvent-2016
+sharing: true
+tags:
+- deployment
+- heroku
+- cakeadvent-2016
+- cakephp
+title: Deploying our application
 ---
 
 A friend of mine asked for a custom website, so here I am, writing a custom cms. I know, there are plenty of systems out there that would handle his needs, but it's also a good excuse to play around with CakePHP 3, so here we are.
 
-> For the lazy, the codebase we'll be working on will be available on [GitHub](https://github.com/josegonzalez/cakeadvent-2016). I will be pushing each set of changes on the date when each blog post in this series is published. No cheating!
+> For the lazy, the codebase we'll be working on will be available on GitHub. I will be pushing each set of changes on the date when each blog post in this series is published. No cheating!
 
 ## Errata from previous post
 
 Looks like I should run the code before committing it. Here are a few issues with the last post:
 
-- The OrderNotificationBehavior was attached improperly. It should be as follows:
-
-  ```php
-  $this->addBehavior('PhotoPostType.OrderNotification');
-  ```
-
+- The OrderNotificationBehavior was attached improperly. It should be as follows: $this-&gt;addBehavior('PhotoPostType.OrderNotification');
 - The namespace for `OrderNotificationBehavior` should be `namespace PhotoPostType\Model\Behavior;`.
 - The `use` statement for `QueueTrait` should be `use Josegonzalez\CakeQueuesadilla\Traits\QueueTrait;`.
 - Missing a comma on line 20 of `OrderNotificationBehavior`.
 - Extra semicolon around line 34 of `OrderNotificationBehavior`
-- Missing data from the `shipped` MailerJob enqueue in `OrderNotificationBehavior`. It should be:
-
-  ```php
-  'data' => [
-      'order_id' => $entity->id
-  ],
-  ```
+- Missing data from the `shipped` MailerJob enqueue in `OrderNotificationBehavior`. It should be: 'data' =&gt; \[ 'order\_id' =&gt; $entity-&gt;id ],
 
 Thanks to those who've pointed out my derps. These fixes are available as the first commit in the current release.
 
@@ -215,7 +205,7 @@ I won't be making these changes in my version, but in a future release of my cli
 
 ---
 
-> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.24](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.24).
+> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as 0.0.24.
 
 And that's a rap! We've created a fully-functioning CMS with:
 
