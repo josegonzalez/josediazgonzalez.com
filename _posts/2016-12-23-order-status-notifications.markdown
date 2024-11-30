@@ -24,6 +24,8 @@ A friend of mine asked for a custom website, so here I am, writing a custom cms.
 > 
 > -- <caption></caption>
 
+## Order Mailer for email notifications
+
 First thing is we'll need an OrderMailer to handle all the actual email sending. Here is mine:
 
 ```php
@@ -108,6 +110,8 @@ export PRIMARY_EMAIL="example@example.com"
 
 Here are my html templates for each email, which I've placed in `plugins/PhotoPostType/Template/Email/html/`. You can create equivalent text templates as well:
 
+#### plugins/PhotoPostType/Template/Email/html/new\_order.ctp
+
 ```php
 <h2>There was a new order</h2>
 
@@ -144,6 +148,8 @@ Here are my html templates for each email, which I've placed in `plugins/PhotoPo
 </dl>
 ```
 
+#### plugins/PhotoPostType/Template/Email/html/received.ctp
+
 ```php
 <h2>Your order was recieved</h2>
 <p>
@@ -170,6 +176,8 @@ Here are my html templates for each email, which I've placed in `plugins/PhotoPo
 </dl>
 <p>Thanks again, and enjoy!</p>
 ```
+
+#### plugins/PhotoPostType/Template/Email/html/shipped.ctp
 
 ```php
 <h2>Your order was shipped</h2>
@@ -204,6 +212,8 @@ Pretty straightforward. I'll commit my changes now.
 git add config/.env.default plugins/PhotoPostType/src/Mailer/OrderMailer.php plugins/PhotoPostType/src/Template/Email/html/new_order.ctp plugins/PhotoPostType/src/Template/Email/html/received.ctp plugins/PhotoPostType/src/Template/Email/html/shipped.ctp
 git commit -m "Create order status emails"
 ```
+
+## Shipping Emails
 
 This one was a bit more difficult to figure out where it should go. I want to hook into CakePHP's `Model.afterSave` event as seamlessly as possible. We could add a new event handler to our `OrdersListener` and bind it on the Model as well, but that seems icky. I'm going to instead use model behaviors, which are purpose-built to handle all table events. The following is my `OrderNotificationBehavior`, located at `plugins/PhotoPostType/src/Model/Behavior/OrderNotificationBehavior.php`:
 
@@ -277,11 +287,15 @@ git commit plugins/PhotoPostType/src/Model/Behavior/OrderNotificationBehavior.ph
 git commit -m "Send emails when the status of the order changes"
 ```
 
+## Homework time
+
 You'll notice that the CMS user has no idea what was actually ordered - they'd need to guess this from the charge id in `Stripe`. This kinda bites, so your task is to:
 
 - Track the post id that is being purchased.
 - Save that relation to the \`orders\` table.
 - Display a link to what is being purchased on the \`/admin/orders\` page.
+---
+
 > For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as 0.0.23.
 > 
 > -- <caption></caption>
