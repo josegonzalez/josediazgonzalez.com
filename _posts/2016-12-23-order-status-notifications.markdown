@@ -1,20 +1,21 @@
 ---
-  title:       "Order status notifications"
-  date:        2016-12-23 08:30
-  description: "Part 23 of a series of posts that will help you build out a personal CMS"
-  category:    cakephp
-  tags:
-    - emails
-    - mailers
-    - orders
-    - cakeadvent-2016
-    - cakephp
-  comments:    true
-  sharing:     true
-  published:   true
-  layout:      post
-  disable_advertisement: true
-  series:      CakeAdvent-2016
+category: cakephp
+comments: true
+date: 2016-12-23 08:30
+description: Part 23 of a series of posts that will help you build out a personal
+  CMS
+disable_advertisement: true
+layout: post
+published: true
+series: CakeAdvent-2016
+sharing: true
+tags:
+- emails
+- mailers
+- orders
+- cakeadvent-2016
+- cakephp
+title: Order status notifications
 ---
 
 A friend of mine asked for a custom website, so here I am, writing a custom cms. I know, there are plenty of systems out there that would handle his needs, but it's also a good excuse to play around with CakePHP 3, so here we are.
