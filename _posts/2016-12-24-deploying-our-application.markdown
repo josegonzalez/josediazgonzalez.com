@@ -19,7 +19,7 @@ title: Deploying our application
 
 A friend of mine asked for a custom website, so here I am, writing a custom cms. I know, there are plenty of systems out there that would handle his needs, but it's also a good excuse to play around with CakePHP 3, so here we are.
 
-> For the lazy, the codebase we'll be working on will be available on GitHub. I will be pushing each set of changes on the date when each blog post in this series is published. No cheating!
+> For the lazy, the codebase we'll be working on will be available on [GitHub](https://github.com/josegonzalez/cakeadvent-2016). I will be pushing each set of changes on the date when each blog post in this series is published. No cheating!
 
 ## Errata from previous post
 
@@ -205,7 +205,7 @@ I won't be making these changes in my version, but in a future release of my cli
 
 ---
 
-> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as 0.0.24.
+> For those that may just want to ensure their codebase matches what has been done so far, the codebase is available on GitHub and tagged as [0.0.24](https://github.com/josegonzalez/cakeadvent-2016/tree/0.0.24).
 
 And that's a rap! We've created a fully-functioning CMS with:
 
