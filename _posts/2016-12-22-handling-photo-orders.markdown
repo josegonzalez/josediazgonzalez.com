@@ -1,19 +1,20 @@
 ---
-  title:       "Handling Photo Orders"
-  date:        2016-12-22 08:53
-  description: "Part 22 of a series of posts that will help you build out a personal CMS"
-  category:    cakephp
-  tags:
-    - crud-view
-    - cakeadvent-2016
-    - cakephp
-  comments:    true
-  sharing:     true
-  published:   true
-  layout:      post
-  disable_advertisement: true
-  series:      CakeAdvent-2016
-  og_image:    /images/2016/12/22/dashboard-bulk.png
+category: cakephp
+comments: true
+date: 2016-12-22 08:53
+description: Part 22 of a series of posts that will help you build out a personal
+  CMS
+disable_advertisement: true
+layout: post
+og_image: /images/2016/12/22/dashboard-bulk.png
+published: true
+series: CakeAdvent-2016
+sharing: true
+tags:
+- crud-view
+- cakeadvent-2016
+- cakephp
+title: Handling Photo Orders
 ---
 
 A friend of mine asked for a custom website, so here I am, writing a custom cms. I know, there are plenty of systems out there that would handle his needs, but it's also a good excuse to play around with CakePHP 3, so here we are.
@@ -254,7 +255,7 @@ export STRIPE_MODE=test
 
 Assuming everything was configured properly, here is what that will look like:
 
-![dashboard confessional](/images/2016/12/22/dashboard.png)
+<figure><img alt="dashboard confessional" class="" src="/images/2016/12/22/dashboard.png"><figcaption>dashboard confessional</figcaption></figure>
 
 I'll save my changes here.
 
@@ -334,8 +335,7 @@ $this->_action()->config('scaffold.bulk_actions', [
 ]);
 ```
 
-![bulk dashboard confessional](/images/2016/12/22/dashboard-bulk.png)
-
+<figure><img alt="bulk dashboard confessional" class="" src="/images/2016/12/22/dashboard-bulk.png"><figcaption>bulk dashboard confessional</figcaption></figure>
 
 And we're done!
 
