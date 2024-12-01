@@ -31,7 +31,3 @@ aws-rotate-key --profile my-aws-personal
 The nice thing here is that it allowed me to specify a profile and also prompted me before deleting any keys.
 
 AWS has a [blog post](https://aws.amazon.com/blogs/security/how-to-rotate-access-keys-for-iam-users/) on how to do this with the aws-cli, but honestly I'm not very enthused about the idea of manually running a ton of commands, so I think I'll continue with the `aws-rotate-key` method for now.
-
-test block
-
-## Heading
