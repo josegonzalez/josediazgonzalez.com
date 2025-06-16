@@ -14,13 +14,13 @@
   disable_advertisement: false
 ---
 
-This post is a collection of notes on how to create Paks for the MinUI libretro frontend and it's forks, such as NextUI. Some of this material may be useful for other platforms, such as OnionOS. I'll be adding to this document from time to time.
+This post is a collection of notes on how to create Paks for the MinUI libretro frontend and it's forks, such as [NextUI](https://github.com/LoveRetro/NextUI). Some of this material may be useful for other platforms, such as OnionOS. I'll be adding to this document from time to time.
 
 ## Some background
 
 MinUI is a custom launcher for a variety of handhelds - notably the Anbernic RGNNXX, Trimui, and Miyoo devices, amongst others. It provides a simple interface for launching emulators via [libretro](https://www.libretro.com/) cores, allowing for resuse of existing emulators with a (very) sparing interface. Support for various cores depends on the device, but generally speaking MinUI does not support any OpenGL cores, meaning emulators for more modern consoles such as N64, Dreamcast, or Nintendo DS often need to use standalone "paks" that do not integrate as well with MinUI.
 
-> Note: MinUI has a variety of forks - MyMinUI, FinUI, Corak's MinUI, and NextUI - which all support the same general emulation functionality, though may add extra features on top such as other devices, button shortcuts, or enhanced emulation support. This post won't go into the vagaries of each project as that isn't super important for the topic.
+> Note: MinUI has a variety of forks - [MyMinUI](https://github.com/Turro75/MyMinUI), [FinUI](https://github.com/robshape/FinUI), Corak's MinUI, and NextUI - which all support the same general emulation functionality, though may add extra features on top such as other devices, button shortcuts, or enhanced emulation support. This post won't go into the vagaries of each project as that isn't super important for the topic.
 
 A "pak" is a collection of files in a folder in a specific path on the SD Card which contains a MinUI installation. Paks are nominally device-specific in that the path where they are placed on the SD Card is a hint to MinUI to tell it whether the pak is loadable or not. Paks come in two varieties:
 
