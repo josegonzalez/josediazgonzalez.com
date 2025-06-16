@@ -11,7 +11,7 @@
   sharing:     true
   published:   true
   layout:      post
-  disable_advertisement: false
+  disable_advertisement: true
 ---
 
 This post is a collection of notes on how to create Paks for the MinUI libretro frontend and it's forks, such as [NextUI](https://github.com/LoveRetro/NextUI). Some of this material may be useful for other platforms, such as OnionOS. I'll be adding to this document from time to time.
