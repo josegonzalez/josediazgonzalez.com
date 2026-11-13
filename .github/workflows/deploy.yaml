@@ -12,9 +12,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
-      - name: Build and Deploy
-        uses: ./.github/actions/build-and-deploy
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Run tests
+        run: bundle exec rake test
+      - name: Clone site repository
         env:
           JEKYLL_GITHUB_ACCESS_TOKEN: ${{ secrets.JEKYLL_GITHUB_ACCESS_TOKEN }}
           SITE_REPOSITORY: josegonzalez/josegonzalez.github.io
-          TRACE: 1
+        run: git clone "https://${GITHUB_REPOSITORY_OWNER}:${JEKYLL_GITHUB_ACCESS_TOKEN}@github.com/${SITE_REPOSITORY}.git" _site
+      - name: Build site
+        run: bundle exec jekyll build
+      - name: Push site
+        working-directory: _site
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git commit -m 'Jekyll Build from Action'
+          git push origin master
