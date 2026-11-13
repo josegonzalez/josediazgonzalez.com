@@ -51,9 +51,15 @@ categories:
 _site:
 	git clone "git@github.com:${SITE_REPOSITORY}.git" _site
 
+.PHONY: test
+test:
+	bundle exec rake test
+
+.PHONY: docker-build
 docker-build: _site
+	docker build -t josediazgonzalez.com-build .github/actions/build-and-deploy
 	docker run --rm \
-	  --volume="$(PWD):/srv/jekyll" \
-	  --volume="$(PWD)/vendor/bundle:/usr/local/bundle" \
-	  -it jekyll/jekyll:$(shell cat Gemfile | grep jekyll | head -n1 | cut -d '"' -f4 | xargs -n1 | tail -n1) \
-	  jekyll build
+	  --env SKIP_DEPLOY=true \
+	  --volume="$(PWD):/github/workspace" \
+	  --workdir /github/workspace \
+	  -it josediazgonzalez.com-build
