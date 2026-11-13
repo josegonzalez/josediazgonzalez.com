@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 group :development do
-  gem "bigdecimal",              "~> 3.1"
+  gem "bigdecimal",              "~> 4.1"
   gem "jekyll",                  "~> 4.4.1"
   gem "jekyll-sass-converter",   "~> 2.2.0"
   gem "multi_json",              "~> 1.19.1"
