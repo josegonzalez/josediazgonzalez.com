@@ -15,4 +15,4 @@ group :test do
   gem "rake",                    "~> 13.2"
 end
 
-gem "sinatra",                   "~> 4.2.1"
+gem "sinatra",                   "~> 4.2.2"
